@@ -1,1 +1,0 @@
-$data modify storage daisukes:state next set from storage daisukes:registry modifiers[$(index)]

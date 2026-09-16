@@ -1,18 +1,20 @@
-tellraw @a {"text":"Daisukes Challenge Datapack loaded!","color":"green"}
+tellraw @a {"text":"Daisukes Challenge started!","color":"red"}
+
+execute if data storage daisukes:state active[0] run function daisukes:engine/deactivate_execute
 
 data modify storage daisukes:registry modifiers set value []
 
 function #daisukes:register
 
-data modify storage daisukes:state active set value "no_jump"
-data modify storage daisukes:state active_index set value 0
+data merge storage daisukes:config {count: 1}
+
+function daisukes:engine/select_modifiers
 
 scoreboard objectives add daisukes.timer dummy
-scoreboard objectives add daisukes.random dummy
-scoreboard objectives add daisukes.index dummy
 scoreboard objectives add daisukes.engine dummy
+scoreboard objectives add daisukes.math dummy
 
-scoreboard players set #active_index daisukes.index 0
 scoreboard players set #engine_active daisukes.engine 1
+scoreboard players set #timer daisukes.timer 0
 
-function daisukes:engine/activate with storage daisukes:state
+function daisukes:engine/activate_execute
