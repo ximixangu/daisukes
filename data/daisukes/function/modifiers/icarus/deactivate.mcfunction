@@ -1,1 +1,3 @@
-execute as @a run function daisukes:modifiers/icarus/cancel_flight
+tag @s remove icarus_stop
+effect clear @s minecraft:levitation
+tag @s remove icarus_airborne
