@@ -3,6 +3,7 @@
     "daisukes:modifiers/no_jump/tick",
     "daisukes:modifiers/half_heart/tick",
     "daisukes:modifiers/zombie_tsunami/tick",
-    "daisukes:modifiers/inv_weight/tick"
+    "daisukes:modifiers/inv_weight/tick",
+    "daisukes:modifiers/icarus/tick"
   ]
 }

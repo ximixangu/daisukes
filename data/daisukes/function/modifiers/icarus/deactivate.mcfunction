@@ -1,0 +1,1 @@
+execute as @a run function daisukes:modifiers/icarus/cancel_flight
