@@ -1,0 +1,8 @@
+{
+  "values": [
+    "daisukes:modifiers/no_jump/activate",
+    "daisukes:modifiers/half_heart/activate",
+    "daisukes:modifiers/zombie_tsunami/activate",
+    "daisukes:modifiers/inv_weight/activate"
+  ]
+}

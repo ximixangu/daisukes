@@ -1,0 +1,1 @@
+execute if score #engine_active daisukes.engine matches 1 run function daisukes:engine/tick

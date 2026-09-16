@@ -1,0 +1,1 @@
+data modify storage daisukes:registry modifiers append value "no_jump"

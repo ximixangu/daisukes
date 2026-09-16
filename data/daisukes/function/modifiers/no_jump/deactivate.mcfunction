@@ -1,0 +1,1 @@
+execute as @a run attribute @s minecraft:jump_strength modifier remove daisuke:no_jump
