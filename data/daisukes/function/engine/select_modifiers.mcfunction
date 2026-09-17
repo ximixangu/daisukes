@@ -1,7 +1,10 @@
 data remove storage daisukes:state active
-
+data remove storage daisukes:temp display_texts
 data remove storage daisukes:temp pool
+
 data modify storage daisukes:temp pool set from storage daisukes:registry modifiers
 
 execute store result score #remaining daisukes.math run data get storage daisukes:config count
 execute if score #remaining daisukes.math matches 1.. run function daisukes:engine/selection_loop
+
+execute if data storage daisukes:temp display_texts[0] run title @a actionbar {"nbt": "display_texts[]", "storage": "daisukes:temp", "separator": {"text": " + ", "color": "white"}, "interpret": true}

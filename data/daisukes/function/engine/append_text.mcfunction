@@ -1,0 +1,1 @@
+$data modify storage daisukes:temp display_texts append from storage daisukes:texts map.$(key)
