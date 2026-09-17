@@ -1,0 +1,1 @@
+execute if score #active daisukes.high_stress matches 1 run function daisukes:modifiers/high_stress/apply_hurt

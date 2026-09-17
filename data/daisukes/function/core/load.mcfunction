@@ -1,4 +1,6 @@
-tellraw @a {"text":"Daisukes Challenge started!","color":"red"}
+title @a times 5t 3s 2s
+title @a subtitle {"text": "Daisuke's", "color": "dark_red"}
+title @a title {"text": "Challenge Mode", "color": "red"}
 
 execute if data storage daisukes:state active[0] run function daisukes:engine/deactivate_execute
 
@@ -6,7 +8,7 @@ data modify storage daisukes:registry modifiers set value []
 
 function #daisukes:register
 
-data merge storage daisukes:config {count: 2}
+data merge storage daisukes:config {count: 1}
 
 function daisukes:engine/select_modifiers
 

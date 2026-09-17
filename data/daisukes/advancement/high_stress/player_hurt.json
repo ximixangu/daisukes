@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "hurt": {
+      "trigger": "minecraft:entity_hurt_player"
+    }
+  },
+  "rewards": {
+    "function": "daisukes:modifiers/high_stress/on_player_hurt"
+  }
+}

@@ -4,6 +4,7 @@
     "daisukes:modifiers/half_heart/register",
     "daisukes:modifiers/zombie_tsunami/register",
     "daisukes:modifiers/inv_weight/register",
-    "daisukes:modifiers/icarus/register"
+    "daisukes:modifiers/icarus/register",
+    "daisukes:modifiers/high_stress/register"
   ]
 }
