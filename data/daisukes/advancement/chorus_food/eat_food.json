@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "ate_something": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:food": {}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "daisukes:modifiers/chorus_food/on_eat_food"
+  }
+}

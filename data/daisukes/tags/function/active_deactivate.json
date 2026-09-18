@@ -6,6 +6,7 @@
     "daisukes:modifiers/inv_weight/deactivate",
     "daisukes:modifiers/icarus/deactivate",
     "daisukes:modifiers/high_stress/deactivate",
-    "daisukes:modifiers/anvil_rain/deactivate"
+    "daisukes:modifiers/anvil_rain/deactivate",
+    "daisukes:modifiers/chorus_food/deactivate"
   ]
 }

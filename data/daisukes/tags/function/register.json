@@ -6,6 +6,7 @@
     "daisukes:modifiers/inv_weight/register",
     "daisukes:modifiers/icarus/register",
     "daisukes:modifiers/high_stress/register",
-    "daisukes:modifiers/anvil_rain/register"
+    "daisukes:modifiers/anvil_rain/register",
+    "daisukes:modifiers/chorus_food/register"
   ]
 }

@@ -1,0 +1,1 @@
+scoreboard players set #active daisukes.chorus_food -1

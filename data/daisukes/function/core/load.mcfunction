@@ -8,7 +8,7 @@ data modify storage daisukes:registry modifiers set value []
 
 function #daisukes:register
 
-data merge storage daisukes:config {count: 1}
+data merge storage daisukes:config {count: 3}
 
 function daisukes:engine/select_modifiers
 
