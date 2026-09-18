@@ -5,6 +5,7 @@
     "daisukes:modifiers/zombie_tsunami/deactivate",
     "daisukes:modifiers/inv_weight/deactivate",
     "daisukes:modifiers/icarus/deactivate",
-    "daisukes:modifiers/high_stress/deactivate"
+    "daisukes:modifiers/high_stress/deactivate",
+    "daisukes:modifiers/anvil_rain/deactivate"
   ]
 }

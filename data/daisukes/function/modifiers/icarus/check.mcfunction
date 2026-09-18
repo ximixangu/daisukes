@@ -1,5 +1,5 @@
-execute if predicate daisukes:on_ground run tag @s remove icarus_stop
-execute if predicate daisukes:on_ground run tag @s remove icarus_airborne
+execute if predicate daisukes:icarus/on_ground run tag @s remove icarus_stop
+execute if predicate daisukes:icarus/on_ground run tag @s remove icarus_airborne
 
 execute if entity @s[x_rotation=-9..90,tag=icarus_airborne,tag=!icarus_stop] run function daisukes:modifiers/icarus/cancel_flight
 

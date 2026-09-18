@@ -1,0 +1,1 @@
+execute as @a at @s if predicate daisukes:anvil_rain/location_check run function daisukes:modifiers/anvil_rain/spawn_anvil
