@@ -18,5 +18,6 @@ scoreboard objectives add daisukes.math dummy
 
 scoreboard players set #engine_active daisukes.engine 1
 scoreboard players set #timer daisukes.timer 0
+scoreboard players set #timer_threshold daisukes.timer 1000
 
 function daisukes:engine/activate_execute
