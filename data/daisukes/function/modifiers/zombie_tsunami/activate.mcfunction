@@ -3,3 +3,6 @@ execute as @e[type=minecraft:zombie,tag=!daisukes_zombie_tsunami] run effect giv
 execute as @e[type=minecraft:zombie,tag=!daisukes_zombie_tsunami] run attribute @s minecraft:spawn_reinforcements base set 10
 
 tag @e[type=minecraft:zombie, tag=!daisukes_zombie_tsunami] add daisukes_zombie_tsunami
+
+weather thunder
+gamerule advance_weather false

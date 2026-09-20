@@ -1,6 +1,6 @@
 summon marker ~ ~ ~ {Tags:["daisukes.anvil_target"]}
 
-spreadplayers ~ ~ 0 64 false @e[type=marker,tag=daisukes.anvil_target,limit=1,sort=nearest]
+spreadplayers ~ ~ 0 32 false @e[type=marker,tag=daisukes.anvil_target,limit=1,sort=nearest]
 
 data modify entity @e[type=marker,tag=daisukes.anvil_target,limit=1,sort=nearest] Pos[1] set from entity @s Pos[1]
 

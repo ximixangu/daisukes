@@ -1,1 +1,1 @@
-kill @e[type=marker,tag=daisukes.anvil_target]
+kill @e[type=marker]

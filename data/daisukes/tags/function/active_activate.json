@@ -1,12 +1,12 @@
 {
   "values": [
     "daisukes:modifiers/no_jump/activate",
-    "daisukes:modifiers/half_heart/activate",
     "daisukes:modifiers/zombie_tsunami/activate",
     "daisukes:modifiers/inv_weight/activate",
     "daisukes:modifiers/icarus/activate",
     "daisukes:modifiers/high_stress/activate",
     "daisukes:modifiers/anvil_rain/activate",
-    "daisukes:modifiers/chorus_food/activate"
+    "daisukes:modifiers/chorus_food/activate",
+    "daisukes:modifiers/mini_creeper/activate"
   ]
 }

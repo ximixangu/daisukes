@@ -1,12 +1,12 @@
 {
   "values": [
     "daisukes:modifiers/no_jump/deactivate",
-    "daisukes:modifiers/half_heart/deactivate",
     "daisukes:modifiers/zombie_tsunami/deactivate",
     "daisukes:modifiers/inv_weight/deactivate",
     "daisukes:modifiers/icarus/deactivate",
     "daisukes:modifiers/high_stress/deactivate",
     "daisukes:modifiers/anvil_rain/deactivate",
-    "daisukes:modifiers/chorus_food/deactivate"
+    "daisukes:modifiers/chorus_food/deactivate",
+    "daisukes:modifiers/mini_creeper/deactivate"
   ]
 }

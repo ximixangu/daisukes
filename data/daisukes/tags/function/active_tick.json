@@ -1,12 +1,12 @@
 {
   "values": [
     "daisukes:modifiers/no_jump/tick",
-    "daisukes:modifiers/half_heart/tick",
     "daisukes:modifiers/zombie_tsunami/tick",
     "daisukes:modifiers/inv_weight/tick",
     "daisukes:modifiers/icarus/tick",
     "daisukes:modifiers/high_stress/tick",
     "daisukes:modifiers/anvil_rain/tick",
-    "daisukes:modifiers/chorus_food/tick"
+    "daisukes:modifiers/chorus_food/tick",
+    "daisukes:modifiers/mini_creeper/tick"
   ]
 }
