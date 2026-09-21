@@ -9,6 +9,7 @@
     "daisukes:modifiers/chorus_food/tick",
     "daisukes:modifiers/mini_creeper/tick",
     "daisukes:modifiers/item_drop/tick",
-    "daisukes:modifiers/hotbar_cycle/tick"
+    "daisukes:modifiers/hotbar_cycle/tick",
+    "daisukes:modifiers/fire_shield/tick"
   ]
 }

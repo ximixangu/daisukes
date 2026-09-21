@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "shield_blocked_attack": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "items": "minecraft:shield"
+        },
+        "durability": {
+          "change": {
+            "max": -1
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "daisukes:modifiers/fire_shield/on_damage_block"
+  }
+}

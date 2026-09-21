@@ -9,6 +9,7 @@
     "daisukes:modifiers/chorus_food/deactivate",
     "daisukes:modifiers/mini_creeper/deactivate",
     "daisukes:modifiers/item_drop/deactivate",
-    "daisukes:modifiers/hotbar_cycle/deactivate"
+    "daisukes:modifiers/hotbar_cycle/deactivate",
+    "daisukes:modifiers/fire_shield/deactivate"
   ]
 }
