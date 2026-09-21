@@ -7,6 +7,7 @@
     "daisukes:modifiers/high_stress/tick",
     "daisukes:modifiers/anvil_rain/tick",
     "daisukes:modifiers/chorus_food/tick",
-    "daisukes:modifiers/mini_creeper/tick"
+    "daisukes:modifiers/mini_creeper/tick",
+    "daisukes:modifiers/item_drop/tick"
   ]
 }

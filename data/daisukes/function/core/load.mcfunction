@@ -9,7 +9,7 @@ data remove storage daisukes:temp pool
 
 function #daisukes:register
 
-data merge storage daisukes:config {count: 3}
+data merge storage daisukes:config {count: 1}
 
 function daisukes:engine/select_modifiers
 

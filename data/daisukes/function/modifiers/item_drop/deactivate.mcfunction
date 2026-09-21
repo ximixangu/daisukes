@@ -1,0 +1,1 @@
+scoreboard objectives remove daisukes.item_drop
