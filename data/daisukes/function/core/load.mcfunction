@@ -5,6 +5,7 @@ title @a title {"text": "Challenge Mode", "color": "red"}
 execute if data storage daisukes:state active[0] run function daisukes:engine/deactivate_execute
 
 data modify storage daisukes:registry modifiers set value []
+data remove storage daisukes:temp pool
 
 function #daisukes:register
 

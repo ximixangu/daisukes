@@ -1,6 +1,3 @@
-# IDEA: Per evitar repeticions de modificadors al canvi es pot:
-# Fer que la pool nomes es reseteja quan es queda buida
-
 execute store result score #size daisukes.math run data get storage daisukes:temp pool
 
 execute if score #size daisukes.math matches 1.. run function daisukes:engine/pick_one
