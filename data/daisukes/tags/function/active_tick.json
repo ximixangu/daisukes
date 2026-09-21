@@ -8,6 +8,7 @@
     "daisukes:modifiers/anvil_rain/tick",
     "daisukes:modifiers/chorus_food/tick",
     "daisukes:modifiers/mini_creeper/tick",
-    "daisukes:modifiers/item_drop/tick"
+    "daisukes:modifiers/item_drop/tick",
+    "daisukes:modifiers/hotbar_cycle/tick"
   ]
 }

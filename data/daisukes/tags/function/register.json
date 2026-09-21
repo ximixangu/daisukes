@@ -8,6 +8,7 @@
     "daisukes:modifiers/anvil_rain/register",
     "daisukes:modifiers/chorus_food/register",
     "daisukes:modifiers/mini_creeper/register",
-    "daisukes:modifiers/item_drop/register"
+    "daisukes:modifiers/item_drop/register",
+    "daisukes:modifiers/hotbar_cycle/register"
   ]
 }

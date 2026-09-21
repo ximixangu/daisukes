@@ -8,6 +8,7 @@
     "daisukes:modifiers/anvil_rain/activate",
     "daisukes:modifiers/chorus_food/activate",
     "daisukes:modifiers/mini_creeper/activate",
-    "daisukes:modifiers/item_drop/activate"
+    "daisukes:modifiers/item_drop/activate",
+    "daisukes:modifiers/hotbar_cycle/activate"
   ]
 }
