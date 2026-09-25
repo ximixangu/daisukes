@@ -10,6 +10,7 @@
     "daisukes:modifiers/mini_creeper/activate",
     "daisukes:modifiers/item_drop/activate",
     "daisukes:modifiers/hotbar_cycle/activate",
-    "daisukes:modifiers/fire_shield/activate"
+    "daisukes:modifiers/fire_shield/activate",
+    "daisukes:modifiers/glass_run/activate"
   ]
 }

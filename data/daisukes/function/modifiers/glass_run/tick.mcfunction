@@ -1,0 +1,1 @@
+execute as @a[gamemode=!spectator] at @s run function daisukes:modifiers/glass_run/check_floor
