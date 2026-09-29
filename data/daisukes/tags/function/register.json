@@ -13,6 +13,7 @@
     "daisukes:modifiers/fire_shield/register",
     "daisukes:modifiers/glass_run/register",
     "daisukes:modifiers/vertigo/register",
-    "daisukes:modifiers/backwards/register"
+    "daisukes:modifiers/backwards/register",
+    "daisukes:modifiers/alyra/register"
   ]
 }

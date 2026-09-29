@@ -13,6 +13,7 @@
     "daisukes:modifiers/fire_shield/activate",
     "daisukes:modifiers/glass_run/activate",
     "daisukes:modifiers/vertigo/activate",
-    "daisukes:modifiers/backwards/activate"
+    "daisukes:modifiers/backwards/activate",
+    "daisukes:modifiers/alyra/activate"
   ]
 }
