@@ -14,6 +14,7 @@
     "daisukes:modifiers/glass_run/deactivate",
     "daisukes:modifiers/vertigo/deactivate",
     "daisukes:modifiers/backwards/deactivate",
-    "daisukes:modifiers/alyra/deactivate"
+    "daisukes:modifiers/alyra/deactivate",
+    "daisukes:modifiers/enderman/deactivate"
   ]
 }

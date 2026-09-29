@@ -14,6 +14,7 @@
     "daisukes:modifiers/glass_run/register",
     "daisukes:modifiers/vertigo/register",
     "daisukes:modifiers/backwards/register",
-    "daisukes:modifiers/alyra/register"
+    "daisukes:modifiers/alyra/register",
+    "daisukes:modifiers/enderman/register"
   ]
 }
