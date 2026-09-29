@@ -1,0 +1,1 @@
+execute as @a unless predicate daisukes:vertigo/on_ground run effect give @s blindness 2 0 true

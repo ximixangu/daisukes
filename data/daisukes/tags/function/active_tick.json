@@ -11,6 +11,7 @@
     "daisukes:modifiers/item_drop/tick",
     "daisukes:modifiers/hotbar_cycle/tick",
     "daisukes:modifiers/fire_shield/tick",
-    "daisukes:modifiers/glass_run/tick"
+    "daisukes:modifiers/glass_run/tick",
+    "daisukes:modifiers/vertigo/tick"
   ]
 }

@@ -1,0 +1,1 @@
+execute as @a if predicate daisukes:vertigo/on_ground run effect clear @s minecraft:blindness

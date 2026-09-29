@@ -11,6 +11,7 @@
     "daisukes:modifiers/item_drop/deactivate",
     "daisukes:modifiers/hotbar_cycle/deactivate",
     "daisukes:modifiers/fire_shield/deactivate",
-    "daisukes:modifiers/glass_run/deactivate"
+    "daisukes:modifiers/glass_run/deactivate",
+    "daisukes:modifiers/vertigo/deactivate"
   ]
 }

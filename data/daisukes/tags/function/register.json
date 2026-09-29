@@ -11,6 +11,7 @@
     "daisukes:modifiers/item_drop/register",
     "daisukes:modifiers/hotbar_cycle/register",
     "daisukes:modifiers/fire_shield/register",
-    "daisukes:modifiers/glass_run/register"
+    "daisukes:modifiers/glass_run/register",
+    "daisukes:modifiers/vertigo/register"
   ]
 }
