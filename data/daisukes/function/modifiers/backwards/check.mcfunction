@@ -1,0 +1,2 @@
+scoreboard players operation _current daisukes.backwards_id = @s daisukes.backwards_id
+execute as @e[type=marker,tag=fwd,limit=1,sort=nearest] if score @s daisukes.backwards_id = _current daisukes.backwards_id at @s run function daisukes:modifiers/backwards/evaluate

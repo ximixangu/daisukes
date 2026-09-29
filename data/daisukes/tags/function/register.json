@@ -12,6 +12,7 @@
     "daisukes:modifiers/hotbar_cycle/register",
     "daisukes:modifiers/fire_shield/register",
     "daisukes:modifiers/glass_run/register",
-    "daisukes:modifiers/vertigo/register"
+    "daisukes:modifiers/vertigo/register",
+    "daisukes:modifiers/backwards/register"
   ]
 }

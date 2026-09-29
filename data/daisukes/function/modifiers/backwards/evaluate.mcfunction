@@ -1,0 +1,2 @@
+execute positioned ^ ^ ^1 as @a if score @s daisukes.backwards_id = _current daisukes.backwards_id if entity @s[distance=..0.87] run effect give @s instant_damage 1 0 true
+execute as @a if score @s daisukes.backwards_id = _current daisukes.backwards_id at @s run tp @e[type=marker,tag=fwd,limit=1,sort=nearest] ~ ~ ~ ~ 0

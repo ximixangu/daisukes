@@ -12,6 +12,7 @@
     "daisukes:modifiers/hotbar_cycle/tick",
     "daisukes:modifiers/fire_shield/tick",
     "daisukes:modifiers/glass_run/tick",
-    "daisukes:modifiers/vertigo/tick"
+    "daisukes:modifiers/vertigo/tick",
+    "daisukes:modifiers/backwards/tick"
   ]
 }
