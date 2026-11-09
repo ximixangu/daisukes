@@ -15,6 +15,7 @@
     "daisukes:modifiers/vertigo/tick",
     "daisukes:modifiers/backwards/tick",
     "daisukes:modifiers/alyra/tick",
-    "daisukes:modifiers/enderman/tick"
+    "daisukes:modifiers/enderman/tick",
+    "daisukes:modifiers/balloon/tick"
   ]
 }

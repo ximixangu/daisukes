@@ -15,6 +15,7 @@
     "daisukes:modifiers/vertigo/register",
     "daisukes:modifiers/backwards/register",
     "daisukes:modifiers/alyra/register",
-    "daisukes:modifiers/enderman/register"
+    "daisukes:modifiers/enderman/register",
+    "daisukes:modifiers/balloon/register"
   ]
 }

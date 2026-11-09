@@ -15,6 +15,7 @@
     "daisukes:modifiers/vertigo/activate",
     "daisukes:modifiers/backwards/activate",
     "daisukes:modifiers/alyra/activate",
-    "daisukes:modifiers/enderman/activate"
+    "daisukes:modifiers/enderman/activate",
+    "daisukes:modifiers/balloon/activate"
   ]
 }
