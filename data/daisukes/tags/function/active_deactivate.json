@@ -16,6 +16,7 @@
     "daisukes:modifiers/backwards/deactivate",
     "daisukes:modifiers/alyra/deactivate",
     "daisukes:modifiers/enderman/deactivate",
-    "daisukes:modifiers/balloon/deactivate"
+    "daisukes:modifiers/balloon/deactivate",
+    "daisukes:modifiers/gerxu/deactivate"
   ]
 }

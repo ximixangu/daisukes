@@ -16,6 +16,7 @@
     "daisukes:modifiers/backwards/tick",
     "daisukes:modifiers/alyra/tick",
     "daisukes:modifiers/enderman/tick",
-    "daisukes:modifiers/balloon/tick"
+    "daisukes:modifiers/balloon/tick",
+    "daisukes:modifiers/gerxu/tick"
   ]
 }

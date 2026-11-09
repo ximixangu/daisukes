@@ -16,6 +16,7 @@
     "daisukes:modifiers/backwards/activate",
     "daisukes:modifiers/alyra/activate",
     "daisukes:modifiers/enderman/activate",
-    "daisukes:modifiers/balloon/activate"
+    "daisukes:modifiers/balloon/activate",
+    "daisukes:modifiers/gerxu/activate"
   ]
 }
