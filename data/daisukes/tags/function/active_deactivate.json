@@ -17,6 +17,7 @@
     "daisukes:modifiers/alyra/deactivate",
     "daisukes:modifiers/enderman/deactivate",
     "daisukes:modifiers/balloon/deactivate",
-    "daisukes:modifiers/gerxu/deactivate"
+    "daisukes:modifiers/gerxu/deactivate",
+    "daisukes:modifiers/covid/deactivate"
   ]
 }

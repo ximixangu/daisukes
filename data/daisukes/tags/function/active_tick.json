@@ -17,6 +17,7 @@
     "daisukes:modifiers/alyra/tick",
     "daisukes:modifiers/enderman/tick",
     "daisukes:modifiers/balloon/tick",
-    "daisukes:modifiers/gerxu/tick"
+    "daisukes:modifiers/gerxu/tick",
+    "daisukes:modifiers/covid/tick"
   ]
 }

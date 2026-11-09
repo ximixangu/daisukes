@@ -17,6 +17,7 @@
     "daisukes:modifiers/alyra/register",
     "daisukes:modifiers/enderman/register",
     "daisukes:modifiers/balloon/register",
-    "daisukes:modifiers/gerxu/register"
+    "daisukes:modifiers/gerxu/register",
+    "daisukes:modifiers/covid/register"
   ]
 }
