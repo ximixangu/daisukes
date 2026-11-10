@@ -20,6 +20,7 @@
     "daisukes:modifiers/gerxu/activate",
     "daisukes:modifiers/covid/activate",
     "daisukes:modifiers/cursed_potato/activate",
-    "daisukes:modifiers/moon/activate"
+    "daisukes:modifiers/moon/activate",
+    "daisukes:modifiers/no_arms/activate"
   ]
 }
