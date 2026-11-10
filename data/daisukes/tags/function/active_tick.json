@@ -18,6 +18,7 @@
     "daisukes:modifiers/enderman/tick",
     "daisukes:modifiers/balloon/tick",
     "daisukes:modifiers/gerxu/tick",
-    "daisukes:modifiers/covid/tick"
+    "daisukes:modifiers/covid/tick",
+    "daisukes:modifiers/cursed_potato/tick"
   ]
 }

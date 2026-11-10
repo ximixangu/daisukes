@@ -18,6 +18,7 @@
     "daisukes:modifiers/enderman/deactivate",
     "daisukes:modifiers/balloon/deactivate",
     "daisukes:modifiers/gerxu/deactivate",
-    "daisukes:modifiers/covid/deactivate"
+    "daisukes:modifiers/covid/deactivate",
+    "daisukes:modifiers/cursed_potato/deactivate"
   ]
 }

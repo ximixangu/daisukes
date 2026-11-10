@@ -1,0 +1,1 @@
+$execute unless items entity @s inventory.$(slot) * run item replace entity @s inventory.$(slot) with minecraft:magma_cream[minecraft:item_name={"text":"Hot Potato","color":"red","bold":true},minecraft:custom_data={hot_potato:1b}]

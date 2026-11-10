@@ -1,4 +1,6 @@
 execute as @a at @s if entity @e[type=!player,type=!item,distance=..10.0] run effect give @s nausea 4 0 true
+execute at @a as @e[type=!player,type=!item,distance=..10.0] run effect give @s glowing 1 0 true
+execute at @a as @e[type=!player,type=!item,distance=..10.0] run team join covid
 
 execute as @a at @s if entity @e[type=!player,type=!item,distance=..5.0] run effect give @s wither 4 0 true
 
