@@ -19,6 +19,7 @@
     "daisukes:modifiers/balloon/register",
     "daisukes:modifiers/gerxu/register",
     "daisukes:modifiers/covid/register",
-    "daisukes:modifiers/cursed_potato/register"
+    "daisukes:modifiers/cursed_potato/register",
+    "daisukes:modifiers/moon/register"
   ]
 }

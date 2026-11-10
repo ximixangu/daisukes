@@ -19,6 +19,7 @@
     "daisukes:modifiers/balloon/activate",
     "daisukes:modifiers/gerxu/activate",
     "daisukes:modifiers/covid/activate",
-    "daisukes:modifiers/cursed_potato/activate"
+    "daisukes:modifiers/cursed_potato/activate",
+    "daisukes:modifiers/moon/activate"
   ]
 }

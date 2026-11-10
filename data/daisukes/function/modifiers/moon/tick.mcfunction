@@ -1,0 +1,1 @@
+execute as @e[type=!item, tag=!moon] run function daisukes:modifiers/moon/moon
