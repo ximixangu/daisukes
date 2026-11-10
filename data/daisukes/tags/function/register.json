@@ -21,6 +21,7 @@
     "daisukes:modifiers/covid/register",
     "daisukes:modifiers/cursed_potato/register",
     "daisukes:modifiers/moon/register",
-    "daisukes:modifiers/no_arms/register"
+    "daisukes:modifiers/no_arms/register",
+    "daisukes:modifiers/jeb/register"
   ]
 }

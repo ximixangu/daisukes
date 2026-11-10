@@ -21,6 +21,7 @@
     "daisukes:modifiers/covid/deactivate",
     "daisukes:modifiers/cursed_potato/deactivate",
     "daisukes:modifiers/moon/deactivate",
-    "daisukes:modifiers/no_arms/deactivate"
+    "daisukes:modifiers/no_arms/deactivate",
+    "daisukes:modifiers/jeb/deactivate"
   ]
 }

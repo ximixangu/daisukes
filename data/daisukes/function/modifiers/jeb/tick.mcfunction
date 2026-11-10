@@ -1,0 +1,4 @@
+execute as @a at @s unless entity @e[type=minecraft:sheep,tag=jeb_sheep,distance=..8] run scoreboard players add _timer daisukes.jeb_timer 1
+execute as @a if score _timer daisukes.jeb_timer matches 20.. at @s unless entity @e[type=minecraft:sheep,tag=jeb_sheep,distance=..8] run summon minecraft:tnt ~ ~ ~
+execute as @a if score _timer daisukes.jeb_timer matches 20.. at @s unless entity @e[type=minecraft:sheep,tag=jeb_sheep,distance=..8] run playsound minecraft:entity.tnt.primed player @s ~ ~ ~ 0.8 0.7
+execute if score _timer daisukes.jeb_timer matches 20.. run scoreboard players set _timer daisukes.jeb_timer 0
