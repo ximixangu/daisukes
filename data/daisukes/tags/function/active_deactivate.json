@@ -23,6 +23,7 @@
     "daisukes:modifiers/moon/deactivate",
     "daisukes:modifiers/no_arms/deactivate",
     "daisukes:modifiers/jeb/deactivate",
-    "daisukes:modifiers/sonic/deactivate"
+    "daisukes:modifiers/sonic/deactivate",
+    "daisukes:modifiers/agua/deactivate"
   ]
 }

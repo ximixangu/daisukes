@@ -23,6 +23,7 @@
     "daisukes:modifiers/moon/register",
     "daisukes:modifiers/no_arms/register",
     "daisukes:modifiers/jeb/register",
-    "daisukes:modifiers/sonic/register"
+    "daisukes:modifiers/sonic/register",
+    "daisukes:modifiers/agua/register"
   ]
 }

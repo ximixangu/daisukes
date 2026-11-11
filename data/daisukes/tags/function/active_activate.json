@@ -23,6 +23,7 @@
     "daisukes:modifiers/moon/activate",
     "daisukes:modifiers/no_arms/activate",
     "daisukes:modifiers/jeb/activate",
-    "daisukes:modifiers/sonic/activate"
+    "daisukes:modifiers/sonic/activate",
+    "daisukes:modifiers/agua/activate"
   ]
 }
