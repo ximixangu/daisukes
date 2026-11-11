@@ -22,6 +22,7 @@
     "daisukes:modifiers/cursed_potato/tick",
     "daisukes:modifiers/moon/tick",
     "daisukes:modifiers/no_arms/tick",
-    "daisukes:modifiers/jeb/tick"
+    "daisukes:modifiers/jeb/tick",
+    "daisukes:modifiers/sonic/tick"
   ]
 }
