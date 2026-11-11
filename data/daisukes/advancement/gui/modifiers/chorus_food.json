@@ -1,0 +1,26 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:chorus_food"
+    },
+    "title": {
+      "text": "Chorus Food",
+      "color": "dark_purple",
+      "bold": true
+    },
+    "description": {
+      "text": "Enderman's diet",
+      "color": "white"
+    },
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

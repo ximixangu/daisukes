@@ -1,0 +1,26 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:black_bundle"
+    },
+    "title": {
+      "text": "Inventory Weight",
+      "color": "dark_aqua",
+      "bold": true
+    },
+    "description": {
+      "text": "You're gonna carry that weight",
+      "color": "white"
+    },
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
