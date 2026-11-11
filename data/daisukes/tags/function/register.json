@@ -24,6 +24,7 @@
     "daisukes:modifiers/no_arms/register",
     "daisukes:modifiers/jeb/register",
     "daisukes:modifiers/sonic/register",
-    "daisukes:modifiers/agua/register"
+    "daisukes:modifiers/agua/register",
+    "daisukes:modifiers/dark/register"
   ]
 }

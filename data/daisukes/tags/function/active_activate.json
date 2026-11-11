@@ -24,6 +24,7 @@
     "daisukes:modifiers/no_arms/activate",
     "daisukes:modifiers/jeb/activate",
     "daisukes:modifiers/sonic/activate",
-    "daisukes:modifiers/agua/activate"
+    "daisukes:modifiers/agua/activate",
+    "daisukes:modifiers/dark/activate"
   ]
 }

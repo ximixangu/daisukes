@@ -24,6 +24,7 @@
     "daisukes:modifiers/no_arms/tick",
     "daisukes:modifiers/jeb/tick",
     "daisukes:modifiers/sonic/tick",
-    "daisukes:modifiers/agua/tick"
+    "daisukes:modifiers/agua/tick",
+    "daisukes:modifiers/dark/tick"
   ]
 }
