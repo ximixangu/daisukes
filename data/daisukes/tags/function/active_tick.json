@@ -25,6 +25,7 @@
     "daisukes:modifiers/jeb/tick",
     "daisukes:modifiers/sonic/tick",
     "daisukes:modifiers/agua/tick",
-    "daisukes:modifiers/dark/tick"
+    "daisukes:modifiers/dark/tick",
+    "daisukes:modifiers/explosive_mob/tick"
   ]
 }

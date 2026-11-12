@@ -25,6 +25,7 @@
     "daisukes:modifiers/jeb/deactivate",
     "daisukes:modifiers/sonic/deactivate",
     "daisukes:modifiers/agua/deactivate",
-    "daisukes:modifiers/dark/deactivate"
+    "daisukes:modifiers/dark/deactivate",
+    "daisukes:modifiers/explosive_mob/deactivate"
   ]
 }
