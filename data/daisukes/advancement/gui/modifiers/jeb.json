@@ -2,7 +2,7 @@
   "parent": "daisukes:gui/root",
   "display": {
     "icon": {
-      "id": "minecraft:white_wool"
+      "id": "minecraft:tnt"
     },
     "title": {
       "text": "jeb_",
