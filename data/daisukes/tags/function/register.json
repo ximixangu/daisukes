@@ -31,6 +31,7 @@
     "daisukes:modifiers/bone_voyage/register",
     "daisukes:modifiers/shadow/register",
     "daisukes:modifiers/gorguns_gaze/register",
-    "daisukes:modifiers/laser_limbo/register"
+    "daisukes:modifiers/laser_limbo/register",
+    "daisukes:modifiers/heisenberg/register"
   ]
 }

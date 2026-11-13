@@ -7,6 +7,8 @@ scoreboard objectives add daisukes.timer dummy
 scoreboard objectives add daisukes.engine dummy
 scoreboard objectives add daisukes.math dummy
 scoreboard objectives add daisukes.config dummy
+# Teletransport a l'atzar compartit (util/teleport: Heisenberg, Chorus Food, Ender Syndrome)
+scoreboard objectives add daisukes.tp dummy
 
 # =====================================================================
 #  CONFIGURACIO  (tots els temps en SEGONS)

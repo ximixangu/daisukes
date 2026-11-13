@@ -2,7 +2,7 @@
   "parent": "daisukes:gui/root",
   "display": {
     "icon": {
-      "id": "minecraft:chorus_food"
+      "id": "minecraft:chorus_fruit"
     },
     "title": {
       "text": "Chorus Food",

@@ -31,6 +31,7 @@
     "daisukes:modifiers/bone_voyage/tick",
     "daisukes:modifiers/shadow/tick",
     "daisukes:modifiers/gorguns_gaze/tick",
-    "daisukes:modifiers/laser_limbo/tick"
+    "daisukes:modifiers/laser_limbo/tick",
+    "daisukes:modifiers/heisenberg/tick"
   ]
 }

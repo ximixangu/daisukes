@@ -1,0 +1,26 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:popped_chorus_fruit"
+    },
+    "title": {
+      "text": "Heisenberg",
+      "color": "#A66BFF",
+      "bold": true
+    },
+    "description": {
+      "text": "Zero speed, uncertain position",
+      "color": "white"
+    },
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

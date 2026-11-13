@@ -31,6 +31,7 @@
     "daisukes:modifiers/bone_voyage/deactivate",
     "daisukes:modifiers/shadow/deactivate",
     "daisukes:modifiers/gorguns_gaze/deactivate",
-    "daisukes:modifiers/laser_limbo/deactivate"
+    "daisukes:modifiers/laser_limbo/deactivate",
+    "daisukes:modifiers/heisenberg/deactivate"
   ]
 }
