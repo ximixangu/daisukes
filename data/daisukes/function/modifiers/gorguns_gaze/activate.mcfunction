@@ -6,7 +6,7 @@ scoreboard objectives add daisukes.petrified dummy
 # =====================================================================
 # Temps entre mirades per a cada jugador: entre #wait_min i #wait_min + #wait_spread
 scoreboard players set #wait_min daisukes.gorgun 100
-scoreboard players set #wait_spread daisukes.gorgun 0
+scoreboard players set #wait_spread daisukes.gorgun 20
 # Des que apareixen els ulls fins que esclaten (temps per deixar de mirar). Minim 22:
 # l'avis sona 20 ticks abans de l'esclat
 scoreboard players set #windup daisukes.gorgun 40
