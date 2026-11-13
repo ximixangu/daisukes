@@ -1,5 +1,8 @@
 scoreboard players add #timer daisukes.timer 1
 
+# Compte enrere dels ultims 5 segons abans del canvi (bossbar + sons)
+function daisukes:engine/countdown/tick
+
 execute if score #timer daisukes.timer >= #timer_threshold daisukes.timer run function daisukes:engine/next2
 execute if score #timer daisukes.timer >= #timer_threshold daisukes.timer run scoreboard players set #timer daisukes.timer 0
 

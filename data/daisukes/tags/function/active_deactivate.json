@@ -26,6 +26,7 @@
     "daisukes:modifiers/sonic/deactivate",
     "daisukes:modifiers/agua/deactivate",
     "daisukes:modifiers/dark/deactivate",
-    "daisukes:modifiers/explosive_mob/deactivate"
+    "daisukes:modifiers/explosive_mob/deactivate",
+    "daisukes:modifiers/thunderstruck/deactivate"
   ]
 }

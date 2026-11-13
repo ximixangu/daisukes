@@ -26,6 +26,7 @@
     "daisukes:modifiers/sonic/register",
     "daisukes:modifiers/agua/register",
     "daisukes:modifiers/dark/register",
-    "daisukes:modifiers/explosive_mob/register"
+    "daisukes:modifiers/explosive_mob/register",
+    "daisukes:modifiers/thunderstruck/register"
   ]
 }

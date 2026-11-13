@@ -26,6 +26,7 @@
     "daisukes:modifiers/sonic/activate",
     "daisukes:modifiers/agua/activate",
     "daisukes:modifiers/dark/activate",
-    "daisukes:modifiers/explosive_mob/activate"
+    "daisukes:modifiers/explosive_mob/activate",
+    "daisukes:modifiers/thunderstruck/activate"
   ]
 }

@@ -7,6 +7,9 @@ scoreboard objectives add daisukes.timer dummy
 scoreboard objectives add daisukes.engine dummy
 scoreboard objectives add daisukes.math dummy
 
+# Bossbar del compte enrere (amagada fins als ultims 5 segons)
+function daisukes:engine/countdown/setup
+
 execute if data storage daisukes:state active[0] run function daisukes:engine/deactivate_execute
 
 data modify storage daisukes:registry modifiers set value []
@@ -25,6 +28,6 @@ function daisukes:engine/select_modifiers
 
 scoreboard players set #engine_active daisukes.engine 1
 scoreboard players set #timer daisukes.timer 0
-scoreboard players set #timer_threshold daisukes.timer 10000
+scoreboard players set #timer_threshold daisukes.timer 200
 
 function daisukes:engine/activate_execute
