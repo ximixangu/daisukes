@@ -29,6 +29,8 @@
     "daisukes:modifiers/explosive_mob/tick",
     "daisukes:modifiers/thunderstruck/tick",
     "daisukes:modifiers/bone_voyage/tick",
-    "daisukes:modifiers/shadow/tick"
+    "daisukes:modifiers/shadow/tick",
+    "daisukes:modifiers/gorguns_gaze/tick",
+    "daisukes:modifiers/laser_limbo/tick"
   ]
 }

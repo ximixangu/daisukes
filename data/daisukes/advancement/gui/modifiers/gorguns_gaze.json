@@ -1,0 +1,26 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:ender_eye"
+    },
+    "title": {
+      "text": "Gorgun's Gaze",
+      "color": "#4BE37A",
+      "bold": true
+    },
+    "description": {
+      "text": "Don't look at the eyes",
+      "color": "white"
+    },
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:end_rod"
+    },
+    "title": {
+      "text": "Laser Limbo",
+      "color": "#FF4FD8",
+      "bold": true
+    },
+    "description": {
+      "text": "Jump the red, duck the blue",
+      "color": "white"
+    },
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

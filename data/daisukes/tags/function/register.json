@@ -29,6 +29,8 @@
     "daisukes:modifiers/explosive_mob/register",
     "daisukes:modifiers/thunderstruck/register",
     "daisukes:modifiers/bone_voyage/register",
-    "daisukes:modifiers/shadow/register"
+    "daisukes:modifiers/shadow/register",
+    "daisukes:modifiers/gorguns_gaze/register",
+    "daisukes:modifiers/laser_limbo/register"
   ]
 }
