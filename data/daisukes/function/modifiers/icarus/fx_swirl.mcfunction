@@ -1,0 +1,9 @@
+# Dos punts oposats que giren al voltant del jugador (45° per tick)
+execute if score #spin daisukes.icarus matches 0 rotated 0 0 run function daisukes:modifiers/icarus/fx_swirl_point
+execute if score #spin daisukes.icarus matches 1 rotated 45 0 run function daisukes:modifiers/icarus/fx_swirl_point
+execute if score #spin daisukes.icarus matches 2 rotated 90 0 run function daisukes:modifiers/icarus/fx_swirl_point
+execute if score #spin daisukes.icarus matches 3 rotated 135 0 run function daisukes:modifiers/icarus/fx_swirl_point
+execute if score #spin daisukes.icarus matches 4 rotated 180 0 run function daisukes:modifiers/icarus/fx_swirl_point
+execute if score #spin daisukes.icarus matches 5 rotated 225 0 run function daisukes:modifiers/icarus/fx_swirl_point
+execute if score #spin daisukes.icarus matches 6 rotated 270 0 run function daisukes:modifiers/icarus/fx_swirl_point
+execute if score #spin daisukes.icarus matches 7 rotated 315 0 run function daisukes:modifiers/icarus/fx_swirl_point

@@ -1,5 +1,3 @@
-playsound minecraft:entity.item.drop player @a ~ ~ ~ 1 1
-
 data modify storage daisukes:temp current_item set from entity @s SelectedItem
 item replace entity @s weapon.mainhand with air
 
