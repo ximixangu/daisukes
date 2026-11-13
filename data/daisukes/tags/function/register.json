@@ -27,6 +27,7 @@
     "daisukes:modifiers/agua/register",
     "daisukes:modifiers/dark/register",
     "daisukes:modifiers/explosive_mob/register",
-    "daisukes:modifiers/thunderstruck/register"
+    "daisukes:modifiers/thunderstruck/register",
+    "daisukes:modifiers/bone_voyage/register"
   ]
 }

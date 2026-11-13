@@ -27,6 +27,7 @@
     "daisukes:modifiers/agua/activate",
     "daisukes:modifiers/dark/activate",
     "daisukes:modifiers/explosive_mob/activate",
-    "daisukes:modifiers/thunderstruck/activate"
+    "daisukes:modifiers/thunderstruck/activate",
+    "daisukes:modifiers/bone_voyage/activate"
   ]
 }

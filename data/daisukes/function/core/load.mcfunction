@@ -28,6 +28,6 @@ function daisukes:engine/select_modifiers
 
 scoreboard players set #engine_active daisukes.engine 1
 scoreboard players set #timer daisukes.timer 0
-scoreboard players set #timer_threshold daisukes.timer 200
+scoreboard players set #timer_threshold daisukes.timer 1500
 
 function daisukes:engine/activate_execute
