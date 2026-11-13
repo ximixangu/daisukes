@@ -12,8 +12,8 @@ particle minecraft:end_rod ^12 ^ ^ 0 0 0 0 1 force
 particle minecraft:end_rod ^-12 ^ ^ 0 0 0 0 1 force
 scoreboard players operation #pulse daisukes.laser = @s daisukes.laser
 scoreboard players operation #pulse daisukes.laser %= #20 daisukes.math
-execute if score #pulse daisukes.laser matches 0 if entity @s[tag=daisukes.laser_low] run playsound minecraft:block.beacon.ambient record @a ~ ~ ~ 1.2 0.7
-execute if score #pulse daisukes.laser matches 0 if entity @s[tag=daisukes.laser_high] run playsound minecraft:block.beacon.ambient record @a ~ ~ ~ 1.2 1.5
+execute if score #pulse daisukes.laser matches 0 if entity @s[tag=daisukes.laser_low] run playsound minecraft:block.beacon.ambient hostile @a ~ ~ ~ 1.2 0.7
+execute if score #pulse daisukes.laser matches 0 if entity @s[tag=daisukes.laser_high] run playsound minecraft:block.beacon.ambient hostile @a ~ ~ ~ 1.2 1.5
 
 # Avanca 0.25 blocs (5 blocs/s). #b0 i #b1 = on era i on es ara, en l'eix per on avanca (decimes de bloc)
 scoreboard players set #axis daisukes.laser 0

@@ -1,0 +1,8 @@
+{
+  "values": [
+    {"id": "#minecraft:can_equip_saddle", "required": false},
+    {"id": "#minecraft:can_equip_harness", "required": false},
+    {"id": "minecraft:llama", "required": false},
+    {"id": "minecraft:trader_llama", "required": false}
+  ]
+}

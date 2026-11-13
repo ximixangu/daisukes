@@ -1,4 +1,2 @@
-scoreboard objectives add daisukes.balloon dummy
-scoreboard players set _active daisukes.balloon 1
-
+# L'avancament balloon/player_hurt salta cada cop que un jugador rep mal (es revoca sol a cada cop)
 advancement revoke @a only daisukes:balloon/player_hurt

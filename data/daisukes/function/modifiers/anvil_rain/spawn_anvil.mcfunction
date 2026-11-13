@@ -1,9 +1,4 @@
-summon marker ~ ~ ~ {Tags:["daisukes.anvil_target"]}
-
-spreadplayers ~ ~ 0 32 false @e[type=marker,tag=daisukes.anvil_target,limit=1,sort=nearest]
-
-data modify entity @e[type=marker,tag=daisukes.anvil_target,limit=1,sort=nearest] Pos[1] set from entity @s Pos[1]
-
-execute at @e[type=marker,tag=daisukes.anvil_target,limit=1,sort=nearest] run setblock ~ ~100 ~ minecraft:damaged_anvil
-
-kill @e[type=marker,tag=daisukes.anvil_target]
+# Com a jugador, als seus peus. Columna a l'atzar dins d'un quadrat de 32 blocs a cada banda
+execute store result storage daisukes:temp anvil.dx int 1 run random value -32..32
+execute store result storage daisukes:temp anvil.dz int 1 run random value -32..32
+function daisukes:modifiers/anvil_rain/drop with storage daisukes:temp anvil

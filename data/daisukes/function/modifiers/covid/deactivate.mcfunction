@@ -1,3 +1,3 @@
-execute as @a run effect clear @s wither
-execute as @a run effect clear @s poison
-team remove covid
+team remove daisukes.covid
+execute as @a run effect clear @s minecraft:nausea
+execute as @a run effect clear @s minecraft:wither

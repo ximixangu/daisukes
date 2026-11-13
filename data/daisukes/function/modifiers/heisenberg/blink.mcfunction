@@ -12,8 +12,8 @@ execute if score #tone daisukes.heisenberg matches 10.. run scoreboard players s
 execute if score #tone daisukes.heisenberg matches ..-1 run scoreboard players set #tone daisukes.heisenberg 0
 execute store result storage daisukes:heisenberg fx.tone int 1 run scoreboard players get #tone daisukes.heisenberg
 
-# Salta a un lloc a l'atzar entre 2 i 8 blocs (util/teleport)
-function daisukes:util/teleport/random {near: 2, far: 8}
+# Salta a un lloc a l'atzar entre 2 i 12 blocs (util/teleport)
+function daisukes:util/teleport/random {near: 2, far: 12}
 
 # No hi ha cap lloc a prop (sota l'aigua, tancat dins la roca...): ho torna a provar d'aqui a 0.1 s
 execute if score #done daisukes.tp matches 0 run return run scoreboard players set @s daisukes.heis_wait 2

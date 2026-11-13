@@ -1,7 +1,7 @@
-scoreboard players add #timer agua_timer 1
+# Cada 5 s, una pocio (persistent, d'aigua) cau al costat de cada jugador
+scoreboard players add #timer daisukes.agua 1
+execute if score #timer daisukes.agua matches 100.. run scoreboard players set #timer daisukes.agua 0
+execute if score #timer daisukes.agua matches 0 as @e[type=minecraft:player,gamemode=!spectator] at @s run function daisukes:modifiers/agua/throw
 
-execute if score #timer agua_timer matches 100.. run function daisukes:modifiers/agua/gen
-
-execute if score #timer agua_timer matches 100.. run scoreboard players set #timer agua_timer 0
-
-execute as @e[type=area_effect_cloud,nbt={potion_contents:{potion:"minecraft:water_breathing"}}] at @s run function daisukes:modifiers/agua/impact
+# On s'ha trencat (el nuvol de la pocio), hi queda una font d'aigua
+execute as @e[type=minecraft:area_effect_cloud,nbt={potion_contents: {potion: "minecraft:water_breathing"}}] at @s run function daisukes:modifiers/agua/impact

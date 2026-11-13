@@ -1,3 +1,3 @@
+# Recompensa de l'avancament chorus_food/eat_food: com al jugador que acaba de menjar, als seus peus
 advancement revoke @s only daisukes:chorus_food/eat_food
-
-execute as @s at @s if score #active daisukes.chorus_food matches 1 run function daisukes:modifiers/chorus_food/tp
+execute if data storage daisukes:state {active: ["chorus_food"]} at @s run function daisukes:util/teleport/chorus

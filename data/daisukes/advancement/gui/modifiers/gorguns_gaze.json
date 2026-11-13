@@ -9,10 +9,16 @@
       "color": "#4BE37A",
       "bold": true
     },
-    "description": {
-      "text": "Don't look at the eyes",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Don't look at the eyes",
+        "color": "white"
+      },
+      {
+        "text": "\nGreen eyes open around you every few seconds. Look away before they burst, or you'll be turned to stone for 8 s.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

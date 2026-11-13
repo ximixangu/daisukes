@@ -1,1 +1,1 @@
-execute as @a[gamemode=!spectator] run function daisukes:modifiers/bone_voyage/charge
+execute as @e[type=minecraft:player,gamemode=!spectator] run function daisukes:modifiers/bone_voyage/charge

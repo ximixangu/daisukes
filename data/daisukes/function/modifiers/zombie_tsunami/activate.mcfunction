@@ -1,8 +1,3 @@
-execute as @e[type=minecraft:zombie,tag=!daisukes_zombie_tsunami] run attribute @s minecraft:follow_range base set 2000
-execute as @e[type=minecraft:zombie,tag=!daisukes_zombie_tsunami] run effect give @s minecraft:speed infinite 3 true
-execute as @e[type=minecraft:zombie,tag=!daisukes_zombie_tsunami] run attribute @s minecraft:spawn_reinforcements base set 10
-
-tag @e[type=minecraft:zombie, tag=!daisukes_zombie_tsunami] add daisukes_zombie_tsunami
-
-weather thunder
+# Tempesta tot el temps (els zombis no es cremen i en surten pertot). Els zombis es reforcen a tick
+execute in minecraft:overworld run weather thunder
 gamerule advance_weather false

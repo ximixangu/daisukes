@@ -9,10 +9,16 @@
       "color": "white",
       "bold": true
     },
-    "description": {
-      "text": "Stay with me",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Stay with me",
+        "color": "white"
+      },
+      {
+        "text": "\nEach player gets jeb_, an unkillable sheep, and a lead. Stray more than 8 blocks from every jeb_ and TNT drops at your feet each second.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

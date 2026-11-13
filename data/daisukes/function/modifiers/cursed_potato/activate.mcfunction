@@ -1,2 +1,2 @@
-scoreboard objectives add potato_timer dummy
-scoreboard objectives add random_add dummy
+scoreboard objectives add daisukes.potato dummy
+scoreboard objectives add daisukes.potato_add dummy

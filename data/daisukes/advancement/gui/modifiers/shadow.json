@@ -9,10 +9,16 @@
       "color": "dark_aqua",
       "bold": true
     },
-    "description": {
-      "text": "Dodge on the beat",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Dodge on the beat",
+        "color": "white"
+      },
+      {
+        "text": "\nYour shadow dances to a song. On some beats it leaps to where you'll be and strikes 2 beats later (2 hearts): change direction!",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

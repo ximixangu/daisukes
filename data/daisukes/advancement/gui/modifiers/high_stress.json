@@ -9,10 +9,16 @@
       "color": "red",
       "bold": true
     },
-    "description": {
-      "text": "You really should learn how to handle stress",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "You really should learn how to handle stress",
+        "color": "white"
+      },
+      {
+        "text": "\nAfter you take damage, your max health drops to half a heart for 6 s: any hit kills you. Survive it and you heal completely.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

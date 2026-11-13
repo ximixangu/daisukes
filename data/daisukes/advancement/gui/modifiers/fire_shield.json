@@ -5,14 +5,20 @@
       "id": "minecraft:fire_charge"
     },
     "title": {
-      "text": "Firey Shield",
+      "text": "Fiery Shield",
       "color": "gold",
       "bold": true
     },
-    "description": {
-      "text": "Burning defense",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Burning defense",
+        "color": "white"
+      },
+      {
+        "text": "\nBlocking a hit with a shield calls down lightning and surrounds you with a ring of fire.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

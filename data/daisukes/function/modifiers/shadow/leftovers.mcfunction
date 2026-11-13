@@ -1,4 +1,4 @@
-# S'executa una sola vegada, 30 s despres que acabi el modificador (ho programa deactivate).
-# Si es va tancar el mon amb Shadow Beat actiu, les ombres es van quedar guardades en un chunk:
-# en tornar a obrir-lo, el motor desactiva el modificador abans que es carreguin, i aqui s'esborren.
-execute unless data storage daisukes:state {active: ["shadow"]} as @e[type=mannequin,tag=daisukes.shadow] at @s run function daisukes:modifiers/shadow/vanish
+# Cada segon mentre Shadow Beat no esta actiu: ombres que s'havien quedat en chunks sense carregar
+# (p. ex. el mon es va tancar amb el modificador actiu i en tornar-lo a obrir es desactiva abans que es carreguin)
+execute if data storage daisukes:state {active: ["shadow"]} run return 0
+execute as @e[type=minecraft:mannequin,tag=daisukes.shadow] at @s run function daisukes:modifiers/shadow/vanish

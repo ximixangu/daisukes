@@ -1,3 +1,4 @@
-execute as @e[type=minecraft:sheep,tag=jeb_sheep] at @s run summon minecraft:tnt ~ ~ ~
-execute as @e[type=minecraft:sheep,tag=jeb_sheep] at @s run playsound minecraft:entity.tnt.primed player @a ~ ~ ~ 0.8 0.7
-execute as @e[type=minecraft:sheep,tag=jeb_sheep] at @s run kill @s
+# jeb_ s'acomiada: cada ovella esclata
+execute as @e[type=minecraft:sheep,tag=daisukes.jeb_sheep] at @s run function daisukes:modifiers/jeb/farewell
+scoreboard objectives remove daisukes.jeb
+scoreboard objectives remove daisukes.jeb_deaths

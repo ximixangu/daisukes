@@ -9,10 +9,16 @@
       "color": "light_purple",
       "bold": true
     },
-    "description": {
-      "text": "Progress brings pain",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Progress brings pain",
+        "color": "white"
+      },
+      {
+        "text": "\nMoving forward hurts you. Walk backwards or sideways (sneaking forward is slow enough to be safe).",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

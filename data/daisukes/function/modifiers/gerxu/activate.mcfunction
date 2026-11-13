@@ -1,1 +1,2 @@
-schedule function daisukes:modifiers/gerxu/particla 5t
+scoreboard objectives add daisukes.gerxu dummy
+scoreboard players set #timer daisukes.gerxu 0

@@ -9,10 +9,16 @@
       "color": "green",
       "bold": true
     },
-    "description": {
-      "text": "Lies within",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Lies within",
+        "color": "white"
+      },
+      {
+        "text": "\nEvery mob that dies releases a tiny creeper with a very short fuse. Even the ones you kill.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

@@ -1,1 +1,1 @@
-schedule clear daisukes:modifiers/gerxu/particla
+scoreboard objectives remove daisukes.gerxu

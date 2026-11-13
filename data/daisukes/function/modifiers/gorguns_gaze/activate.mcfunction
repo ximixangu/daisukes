@@ -18,5 +18,5 @@ scoreboard players set #petrify daisukes.gorgun 160
 kill @e[type=minecraft:text_display,tag=daisukes.gorgun_eye]
 execute as @a[scores={daisukes.petrified=1..}] run function daisukes:modifiers/gorguns_gaze/stone_end
 
-# Primera mirada entre 8 i 15 s despres d'activar-se
+# Primera mirada entre 5 i 6 s despres d'activar-se (#wait_min + 0..#wait_spread)
 execute as @a run function daisukes:modifiers/gorguns_gaze/reset_timer

@@ -5,14 +5,20 @@
       "id": "minecraft:sculk_sensor"
     },
     "title": {
-      "text": "Curse of the Darkness",
-      "color": "black",
+      "text": "Curse of Darkness",
+      "color": "dark_gray",
       "bold": true
     },
-    "description": {
-      "text": "Darkness is madness",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Darkness is madness",
+        "color": "white"
+      },
+      {
+        "text": "\nEndless night. Unlit places weaken you, and staying in the dark for 8 s withers you. Bring torches.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

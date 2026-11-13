@@ -1,17 +1,10 @@
-data modify storage daisukes:temp current_item set from entity @s SelectedItem
-item replace entity @s weapon.mainhand with air
+# Com a jugador, als seus peus. L'objecte de la ma surt volant cap on mira, com si l'hagues llançat
+summon minecraft:item ~ ~1.3 ~ {Tags: ["daisukes.slip"], PickupDelay: 30, Item: {id: "minecraft:stone", count: 1}}
+item replace entity @n[type=minecraft:item,tag=daisukes.slip] contents from entity @s weapon.mainhand
+item replace entity @s weapon.mainhand with minecraft:air
 
-summon item ~ ~1.2 ~ {Tags:["daisukes.temp_drop"],PickupDelay:30,Item:{id:"minecraft:stone",count:1}}
+# Velocitat: un marker temporal als seus peus i amb el seu gir mesura on queda ^ ^0.1 ^0.35
+execute summon minecraft:marker run function daisukes:modifiers/item_drop/aim
 
-data modify entity @e[type=item,tag=daisukes.temp_drop,sort=nearest,limit=1] Item set from storage daisukes:temp current_item
-
-summon marker 0.0 0.0 0.0 {Tags:["daisukes.vec"]}
-execute positioned 0.0 0.0 0.0 rotated as @s run tp @e[type=marker,tag=daisukes.vec,limit=1] ^ ^0.1 ^0.35
-
-execute store result entity @e[type=item,tag=daisukes.temp_drop,sort=nearest,limit=1] Motion[0] double 0.0001 run data get entity @e[type=marker,tag=daisukes.vec,limit=1] Pos[0] 10000
-execute store result entity @e[type=item,tag=daisukes.temp_drop,sort=nearest,limit=1] Motion[1] double 0.0001 run data get entity @e[type=marker,tag=daisukes.vec,limit=1] Pos[1] 10000
-execute store result entity @e[type=item,tag=daisukes.temp_drop,sort=nearest,limit=1] Motion[2] double 0.0001 run data get entity @e[type=marker,tag=daisukes.vec,limit=1] Pos[2] 10000
-
-kill @e[type=marker,tag=daisukes.vec]
-tag @e[type=item,tag=daisukes.temp_drop,sort=nearest,limit=1] remove daisukes.temp_drop
-data remove storage daisukes:temp current_item
+tag @e[type=minecraft:item,tag=daisukes.slip] remove daisukes.slip
+playsound minecraft:block.honey_block.slide player @a ~ ~ ~ 0.8 1.2

@@ -9,10 +9,16 @@
       "color": "dark_purple",
       "bold": true
     },
-    "description": {
-      "text": "Enderman's diet",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Enderman's diet",
+        "color": "white"
+      },
+      {
+        "text": "\nEvery time you eat, you teleport a few blocks away, just like with chorus fruit.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

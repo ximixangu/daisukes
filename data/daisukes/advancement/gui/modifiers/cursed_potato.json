@@ -9,10 +9,16 @@
       "color": "red",
       "bold": true
     },
-    "description": {
-      "text": "It burns",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "It burns",
+        "color": "white"
+      },
+      {
+        "text": "\nHot Potatoes keep popping into empty inventory slots, and while you carry any you are wreathed in flames and screaming. They vanish when the modifier ends.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

@@ -9,10 +9,16 @@
       "color": "white",
       "bold": true
     },
-    "description": {
-      "text": "Skeletons will see you off",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Skeletons will see you off",
+        "color": "white"
+      },
+      {
+        "text": "\nEndless night. Skeletons with Punch XVI bows keep appearing around you, up to 6 at a time.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

@@ -5,14 +5,20 @@
       "id": "minecraft:ender_pearl"
     },
     "title": {
-      "text": "Enderman Syndrome",
+      "text": "Ender Syndrome",
       "color": "dark_purple",
       "bold": true
     },
-    "description": {
-      "text": "Damage pops you elsewhere",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Damage pops you elsewhere",
+        "color": "white"
+      },
+      {
+        "text": "\nEvery time you take damage, you teleport a few blocks away, like an enderman.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:water_bucket"
+    },
+    "title": {
+      "text": "Flooded",
+      "color": "aqua",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "It's getting wet",
+        "color": "white"
+      },
+      {
+        "text": "\nEvery 5 s a potion lands next to each player and turns into a water source.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

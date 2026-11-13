@@ -4,4 +4,4 @@ scoreboard players operation @e[type=mannequin,tag=daisukes.shadow_new] daisukes
 tag @e[type=mannequin,tag=daisukes.shadow_new] remove daisukes.shadow_new
 
 particle minecraft:squid_ink ~ ~1 ~ 0.3 0.6 0.3 0.05 30
-playsound minecraft:entity.illusioner.prepare_mirror record @a ~ ~ ~ 1 1.2
+playsound minecraft:entity.illusioner.prepare_mirror hostile @a ~ ~ ~ 1 1.2

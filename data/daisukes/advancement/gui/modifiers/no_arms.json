@@ -6,13 +6,19 @@
     },
     "title": {
       "text": "Short Arms",
-      "color": "gray",
+      "color": "dark_aqua",
       "bold": true
     },
-    "description": {
-      "text": "Low reach",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Low reach",
+        "color": "white"
+      },
+      {
+        "text": "\nYour reach shrinks to 1.6 blocks for blocks and 1.3 for mobs. Get really close.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

@@ -6,13 +6,19 @@
     },
     "title": {
       "text": "Kamikasheep",
-      "color": "green",
+      "color": "gray",
       "bold": true
     },
-    "description": {
-      "text": "Mobs detonate",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Mobs detonate",
+        "color": "white"
+      },
+      {
+        "text": "\nCows, pigs, sheep, chickens and horses that come within 15 blocks of you light up, smoke and explode 4.5 s later. Huge explosions: run!",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

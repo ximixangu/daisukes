@@ -9,10 +9,16 @@
       "color": "green",
       "bold": true
     },
-    "description": {
-      "text": "You kill or you die, or you die and you kill",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "You kill or you die, or you die and you kill",
+        "color": "white"
+      },
+      {
+        "text": "\nEndless thunderstorm. Zombies get Speed IV and hunt you from far away. When it ends, they wither away.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

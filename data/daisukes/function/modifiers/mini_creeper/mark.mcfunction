@@ -1,3 +1,5 @@
-execute at @s run summon marker ~ ~ ~ {Tags:["creeper_marker"]}
-execute as @s at @s run ride @e[type=marker,tag=creeper_marker,limit=1,sort=nearest] mount @s
-tag @s add creeper_marker
+# Com a mob: un marker nou hi puja a sobre (si ja porta algu que no deixa lloc, el marker queda sol i check el treu)
+tag @s add daisukes.creeper_host
+tag @s add daisukes.creeper_host_now
+execute at @s summon minecraft:marker run function daisukes:modifiers/mini_creeper/attach
+tag @s remove daisukes.creeper_host_now

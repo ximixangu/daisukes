@@ -1,2 +1,3 @@
+# Recompensa de l'avancament enderman/player_hurt: com al jugador que ha rebut mal, als seus peus
 advancement revoke @s only daisukes:enderman/player_hurt
-execute as @s at @s if score _active daisukes.enderman matches 1.. run function daisukes:modifiers/enderman/tp
+execute if data storage daisukes:state {active: ["enderman"]} at @s run function daisukes:util/teleport/chorus

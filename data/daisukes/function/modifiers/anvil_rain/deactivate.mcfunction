@@ -1,1 +1,1 @@
-kill @e[type=marker]
+

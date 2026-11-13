@@ -1,4 +1,4 @@
-# Dificultat: com mes temps, mes lasers alhora al voltant de cada jugador (2 als 30 s, 3 als 75 s)
+# Dificultat: com mes temps, mes lasers alhora al voltant de cada jugador (3 al principi, 4 als 30 s)
 scoreboard players add #t daisukes.laser 1
 execute if score #t daisukes.laser matches 600 run scoreboard players set #max daisukes.laser 4
 

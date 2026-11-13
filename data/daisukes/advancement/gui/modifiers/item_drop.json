@@ -6,13 +6,19 @@
     },
     "title": {
       "text": "Slippery Hands",
-      "color": "gold",
+      "color": "yellow",
       "bold": true
     },
-    "description": {
-      "text": "Buttered fingertips",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Buttered fingertips",
+        "color": "white"
+      },
+      {
+        "text": "\nEvery few seconds the item in your hand slips and flies forward. You can pick it up again after 1.5 s.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

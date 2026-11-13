@@ -9,10 +9,16 @@
       "color": "gold",
       "bold": true
     },
-    "description": {
-      "text": "Ever-changing slots",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Ever-changing slots",
+        "color": "white"
+      },
+      {
+        "text": "\nEvery 4 s, every item in your hotbar shifts one slot to the right.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

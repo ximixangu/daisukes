@@ -1,2 +1,1 @@
-execute as @a at @s unless score @s daisukes.backwards_id = @s daisukes.backwards_id run function daisukes:modifiers/backwards/set
-execute as @a run function daisukes:modifiers/backwards/check
+execute as @e[type=minecraft:player,gamemode=!spectator] at @s run function daisukes:modifiers/backwards/check

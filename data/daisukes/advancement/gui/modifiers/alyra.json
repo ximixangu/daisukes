@@ -6,13 +6,19 @@
     },
     "title": {
       "text": "Alyra's Curse",
-      "color": "green",
+      "color": "dark_green",
       "bold": true
     },
-    "description": {
-      "text": "Waters become poisonous",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Waters become poisonous",
+        "color": "white"
+      },
+      {
+        "text": "\nTouching water poisons and withers you (about 1 heart per second).",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

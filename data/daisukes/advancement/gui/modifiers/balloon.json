@@ -5,14 +5,20 @@
       "id": "minecraft:lead"
     },
     "title": {
-      "text": "Balloon",
+      "text": "Balloon Boy",
       "color": "blue",
       "bold": true
     },
-    "description": {
-      "text": "Damage pops you skywards",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Damage pops you skywards",
+        "color": "white"
+      },
+      {
+        "text": "\nAny damage (falls included) launches you high into the air. A water bucket might save your life.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

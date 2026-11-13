@@ -9,10 +9,16 @@
       "color": "dark_aqua",
       "bold": true
     },
-    "description": {
-      "text": "You're gonna carry that weight",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "You're gonna carry that weight",
+        "color": "white"
+      },
+      {
+        "text": "\nThe fuller your inventory, the slower you walk: Slowness I from 9 used slots, II from 18, III from 27 and IV when it's full.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

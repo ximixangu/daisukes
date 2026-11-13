@@ -1,1 +1,1 @@
-return 1
+# Tot passa a on_player_hurt (avancament balloon/player_hurt)

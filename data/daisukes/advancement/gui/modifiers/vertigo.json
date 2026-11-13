@@ -9,10 +9,16 @@
       "color": "gray",
       "bold": true
     },
-    "description": {
-      "text": "One must stay grounded",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "One must stay grounded",
+        "color": "white"
+      },
+      {
+        "text": "\nWhenever your feet leave the ground (jumping, falling, swimming, riding...) you go blind.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

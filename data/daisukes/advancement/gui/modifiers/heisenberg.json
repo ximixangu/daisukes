@@ -9,10 +9,16 @@
       "color": "#A66BFF",
       "bold": true
     },
-    "description": {
-      "text": "Zero speed, uncertain position",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Zero speed, uncertain position",
+        "color": "white"
+      },
+      {
+        "text": "\nStand still for 1 s and you start blinking to random spots nearby, faster and faster, until you move again.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

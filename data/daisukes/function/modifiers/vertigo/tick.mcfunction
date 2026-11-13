@@ -1,1 +1,1 @@
-execute as @a unless predicate daisukes:vertigo/on_ground run effect give @s blindness 2 0 true
+execute as @e[type=minecraft:player,gamemode=!spectator] unless predicate daisukes:on_ground run effect give @s minecraft:blindness 2 0 true

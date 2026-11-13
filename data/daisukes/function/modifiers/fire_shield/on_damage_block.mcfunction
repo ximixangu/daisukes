@@ -1,2 +1,3 @@
+# Recompensa de l'avancament fire_shield/damage_block: com al jugador que ha bloquejat, als seus peus
 advancement revoke @s only daisukes:fire_shield/damage_block
-execute as @s if score _active daisukes.fire_shield matches 1.. run function daisukes:modifiers/fire_shield/trigger_fire
+execute if data storage daisukes:state {active: ["fire_shield"]} at @s run function daisukes:modifiers/fire_shield/trigger_fire

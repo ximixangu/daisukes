@@ -26,7 +26,7 @@ execute if score @s daisukes.heis_gap < #first daisukes.heisenberg if predicate 
 
 # Es mou: tot torna a comencar (el primer salt, quan porti #first ticks quiet)
 execute if score #moved daisukes.heisenberg matches 1 run scoreboard players operation @s daisukes.heis_gap = #first daisukes.heisenberg
-execute if score #moved daisukes.heisenberg matches 1 run scoreboard players operation @s daisukes.heis_wait = #first daisukes.heisenberg
+execute if score #moved daisukes.heisenberg matches 1 run scoreboard players operation @s daisukes.heis_wait = #first_wait daisukes.heisenberg
 
 # Quiet: compte enrere fins al proxim salt
 execute if score #moved daisukes.heisenberg matches 0 run function daisukes:modifiers/heisenberg/still

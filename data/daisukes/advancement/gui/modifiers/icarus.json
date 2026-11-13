@@ -9,10 +9,16 @@
       "color": "aqua",
       "bold": true
     },
-    "description": {
-      "text": "Don't look up",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Don't look up",
+        "color": "white"
+      },
+      {
+        "text": "\nLooking up makes you fly, the higher you look the faster. Look straight or down and you fall, and can't fly again until you land.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

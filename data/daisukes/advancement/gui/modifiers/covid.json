@@ -9,10 +9,16 @@
       "color": "green",
       "bold": true
     },
-    "description": {
-      "text": "Keep your distance",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Keep your distance",
+        "color": "white"
+      },
+      {
+        "text": "\nMobs are contagious: nausea within 10 blocks of one, wither within 5. Infected mobs glow green.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

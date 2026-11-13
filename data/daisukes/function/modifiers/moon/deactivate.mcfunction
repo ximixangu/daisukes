@@ -1,2 +1,2 @@
-execute as @e[type=!item, tag=moon] run attribute @s minecraft:gravity base reset
-execute as @e[type=!item, tag=moon] run tag @s remove moon
+execute as @e[tag=daisukes.moon] run function daisukes:modifiers/moon/restore
+execute as @a run function daisukes:modifiers/moon/restore

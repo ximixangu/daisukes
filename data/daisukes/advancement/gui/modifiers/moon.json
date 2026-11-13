@@ -5,14 +5,20 @@
       "id": "minecraft:end_stone"
     },
     "title": {
-      "text": "Outter Space",
+      "text": "Outer Space",
       "color": "blue",
       "bold": true
     },
-    "description": {
-      "text": "A giant leap for mankind",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "A giant leap for mankind",
+        "color": "white"
+      },
+      {
+        "text": "\nGravity drops to 1/8 for players and mobs alike. Huge jumps, slow falls, and fall damage scaled down to match.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

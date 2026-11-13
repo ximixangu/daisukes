@@ -9,10 +9,16 @@
       "color": "gray",
       "bold": true
     },
-    "description": {
-      "text": "Split vision",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Split vision",
+        "color": "white"
+      },
+      {
+        "text": "\nThe Elder Guardian's face keeps flashing on your screen. Good luck seeing anything.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

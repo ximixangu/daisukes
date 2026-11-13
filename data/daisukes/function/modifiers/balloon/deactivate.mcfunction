@@ -1,1 +1,1 @@
-scoreboard objectives remove daisukes.balloon
+

@@ -9,10 +9,16 @@
       "color": "yellow",
       "bold": true
     },
-    "description": {
-      "text": "Lightning has your name on it",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Lightning has your name on it",
+        "color": "white"
+      },
+      {
+        "text": "\nEvery few seconds a golden circle marks where you stand: 2 s later lightning strikes there (5 hearts). Keep moving.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

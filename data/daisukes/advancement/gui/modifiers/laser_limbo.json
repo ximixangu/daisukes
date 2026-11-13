@@ -9,10 +9,16 @@
       "color": "#FF4FD8",
       "bold": true
     },
-    "description": {
-      "text": "Jump the red, duck the blue",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Jump the red, duck the blue",
+        "color": "white"
+      },
+      {
+        "text": "\nLasers sweep towards you: jump over the red ones (low hum), crouch under the blue ones (high hum). Each hit costs 2.5 hearts.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

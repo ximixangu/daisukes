@@ -9,10 +9,16 @@
       "color": "gray",
       "bold": true
     },
-    "description": {
-      "text": "Heavy metal from the heavens",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Heavy metal from the heavens",
+        "color": "white"
+      },
+      {
+        "text": "\nDamaged anvils fall from the sky around every player in the Overworld. A roof over your head keeps you safe.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

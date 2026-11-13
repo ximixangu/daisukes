@@ -9,10 +9,16 @@
       "color": "aqua",
       "bold": true
     },
-    "description": {
-      "text": "Ludicrous speed",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Ludicrous speed",
+        "color": "white"
+      },
+      {
+        "text": "\nYou move 10 times faster and walk straight up full blocks. Good luck stopping.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,
