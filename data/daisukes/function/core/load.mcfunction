@@ -6,6 +6,44 @@ title @a title {"text": "Challenge Mode", "color": "red"}
 scoreboard objectives add daisukes.timer dummy
 scoreboard objectives add daisukes.engine dummy
 scoreboard objectives add daisukes.math dummy
+scoreboard objectives add daisukes.config dummy
+
+# =====================================================================
+#  CONFIGURACIO  (tots els temps en SEGONS)
+#  Despres de canviar-la: /reload  (al xat surt la configuracio aplicada)
+#  Tambe es pot canviar en partida, sense /reload, amb:
+#    /scoreboard players set #change_seconds daisukes.config 30
+# =====================================================================
+
+# Modificadors actius a l'inici de la partida
+scoreboard players set #start_count daisukes.config 1
+
+# Cada quants segons canvien els modificadors (minim 6)
+scoreboard players set #change_seconds daisukes.config 240
+
+# Cada quants segons de partida augmenta el nombre de modificadors (1200 = 20 min). 0 = no augmenta mai
+scoreboard players set #escalate_seconds daisukes.config 1200
+
+# Quants modificadors s'afegeixen cada cop (1 => 1, 2, 3, 4... / 2 => 1, 3, 5, 7...)
+scoreboard players set #escalate_step daisukes.config 1
+
+# Minim de modificadors quan algun jugador entra al Nether per primer cop. 0 = desactivat
+scoreboard players set #nether_count daisukes.config 2
+
+# Minim de modificadors quan algun jugador entra a l'End per primer cop (drac). 0 = desactivat
+scoreboard players set #end_count daisukes.config 5
+
+# Cada quants segons canvien els modificadors un cop algu ha entrat a l'End (minim 6). 0 = igual que #change_seconds
+scoreboard players set #change_seconds_end daisukes.config 60
+
+# Maxim de modificadors alhora. 0 = sense limit
+scoreboard players set #max_count daisukes.config 0
+
+# =====================================================================
+
+# Constants
+scoreboard players set #20 daisukes.math 20
+scoreboard players set #60 daisukes.math 60
 
 # Bossbar del compte enrere (amagada fins als ultims 5 segons)
 function daisukes:engine/countdown/setup
@@ -22,12 +60,23 @@ function #daisukes:register
 # Converteix les incompatibilitats declarades als register en una taula reciproca (A no amb B => B no amb A)
 function daisukes:engine/incompat/build
 
-data merge storage daisukes:config {count: 1}
+# Estat de la partida (temps jugat, Nether, End). Es guarda al mon: NO es reinicia amb /reload
+# ni en tornar a entrar. Nomes es reinicia en un mon nou o amb /function daisukes:reset
+execute unless score #initialized daisukes.engine matches 1 run function daisukes:engine/progress/init
+
+# Interval i nombre de modificadors segons la configuracio i l'estat (sense avisos)
+scoreboard players set #silent daisukes.math 1
+scoreboard players set #current_count daisukes.engine -1
+function daisukes:engine/progress/update_interval
+function daisukes:engine/progress/update_count
+scoreboard players set #silent daisukes.math 0
 
 function daisukes:engine/select_modifiers
 
 scoreboard players set #engine_active daisukes.engine 1
 scoreboard players set #timer daisukes.timer 0
-scoreboard players set #timer_threshold daisukes.timer 1500
 
 function daisukes:engine/activate_execute
+
+# Resum al xat de la configuracio aplicada
+function daisukes:debug/status
