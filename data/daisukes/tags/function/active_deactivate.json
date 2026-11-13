@@ -28,6 +28,7 @@
     "daisukes:modifiers/dark/deactivate",
     "daisukes:modifiers/explosive_mob/deactivate",
     "daisukes:modifiers/thunderstruck/deactivate",
-    "daisukes:modifiers/bone_voyage/activate"
+    "daisukes:modifiers/bone_voyage/deactivate",
+    "daisukes:modifiers/shadow/deactivate"
   ]
 }

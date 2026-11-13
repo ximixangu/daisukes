@@ -28,6 +28,7 @@
     "daisukes:modifiers/dark/tick",
     "daisukes:modifiers/explosive_mob/tick",
     "daisukes:modifiers/thunderstruck/tick",
-    "daisukes:modifiers/bone_voyage/tick"
+    "daisukes:modifiers/bone_voyage/tick",
+    "daisukes:modifiers/shadow/tick"
   ]
 }
