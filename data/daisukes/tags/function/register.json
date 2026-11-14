@@ -34,6 +34,7 @@
     "daisukes:modifiers/laser_limbo/register",
     "daisukes:modifiers/heisenberg/register",
     "daisukes:modifiers/hot_potato/register",
-    "daisukes:modifiers/hush/register"
+    "daisukes:modifiers/hush/register",
+    "daisukes:modifiers/lava_roulette/register"
   ]
 }

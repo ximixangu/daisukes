@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:magma_block"
+    },
+    "title": {
+      "text": "Floor is Lava",
+      "color": "#FF7A1A",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "The floor is lava (some of it)",
+        "color": "white"
+      },
+      {
+        "text": "\nA roulette keeps picking a block next to one of you. 2 s later every block of that type turns to lava for 6 s: stand on anything else.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
