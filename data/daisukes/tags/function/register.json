@@ -33,6 +33,7 @@
     "daisukes:modifiers/gorguns_gaze/register",
     "daisukes:modifiers/laser_limbo/register",
     "daisukes:modifiers/heisenberg/register",
-    "daisukes:modifiers/hot_potato/register"
+    "daisukes:modifiers/hot_potato/register",
+    "daisukes:modifiers/hush/register"
   ]
 }

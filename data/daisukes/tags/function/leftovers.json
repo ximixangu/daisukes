@@ -16,6 +16,7 @@
     "daisukes:modifiers/sonic/leftovers",
     "daisukes:modifiers/thunderstruck/leftovers",
     "daisukes:modifiers/zombie_tsunami/leftovers",
-    "daisukes:modifiers/hot_potato/leftovers"
+    "daisukes:modifiers/hot_potato/leftovers",
+    "daisukes:modifiers/hush/leftovers"
   ]
 }
