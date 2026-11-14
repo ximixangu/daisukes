@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:wheat_seeds"
+    },
+    "title": {
+      "text": "Junk Magnet",
+      "color": "#A0B040",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "One man's trash is... yours now",
+        "color": "white"
+      },
+      {
+        "text": "\nJunk keeps stuffing your empty slots and popping up wherever you walk: seeds, string, spider eyes... and white glass panes you can't even see. Whatever you throw away is gone for good, and the rest vanishes when the modifier ends.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

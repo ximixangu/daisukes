@@ -37,6 +37,7 @@
     "daisukes:modifiers/hush/register",
     "daisukes:modifiers/lava_roulette/register",
     "daisukes:modifiers/orbital/register",
-    "daisukes:modifiers/uhc/register"
+    "daisukes:modifiers/uhc/register",
+    "daisukes:modifiers/junk/register"
   ]
 }

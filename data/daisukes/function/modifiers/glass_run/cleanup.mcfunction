@@ -15,5 +15,4 @@ data remove storage daisukes:glass_run pos
 kill @e[type=minecraft:marker,tag=daisukes.glass_run]
 
 # Restes de la versio anterior (cristall + markers que no s'havien esborrat)
-execute as @e[type=minecraft:marker,tag=daisukes.glass_marker] at @s run function daisukes:modifiers/glass_run/cleanup_legacy
 data remove storage daisukes:data GlassQueue

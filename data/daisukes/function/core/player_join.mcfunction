@@ -2,7 +2,6 @@
 # El que li hagi quedat de modificadors que ja no estan actius ho treu core/leftovers (en menys d'1 s)
 
 # Primer cop que entra amb aquesta versio del datapack (encara no te puntuacio de daisukes.left)
-execute unless score @s daisukes.left matches 0.. run function daisukes:core/legacy_reset
 scoreboard players set @s daisukes.left 0
 
 # Victoria (victory/watch): si entra a l'End, el drac encara s'ha de carregar. Que no sembli que ha mort
