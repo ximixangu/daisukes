@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:campfire"
+    },
+    "title": {
+      "text": "Overheat",
+      "color": "#FF6A3D",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "Stay hydrated",
+        "color": "white"
+      },
+      {
+        "text": "\nYou keep heating up, and only water cools you down. If your heat bar fills up (45 s) you burn, 1 heart per second, until you get into water. In the Nether, bring a cauldron and a water bucket.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
