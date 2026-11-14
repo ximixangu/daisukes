@@ -1,0 +1,26 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:baked_potato"
+    },
+    "title": {
+      "text": "Hot Potato",
+      "color": "gold",
+      "bold": true
+    },
+    "description": {
+      "text": "Pass it before it blows up",
+      "color": "white"
+    },
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
