@@ -1,0 +1,26 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:spectral_arrow"
+    },
+    "title": {
+      "text": "Arrow Rush",
+      "color": "#FFC53D",
+      "bold": true
+    },
+    "description": {
+      "text": "Type the code before it shoots you",
+      "color": "white"
+    },
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
