@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_helmet"
+    },
+    "title": {
+      "text": "The King",
+      "color": "gold",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "The King is dead, long live the King!",
+        "color": "white"
+      },
+      {
+        "text": "\nA monster near you is crowned King: while he lives, every monster within 24 blocks of him is invincible. Kill him to steal the crown and leave his court defenseless for 15 s, until the crown picks a new King.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

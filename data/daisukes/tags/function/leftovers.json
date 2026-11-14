@@ -24,6 +24,7 @@
     "daisukes:modifiers/ender_step/leftovers",
     "daisukes:modifiers/heavy_blocks/leftovers",
     "daisukes:modifiers/blind_spot/leftovers",
-    "daisukes:modifiers/overheat/leftovers"
+    "daisukes:modifiers/overheat/leftovers",
+    "daisukes:modifiers/king/leftovers"
   ]
 }

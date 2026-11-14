@@ -43,6 +43,7 @@
     "daisukes:modifiers/ender_step/register",
     "daisukes:modifiers/heavy_blocks/register",
     "daisukes:modifiers/blind_spot/register",
-    "daisukes:modifiers/overheat/register"
+    "daisukes:modifiers/overheat/register",
+    "daisukes:modifiers/king/register"
   ]
 }
