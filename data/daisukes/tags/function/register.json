@@ -35,6 +35,7 @@
     "daisukes:modifiers/heisenberg/register",
     "daisukes:modifiers/hot_potato/register",
     "daisukes:modifiers/hush/register",
-    "daisukes:modifiers/lava_roulette/register"
+    "daisukes:modifiers/lava_roulette/register",
+    "daisukes:modifiers/orbital/register"
   ]
 }

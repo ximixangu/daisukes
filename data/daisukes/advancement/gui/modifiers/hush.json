@@ -9,10 +9,16 @@
       "color": "#3FE0D0",
       "bold": true
     },
-    "description": {
-      "text": "Shhh... the Deep is listening",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Shhh... the Deep is listening",
+        "color": "white"
+      },
+      {
+        "text": "\nThe creature is triggered by noise. If the noise bar fills up, bad things will happen.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

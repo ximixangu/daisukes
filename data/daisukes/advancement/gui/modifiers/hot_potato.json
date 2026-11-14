@@ -9,10 +9,16 @@
       "color": "gold",
       "bold": true
     },
-    "description": {
-      "text": "Pass it before it blows up",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Pass it before it blows up",
+        "color": "white"
+      },
+      {
+        "text": "\nGet rid of the potato by punching other entities, which also resets the countdown to 10s.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

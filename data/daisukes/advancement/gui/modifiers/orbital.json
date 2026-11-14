@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:amethyst_block"
+    },
+    "title": {
+      "text": "Orbital",
+      "color": "#B44DFF",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "Pop them before they pop you",
+        "color": "white"
+      },
+      {
+        "text": "\nOrbs keep popping up around you: hit them before they burst. Purple ones are deadly, the others hurt in their own way. Hit one while it still shines white for a shield.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
