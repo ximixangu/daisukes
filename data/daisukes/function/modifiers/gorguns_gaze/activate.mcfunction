@@ -9,7 +9,7 @@ scoreboard players set #wait_min daisukes.gorgun 100
 scoreboard players set #wait_spread daisukes.gorgun 20
 # Des que apareixen els ulls fins que esclaten (temps per deixar de mirar). Minim 22:
 # l'avis sona 20 ticks abans de l'esclat
-scoreboard players set #windup daisukes.gorgun 40
+scoreboard players set #windup daisukes.gorgun 17
 # Temps petrificat
 scoreboard players set #petrify daisukes.gorgun 160
 # =====================================================================
