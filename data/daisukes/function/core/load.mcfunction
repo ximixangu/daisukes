@@ -11,6 +11,8 @@ scoreboard objectives add daisukes.config dummy
 scoreboard objectives add daisukes.tp dummy
 # Jugadors que entren al servidor, nous o que tornen (core/player_join)
 scoreboard objectives add daisukes.left minecraft.custom:minecraft.leave_game
+# Victoria quan mor el drac de l'End (victory/)
+scoreboard objectives add daisukes.victory dummy
 
 # =====================================================================
 #  CONFIGURACIO  (tots els temps en SEGONS)
@@ -42,6 +44,9 @@ scoreboard players set #change_seconds_end daisukes.config 60
 
 # Maxim de modificadors alhora. 0 = sense limit
 scoreboard players set #max_count daisukes.config 0
+
+# Quants segons duren els petards de la victoria quan mor el drac. 0 = sense petards (titol i musica si)
+scoreboard players set #victory_seconds daisukes.config 90
 
 # =====================================================================
 
@@ -86,6 +91,12 @@ scoreboard players set #intro daisukes.engine 1
 data modify storage daisukes:temp countdown_label set value "Challenge starts in "
 scoreboard players operation #timer daisukes.timer = #timer_threshold daisukes.timer
 scoreboard players remove #timer daisukes.timer 206
+
+# Victoria (victory/watch): es torna a comptar el drac des de zero
+scoreboard players set #dragons_before daisukes.victory 0
+
+# Si aquesta partida ja s'ha guanyat (drac mort), el repte continua aturat fins a /function daisukes:reset
+execute if score #victory daisukes.engine matches 1 run function daisukes:engine/stop
 
 # Resum al xat de la configuracio aplicada
 function daisukes:debug/status

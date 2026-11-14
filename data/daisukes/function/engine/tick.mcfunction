@@ -1,3 +1,7 @@
+# Ha mort el drac de l'End? Victoria i s'atura el repte: aquest tick ja no fa res mes (ni canvis ni modificadors)
+function daisukes:victory/watch
+execute unless score #engine_active daisukes.engine matches 1 run return 0
+
 # Presentacio pendent (acaba de carregar el mon, /reload o /function daisukes:reset): surt ara
 execute if score #intro daisukes.engine matches 1 run function daisukes:engine/intro
 

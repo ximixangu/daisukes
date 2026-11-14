@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_apple"
+    },
+    "title": {
+      "text": "UHC",
+      "color": "red",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "Prepare to die",
+        "color": "white"
+      },
+      {
+        "text": "\nNatural regeneration is disabled: a full hunger bar won't heal you anymore. Golden apples and potions still do.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

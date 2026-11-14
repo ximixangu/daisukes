@@ -1,0 +1,1 @@
+gamerule natural_health_regeneration true

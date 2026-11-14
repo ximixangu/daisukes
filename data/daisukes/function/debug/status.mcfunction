@@ -20,7 +20,8 @@ tellraw @a ["", {"text": "   Modifiers: ", "color": "gray"}, {"score": {"name": 
 
 # Actius ara (passant el ratoli per sobre, que fa cadascun)
 execute if data storage daisukes:temp chat_texts[0] run tellraw @a ["", {"text": "   Active: ", "color": "gray"}, {"nbt": "chat_texts[]", "storage": "daisukes:temp", "interpret": true, "separator": {"text": ", ", "color": "gray"}}]
-execute unless score #engine_active daisukes.engine matches 1 run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "stopped", "color": "red"}, {"text": " (/reload to start again)", "color": "dark_gray"}]
+execute unless score #engine_active daisukes.engine matches 1 unless score #victory daisukes.engine matches 1 run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "stopped", "color": "red"}, {"text": " (/reload to start again)", "color": "dark_gray"}]
+execute if score #victory daisukes.engine matches 1 run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "challenge completed, Ender Dragon defeated", "color": "gold"}, {"text": " (/function daisukes:reset for a new game)", "color": "dark_gray"}]
 
 # Seguent augment per temps
 execute if score #escalate_ticks daisukes.math matches 1.. run function daisukes:debug/status_escalation
