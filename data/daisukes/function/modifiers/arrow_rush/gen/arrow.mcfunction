@@ -1,5 +1,5 @@
-# Direccio i, si toca, tipus especial: 12 % per nivell a partir del 2
-#  nivell 2: grossa | 3: + es parteix i doble | 4-5: + mantenir
+# Direccio i, si toca, tipus especial: 12 % per nivell a partir del 2. Es van sumant:
+#  nivell 2: grossa | 3: grossa, es parteix i doble | 4: totes, mantenir inclosa
 execute store result score #i daisukes.rush run random value 1..4
 function daisukes:modifiers/arrow_rush/gen/dir
 scoreboard players set #k daisukes.rush 0
