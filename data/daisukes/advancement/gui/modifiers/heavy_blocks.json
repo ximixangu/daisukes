@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:gravel"
+    },
+    "title": {
+      "text": "Falling Blocks",
+      "color": "#D9B26F",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "Everything you place falls like sand",
+        "color": "white"
+      },
+      {
+        "text": "\nBlocks you place have gravity. Ladders, torches and other blocks that hang from walls or ceilings stay put.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

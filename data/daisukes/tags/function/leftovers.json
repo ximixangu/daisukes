@@ -20,6 +20,8 @@
     "daisukes:modifiers/hush/leftovers",
     "daisukes:modifiers/orbital/leftovers",
     "daisukes:modifiers/junk/leftovers",
-    "daisukes:modifiers/arrow_rush/leftovers"
+    "daisukes:modifiers/arrow_rush/leftovers",
+    "daisukes:modifiers/ender_step/leftovers",
+    "daisukes:modifiers/heavy_blocks/leftovers"
   ]
 }

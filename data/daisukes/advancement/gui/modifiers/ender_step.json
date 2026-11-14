@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:chorus_flower"
+    },
+    "title": {
+      "text": "Ender Step",
+      "color": "#C77DFF",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "Never touch the next block",
+        "color": "white"
+      },
+      {
+        "text": "\nYou can't walk: every step teleports you 2 blocks away (3 sprinting), skipping the one in front. Jump to blink up. You can climb 1 block (2 jumping) and drop 3 at most. Sneak to never drop.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
