@@ -9,7 +9,7 @@ scoreboard players set #20 daisukes.bspot 20
 # Valors (BLIND_SPOT.md): com a molt #cap carregues a 16 blocs de cada jugador (puja a stage). Cada 2 s se n'hi
 # afegeixen fins a 4 a 6-16 blocs, a tot el voltant
 scoreboard players set #time daisukes.bspot 0
-scoreboard players set #cap daisukes.bspot 40
+scoreboard players set #cap daisukes.bspot 30
 scoreboard players set #fill daisukes.bspot 0
 
 # Entrada: un corn i el camp ja ple al voltant de cadascu

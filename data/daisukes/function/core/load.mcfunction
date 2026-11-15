@@ -28,7 +28,7 @@ scoreboard players set #start_count daisukes.config 1
 scoreboard players set #change_seconds daisukes.config 240
 
 # Cada quants segons de partida augmenta el nombre de modificadors (1200 = 20 min). 0 = no augmenta mai
-scoreboard players set #escalate_seconds daisukes.config 1200
+scoreboard players set #escalate_seconds daisukes.config 1800
 
 # Quants modificadors s'afegeixen cada cop (1 => 1, 2, 3, 4... / 2 => 1, 3, 5, 7...)
 scoreboard players set #escalate_step daisukes.config 1
@@ -37,7 +37,7 @@ scoreboard players set #escalate_step daisukes.config 1
 scoreboard players set #nether_count daisukes.config 2
 
 # Minim de modificadors quan algun jugador entra a l'End per primer cop (drac). 0 = desactivat
-scoreboard players set #end_count daisukes.config 5
+scoreboard players set #end_count daisukes.config 4
 
 # Cada quants segons canvien els modificadors un cop algu ha entrat a l'End (minim 6). 0 = igual que #change_seconds
 scoreboard players set #change_seconds_end daisukes.config 60
