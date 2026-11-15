@@ -11,7 +11,7 @@ scoreboard players set #wait_spread daisukes.gorgun 20
 # l'avis sona 20 ticks abans de l'esclat
 scoreboard players set #windup daisukes.gorgun 22
 # Temps petrificat
-scoreboard players set #petrify daisukes.gorgun 160
+scoreboard players set #petrify daisukes.gorgun 140
 # =====================================================================
 
 # Restes d'una activacio anterior
