@@ -27,4 +27,4 @@ execute at @e[type=minecraft:marker,tag=daisukes.anchor_root,limit=1] run partic
 # L'encadenat ja no pot picar, posar, obrir ni pegar
 execute as @e[type=minecraft:player,tag=daisukes.anchor_p,gamemode=!creative,gamemode=!spectator] run function daisukes:modifiers/anchor/catch
 # La cadena (encara amagada) a l'ull de l'ancora
-execute at @e[type=minecraft:marker,tag=daisukes.anchor_root,limit=1] positioned ^ ^2.59 ^ run function daisukes:modifiers/anchor/chain_make
+execute at @e[type=minecraft:marker,tag=daisukes.anchor_root,limit=1] positioned ^ ^2.5625 ^ run function daisukes:modifiers/anchor/chain_make

@@ -4,7 +4,7 @@ execute unless entity @e[type=minecraft:player,tag=daisukes.anchor_p,gamemode=!c
 execute if score #t daisukes.anchor matches 1200.. run return run function daisukes:modifiers/anchor/free
 execute as @e[type=minecraft:player,tag=daisukes.anchor_p,gamemode=!creative,gamemode=!spectator] at @s run function daisukes:modifiers/anchor/float
 function daisukes:modifiers/anchor/chain_draw
-execute if score #pulse daisukes.anchor matches 0.. at @e[type=minecraft:marker,tag=daisukes.anchor_root,limit=1] positioned ^ ^2.59 ^ facing entity @a[tag=daisukes.anchor_p,limit=1] feet run function daisukes:modifiers/anchor/pulse
+execute if score #pulse daisukes.anchor matches 0.. at @e[type=minecraft:marker,tag=daisukes.anchor_root,limit=1] positioned ^ ^2.5625 ^ facing entity @a[tag=daisukes.anchor_p,limit=1] feet run function daisukes:modifiers/anchor/pulse
 
 # L'objecte que brilla: cadascu en te un en tot moment (keep). Qui no en te cap per marcar ho torna a provar cada 10 ticks
 scoreboard players operation #t10 daisukes.anchor = #t daisukes.anchor
