@@ -25,7 +25,7 @@ scoreboard objectives add daisukes.victory dummy
 scoreboard players set #start_count daisukes.config 1
 
 # Cada quants segons canvien els modificadors (minim 6)
-scoreboard players set #change_seconds daisukes.config 240
+scoreboard players set #change_seconds daisukes.config 120
 
 # Cada quants segons de partida augmenta el nombre de modificadors (1200 = 20 min). 0 = no augmenta mai
 scoreboard players set #escalate_seconds daisukes.config 1800
