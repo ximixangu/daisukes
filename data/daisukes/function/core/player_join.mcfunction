@@ -8,4 +8,4 @@ scoreboard players set @s daisukes.left 0
 scoreboard players set #dragons_before daisukes.victory 0
 
 # Benvinguda amb els modificadors actius (si la presentacio encara no ha sortit, la veura ara mateix)
-execute if score #engine_active daisukes.engine matches 1 unless score #intro daisukes.engine matches 1 if data storage daisukes:temp chat_texts[0] run tellraw @s ["", {"text": "» ", "color": "dark_red", "bold": true}, {"text": "Daisuke's Challenge", "color": "red", "bold": true}, {"text": " · Active: ", "color": "gray"}, {"nbt": "chat_texts[]", "storage": "daisukes:temp", "interpret": true, "separator": {"text": ", ", "color": "gray"}}]
+# execute if score #engine_active daisukes.engine matches 1 unless score #intro daisukes.engine matches 1 if data storage daisukes:temp chat_texts[0] run tellraw @s ["", {"text": "» ", "color": "dark_red", "bold": true}, {"text": "Daisuke's Challenge", "color": "red", "bold": true}, {"text": " · Active: ", "color": "gray"}, {"nbt": "chat_texts[]", "storage": "daisukes:temp", "interpret": true, "separator": {"text": ", ", "color": "gray"}}]

@@ -99,4 +99,4 @@ scoreboard players set #dragons_before daisukes.victory 0
 execute if score #victory daisukes.engine matches 1 run function daisukes:engine/stop
 
 # Resum al xat de la configuracio aplicada
-function daisukes:debug/status
+# function daisukes:debug/status

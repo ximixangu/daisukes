@@ -1,0 +1,11 @@
+execute unless entity @a[tag=daisukes.anchor_p,distance=..0.8] run scoreboard players set #n daisukes.anchor 2
+execute unless entity @a[tag=daisukes.anchor_p,distance=..1.6] run scoreboard players set #n daisukes.anchor 3
+execute unless entity @a[tag=daisukes.anchor_p,distance=..2.4] run scoreboard players set #n daisukes.anchor 4
+execute unless entity @a[tag=daisukes.anchor_p,distance=..3.2] run scoreboard players set #n daisukes.anchor 5
+execute unless entity @a[tag=daisukes.anchor_p,distance=..4.0] run scoreboard players set #n daisukes.anchor 6
+execute unless entity @a[tag=daisukes.anchor_p,distance=..4.8] run scoreboard players set #n daisukes.anchor 7
+execute unless entity @a[tag=daisukes.anchor_p,distance=..5.6] run scoreboard players set #n daisukes.anchor 8
+execute unless entity @a[tag=daisukes.anchor_p,distance=..6.4] run scoreboard players set #n daisukes.anchor 9
+execute unless entity @a[tag=daisukes.anchor_p,distance=..7.2] run scoreboard players set #n daisukes.anchor 10
+execute unless entity @a[tag=daisukes.anchor_p,distance=..8.0] run scoreboard players set #n daisukes.anchor 11
+execute unless entity @a[tag=daisukes.anchor_p,distance=..8.8] run scoreboard players set #n daisukes.anchor 12

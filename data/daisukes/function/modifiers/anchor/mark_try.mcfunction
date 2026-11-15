@@ -1,0 +1,1 @@
+$execute if items entity @s container.$(i) *[!minecraft:custom_data,!minecraft:enchantment_glint_override,!minecraft:lodestone_tracker,minecraft:enchantments={}] unless items entity @s container.$(i) $(last) run function daisukes:modifiers/anchor/mark_put with storage daisukes:anchor m

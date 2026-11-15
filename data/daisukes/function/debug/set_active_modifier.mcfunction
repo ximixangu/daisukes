@@ -24,4 +24,6 @@ function daisukes:engine/activate_execute
 # Com un canvi normal: so, bossbar i avis al xat
 data modify storage daisukes:temp countdown_label set value "Modifier change in "
 function daisukes:engine/countdown/end
-tellraw @a ["", {"text": "» ", "color": "dark_red", "bold": true}, {"text": "Now active: ", "color": "gray"}, {"nbt": "chat_texts[]", "storage": "daisukes:temp", "interpret": true, "separator": {"text": ", ", "color": "gray"}}, {"text": "  (hover for details)", "color": "dark_gray", "italic": true}]
+
+# Mostrar modificador al chat
+# tellraw @a ["", {"text": "» ", "color": "dark_red", "bold": true}, {"text": "Now active: ", "color": "gray"}, {"nbt": "chat_texts[]", "storage": "daisukes:temp", "interpret": true, "separator": {"text": ", ", "color": "gray"}}, {"text": "  (hover for details)", "color": "dark_gray", "italic": true}]
