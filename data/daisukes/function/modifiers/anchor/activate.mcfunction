@@ -20,8 +20,8 @@ scoreboard players set #time daisukes.anchor 0
 scoreboard players set #phase daisukes.anchor 0
 scoreboard players set #event daisukes.anchor 0
 scoreboard players set #wait daisukes.anchor 100
-scoreboard players set #every daisukes.anchor 700
-scoreboard players set #total daisukes.anchor 3
+scoreboard players set #every daisukes.anchor 555
+scoreboard players set #total daisukes.anchor 5
 scoreboard players set #sweep daisukes.anchor 0
 scoreboard players set #pulse daisukes.anchor -1
 scoreboard players set #burst daisukes.anchor 0

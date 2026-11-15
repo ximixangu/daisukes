@@ -3,8 +3,7 @@ scoreboard players add #time daisukes.anchor 1
 # marcats poden arribar al mateix tick: nomes compta el primer)
 tag @a[tag=daisukes.anchor_once] remove daisukes.anchor_once
 
-execute if score #time daisukes.anchor matches 400 run function daisukes:modifiers/anchor/stage {total: 4, every: 500}
-execute if score #time daisukes.anchor matches 0 run function daisukes:modifiers/anchor/stage {total: 10, every: 400}
+execute if score #time daisukes.anchor matches 600 run function daisukes:modifiers/anchor/stage {total: 7, every: 500}
 
 # Objectes nous a terra (abans que res: si algu acaba de llencar el que li brilla, compta ara)
 execute as @e[type=minecraft:item,tag=!daisukes.anchor_seen] run function daisukes:modifiers/anchor/item
