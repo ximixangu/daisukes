@@ -4,4 +4,4 @@ data modify storage daisukes:texts desc.anchor set value "Every so often an anch
 
 # La gravetat de la Lluna, salts i vols que no controles, teletransports a l'atzar, la pantalla negra en enlairar-se
 # o haver de picar per treure't la patata: tot xoca amb estar encadenat a l'aire
-data modify storage daisukes:registry incompatible.anchor set value ["moon", "balloon", "icarus", "vertigo", "heisenberg", "enderman", "chorus_food", "hot_potato"]
+data modify storage daisukes:registry incompatible.anchor set value ["moon", "icarus", "vertigo", "hot_potato"]
