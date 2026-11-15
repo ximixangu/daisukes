@@ -11,3 +11,6 @@ execute if score @s daisukes.anchor_i matches 8 positioned ^ ^ ^6.80 rotated ~-9
 execute if score @s daisukes.anchor_i matches 9 positioned ^ ^ ^7.60 rotated ~90 0 run function daisukes:modifiers/anchor/shard
 execute if score @s daisukes.anchor_i matches 10 positioned ^ ^ ^8.40 rotated ~-90 0 run function daisukes:modifiers/anchor/shard
 execute if score @s daisukes.anchor_i matches 11 positioned ^ ^ ^9.20 rotated ~90 0 run function daisukes:modifiers/anchor/shard
+execute if score @s daisukes.anchor_i matches 12 positioned ^ ^ ^10.00 rotated ~-90 0 run function daisukes:modifiers/anchor/shard
+execute if score @s daisukes.anchor_i matches 13 positioned ^ ^ ^10.80 rotated ~90 0 run function daisukes:modifiers/anchor/shard
+execute if score @s daisukes.anchor_i matches 14 positioned ^ ^ ^11.60 rotated ~-90 0 run function daisukes:modifiers/anchor/shard

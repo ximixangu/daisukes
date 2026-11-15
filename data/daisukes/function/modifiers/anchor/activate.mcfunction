@@ -1,6 +1,6 @@
 # Anchored: de tant en tant cau una ancora al costat d'un jugador i l'encadena a l'aire (no pot picar, construir ni
-# pegar, pero tampoc rebre mal). Per trencar la cadena, cadascu llenca l'objecte que li brilla a l'inventari (Q):
-# el de l'encadenat trenca 1 baula i el d'un company, 2. Mes baules i ancores mes seguides amb el temps.
+# pegar, pero si que rep mal). Per trencar la cadena, cadascu llenca l'objecte que li brilla, de la barra rapida si
+# pot ser (Q): el de l'encadenat trenca 1 baula i el d'un company, 2. Mes baules i ancores mes seguides amb el temps.
 #  daisukes.anchor: valors globals (#...) i numero de l'ancorada a cada entitat i a l'encadenat
 #  daisukes.anchor_i: numero de cada anella i de cada baula de la cadena
 #  daisukes.anchor_t: temps que li queda a una anella que esclata
@@ -15,13 +15,13 @@ scoreboard players set #50 daisukes.anchor 50
 scoreboard players set #52 daisukes.anchor 52
 scoreboard players set #1000 daisukes.anchor 1000
 
-# Valors (ANCHOR.md): primera ancora als 5 s; despres, 35 s de pausa i 3 baules (stage les puja)
+# Valors (ANCHOR.md): primera ancora als 5 s; despres, 20 s de pausa i 5 baules (stage les puja)
 scoreboard players set #time daisukes.anchor 0
 scoreboard players set #phase daisukes.anchor 0
 scoreboard players set #event daisukes.anchor 0
 scoreboard players set #wait daisukes.anchor 100
-scoreboard players set #every daisukes.anchor 555
-scoreboard players set #total daisukes.anchor 5
+scoreboard players set #every daisukes.anchor 400
+scoreboard players set #total daisukes.anchor 10
 scoreboard players set #sweep daisukes.anchor 0
 scoreboard players set #pulse daisukes.anchor -1
 scoreboard players set #burst daisukes.anchor 0

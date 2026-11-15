@@ -2,8 +2,9 @@ scoreboard players add #time daisukes.anchor 1
 # Cadascu pot trencar com a molt una vegada per tick (si prem Q molt de pressa sobre una pila que brilla, dos objectes
 # marcats poden arribar al mateix tick: nomes compta el primer)
 tag @a[tag=daisukes.anchor_once] remove daisukes.anchor_once
-
-execute if score #time daisukes.anchor matches 600 run function daisukes:modifiers/anchor/stage {total: 7, every: 500}
+# Amb el temps: 7 baules i 15 s de pausa (als 40 s); 10 baules i 10 s de pausa (als 80 s)
+execute if score #time daisukes.anchor matches 800 run function daisukes:modifiers/anchor/stage {total: 10, every: 400}
+execute if score #time daisukes.anchor matches 1600 run function daisukes:modifiers/anchor/stage {total: 10, every: 400}
 
 # Objectes nous a terra (abans que res: si algu acaba de llencar el que li brilla, compta ara)
 execute as @e[type=minecraft:item,tag=!daisukes.anchor_seen] run function daisukes:modifiers/anchor/item

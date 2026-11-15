@@ -11,5 +11,8 @@ execute if score #pulse daisukes.anchor matches 7..8 run particle minecraft:elec
 execute if score #pulse daisukes.anchor matches 8..9 run particle minecraft:electric_spark ^ ^ ^7.60 0.04 0.04 0.04 0.02 2 force @a[distance=..48]
 execute if score #pulse daisukes.anchor matches 9..10 run particle minecraft:electric_spark ^ ^ ^8.40 0.04 0.04 0.04 0.02 2 force @a[distance=..48]
 execute if score #pulse daisukes.anchor matches 10..11 run particle minecraft:electric_spark ^ ^ ^9.20 0.04 0.04 0.04 0.02 2 force @a[distance=..48]
+execute if score #pulse daisukes.anchor matches 11..12 run particle minecraft:electric_spark ^ ^ ^10.00 0.04 0.04 0.04 0.02 2 force @a[distance=..48]
+execute if score #pulse daisukes.anchor matches 12..13 run particle minecraft:electric_spark ^ ^ ^10.80 0.04 0.04 0.04 0.02 2 force @a[distance=..48]
+execute if score #pulse daisukes.anchor matches 13..14 run particle minecraft:electric_spark ^ ^ ^11.60 0.04 0.04 0.04 0.02 2 force @a[distance=..48]
 scoreboard players add #pulse daisukes.anchor 2
 execute if score #pulse daisukes.anchor >= #shown daisukes.anchor run function daisukes:modifiers/anchor/burst

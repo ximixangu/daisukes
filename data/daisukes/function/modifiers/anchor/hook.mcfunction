@@ -1,7 +1,7 @@
 # Enganxat: comenca a flotar, i a cadascu li brilla un objecte
 scoreboard players set #phase daisukes.anchor 3
 scoreboard players set #t daisukes.anchor 0
-scoreboard players set #reveal daisukes.anchor 12
+scoreboard players set #reveal daisukes.anchor 15
 execute as @e[type=minecraft:player,tag=daisukes.anchor_p,gamemode=!creative,gamemode=!spectator] at @s run function daisukes:modifiers/anchor/lift
 execute at @e[type=minecraft:marker,tag=daisukes.anchor_root,limit=1] run playsound minecraft:block.respawn_anchor.charge block @a ~ ~ ~ 0.8 1.2
 execute store result storage daisukes:anchor m.n int 1 run scoreboard players get #event daisukes.anchor
