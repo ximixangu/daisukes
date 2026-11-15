@@ -1,4 +1,5 @@
-# Comença una partida nova: temps jugat a 0, Nether i End sense visitar, i presentacio + tirada nova
+# Comença una partida nova: temps jugat a 0, Nether i End sense visitar, i presentacio + tirada nova.
+# Tambe serveix per comencar el repte la primera vegada (com /function daisukes:start)
 # /function daisukes:reset
 scoreboard players set #initialized daisukes.engine 0
 
@@ -7,3 +8,6 @@ scoreboard players set #initialized daisukes.engine 0
 advancement revoke @a from daisukes:gui/root
 
 function daisukes:core/load
+
+# En marxa amb la presentacio (titol Challenge Mode, compte enrere i primer modificador)
+function daisukes:engine/begin

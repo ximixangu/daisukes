@@ -9,5 +9,5 @@ scoreboard players set #interval daisukes.bone_voyage 100
 scoreboard players set #max daisukes.bone_voyage 6
 
 # Es fa de nit i el temps s'atura mentre duri el modificador (així els esquelets no es cremen amb el sol)
-execute in minecraft:overworld run time set minecraft:midnight
-gamerule advance_time false
+function daisukes:util/in_worlds {cmd: "time set minecraft:midnight"}
+function daisukes:util/in_worlds {cmd: "gamerule advance_time false"}

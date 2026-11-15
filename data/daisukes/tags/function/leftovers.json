@@ -26,6 +26,7 @@
     "daisukes:modifiers/blind_spot/leftovers",
     "daisukes:modifiers/overheat/leftovers",
     "daisukes:modifiers/king/leftovers",
-    "daisukes:modifiers/anchor/leftovers"
+    "daisukes:modifiers/anchor/leftovers",
+    "daisukes:modifiers/vertigo/leftovers"
   ]
 }

@@ -16,16 +16,18 @@ scoreboard players operation #next_change_s daisukes.math -= #timer daisukes.tim
 scoreboard players operation #next_change_s daisukes.math /= #20 daisukes.math
 
 tellraw @a ["", {"text": "» ", "color": "dark_red", "bold": true}, {"text": "Daisuke's Challenge ", "color": "red", "bold": true}, {"score": {"name": "#mins", "objective": "daisukes.math"}, "color": "white"}, {"text": " min ", "color": "gray"}, {"score": {"name": "#secs", "objective": "daisukes.math"}, "color": "white"}, {"text": " s played", "color": "gray"}]
-tellraw @a ["", {"text": "   Modifiers: ", "color": "gray"}, {"score": {"name": "#current_count", "objective": "daisukes.engine"}, "color": "gold", "bold": true}, {"text": " · change every ", "color": "gray"}, {"score": {"name": "#interval_s", "objective": "daisukes.math"}, "color": "white"}, {"text": " s (next in ", "color": "gray"}, {"score": {"name": "#next_change_s", "objective": "daisukes.math"}, "color": "white"}, {"text": " s)", "color": "gray"}]
+execute if score #engine_active daisukes.engine matches 1 run tellraw @a ["", {"text": "   Next change: ", "color": "gray"}, {"score": {"name": "#current_count", "objective": "daisukes.engine"}, "color": "gold", "bold": true}, {"text": " modifiers in ", "color": "gray"}, {"score": {"name": "#next_change_s", "objective": "daisukes.math"}, "color": "white"}, {"text": " s (every ", "color": "gray"}, {"score": {"name": "#interval_s", "objective": "daisukes.math"}, "color": "white"}, {"text": " s)", "color": "gray"}]
+execute unless score #engine_active daisukes.engine matches 1 run tellraw @a ["", {"text": "   Change every ", "color": "gray"}, {"score": {"name": "#interval_s", "objective": "daisukes.math"}, "color": "white"}, {"text": " s", "color": "gray"}]
 
 # Actius ara (passant el ratoli per sobre, que fa cadascun)
 execute if data storage daisukes:temp chat_texts[0] run tellraw @a ["", {"text": "   Active: ", "color": "gray"}, {"nbt": "chat_texts[]", "storage": "daisukes:temp", "interpret": true, "separator": {"text": ", ", "color": "gray"}}]
-execute unless score #engine_active daisukes.engine matches 1 unless score #victory daisukes.engine matches 1 run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "stopped", "color": "red"}, {"text": " (/reload to start again)", "color": "dark_gray"}]
+execute unless score #engine_active daisukes.engine matches 1 unless score #victory daisukes.engine matches 1 if score #elapsed daisukes.engine matches ..0 run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "not started", "color": "red"}, {"text": " (/function daisukes:start)", "color": "dark_gray"}]
+execute unless score #engine_active daisukes.engine matches 1 unless score #victory daisukes.engine matches 1 unless score #defeat daisukes.engine matches 1 if score #elapsed daisukes.engine matches 1.. run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "stopped", "color": "red"}, {"text": " (/function daisukes:start to resume)", "color": "dark_gray"}]
 execute if score #victory daisukes.engine matches 1 run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "challenge completed, Ender Dragon defeated", "color": "gold"}, {"text": " (/function daisukes:reset for a new game)", "color": "dark_gray"}]
+execute if score #defeat daisukes.engine matches 1 run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "challenge failed, a player died", "color": "red"}, {"text": " (/function daisukes:reset for a new game)", "color": "dark_gray"}]
 
-# Seguent augment per temps
-execute if score #escalate_ticks daisukes.math matches 1.. run function daisukes:debug/status_escalation
-execute unless score #escalate_ticks daisukes.math matches 1.. run tellraw @a ["", {"text": "   Increase over time: ", "color": "gray"}, {"text": "off", "color": "white"}]
+# Dificultat: fase actual i que la fara pujar
+function daisukes:debug/status_difficulty
 
 # Fase
 execute if score #end_reached daisukes.engine matches 1 run tellraw @a ["", {"text": "   Phase: ", "color": "gray"}, {"text": "End", "color": "light_purple"}]

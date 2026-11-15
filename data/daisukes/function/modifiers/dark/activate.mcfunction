@@ -2,5 +2,5 @@
 scoreboard objectives add daisukes.dark dummy
 
 # Es fa de nit i el temps s'atura mentre duri el modificador
-execute in minecraft:overworld run time set minecraft:midnight
-gamerule advance_time false
+function daisukes:util/in_worlds {cmd: "time set minecraft:midnight"}
+function daisukes:util/in_worlds {cmd: "gamerule advance_time false"}

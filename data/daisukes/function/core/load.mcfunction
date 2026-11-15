@@ -1,6 +1,6 @@
-# En carregar el mon i amb /reload. Prepara scoreboards i configuracio, desactiva el que hi hagues actiu
-# i deixa el repte a punt: quan hi hagi algu connectat surt el titol (engine/intro), compte enrere de 5 s
-# i primer modificador.
+# En carregar el mon i amb /reload. Prepara scoreboards i configuracio.
+# El repte NO comenca sol: cal /function daisukes:start (o daisukes:reset). Si ja estava en marxa
+# (mon tancat o /reload a mitja partida), continua tal com era, sense titol (engine/resume).
 
 # Els scoreboards es creen abans de la tria (si no, la primera tirada d'un món nou fallava)
 scoreboard objectives add daisukes.timer dummy
@@ -13,6 +13,8 @@ scoreboard objectives add daisukes.tp dummy
 scoreboard objectives add daisukes.left minecraft.custom:minecraft.leave_game
 # Victoria quan mor el drac de l'End (victory/)
 scoreboard objectives add daisukes.victory dummy
+# Derrota quan mor qualsevol jugador (defeat/)
+scoreboard objectives add daisukes.deaths deathCount
 
 # =====================================================================
 #  CONFIGURACIO  (tots els temps en SEGONS)
@@ -21,22 +23,27 @@ scoreboard objectives add daisukes.victory dummy
 #    /scoreboard players set #change_seconds daisukes.config 30
 # =====================================================================
 
-# Modificadors actius a l'inici de la partida
-scoreboard players set #start_count daisukes.config 1
-
 # Cada quants segons canvien els modificadors (minim 6)
 scoreboard players set #change_seconds daisukes.config 120
 
-# Cada quants segons de partida augmenta el nombre de modificadors (1200 = 20 min). 0 = no augmenta mai
-scoreboard players set #escalate_seconds daisukes.config 1800
+# ---- Quants modificadors surten a cada canvi: per fases, que nomes pugen (engine/progress/update_count) ----
+# 1. Al principi
+scoreboard players set #start_count daisukes.config 1
 
-# Quants modificadors s'afegeixen cada cop (1 => 1, 2, 3, 4... / 2 => 1, 3, 5, 7...)
-scoreboard players set #escalate_step daisukes.config 1
+# 2. Dificultat 2-1: passats aquests segons (2400 = 40 min) o en entrar al Nether, el que passi abans.
+#    A cada canvi alterna #alternate_high i #alternate_low (2, 1, 2, 1...). 0 segons = nomes amb el Nether
+scoreboard players set #alternate_seconds daisukes.config 2400
+scoreboard players set #alternate_high daisukes.config 2
+scoreboard players set #alternate_low daisukes.config 1
 
-# Minim de modificadors quan algun jugador entra al Nether per primer cop. 0 = desactivat
-scoreboard players set #nether_count daisukes.config 2
+# 3. Des de la primera vara de blaze de la partida (Into Fire)
+scoreboard players set #blaze_count daisukes.config 2
 
-# Minim de modificadors quan algun jugador entra a l'End per primer cop (drac). 0 = desactivat
+# 4. Aquests segons despres de la primera vara de blaze (3000 = 50 min)
+scoreboard players set #blaze_late_seconds daisukes.config 3000
+scoreboard players set #blaze_late_count daisukes.config 3
+
+# 5. A l'End (batalla contra el drac)
 scoreboard players set #end_count daisukes.config 4
 
 # Cada quants segons canvien els modificadors un cop algu ha entrat a l'End (minim 6). 0 = igual que #change_seconds
@@ -54,14 +61,16 @@ scoreboard players set #victory_seconds daisukes.config 90
 scoreboard players set #20 daisukes.math 20
 scoreboard players set #60 daisukes.math 60
 
+# Hi ha una partida en marxa? (mon tornat a obrir o /reload a mitja partida). Llavors continua tal com era:
+# els mateixos modificadors actius i el mateix temps fins al proxim canvi (engine/resume).
+# Si no (mon nou, aturat, guanyat o /function daisukes:reset), no queda res actiu de la tirada anterior
+scoreboard players set #resume daisukes.math 0
+execute if score #engine_active daisukes.engine matches 1 if score #initialized daisukes.engine matches 1 if score #elapsed daisukes.engine matches 1.. unless score #victory daisukes.engine matches 1 run scoreboard players set #resume daisukes.math 1
+
 # Bossbar del compte enrere (amagada fins als ultims 5 segons)
 function daisukes:engine/countdown/setup
 
-# El que hi hagues actiu (mon tancat o /reload a mitja partida) es desactiva i no queda res de la tirada anterior
-execute if data storage daisukes:state active[0] run function daisukes:engine/deactivate_execute
-data remove storage daisukes:state active
-data remove storage daisukes:temp display_texts
-data remove storage daisukes:temp chat_texts
+execute if score #resume daisukes.math matches 0 run function daisukes:engine/clear
 
 data modify storage daisukes:registry modifiers set value []
 data remove storage daisukes:registry incompatible
@@ -78,25 +87,26 @@ function daisukes:engine/incompat/build
 execute unless score #initialized daisukes.engine matches 1 run function daisukes:engine/progress/init
 
 # Interval i nombre de modificadors segons la configuracio i l'estat (sense avisos)
-scoreboard players set #silent daisukes.math 1
-scoreboard players set #current_count daisukes.engine -1
-function daisukes:engine/progress/update_interval
-function daisukes:engine/progress/update_count
-scoreboard players set #silent daisukes.math 0
-
-# Repte en marxa, començant per la presentacio (surt en quant hi hagi algu connectat).
-# El primer canvi arriba quan el titol ja ha marxat (105 ticks) i s'ha acabat el compte enrere (100 ticks)
-scoreboard players set #engine_active daisukes.engine 1
-scoreboard players set #intro daisukes.engine 1
-data modify storage daisukes:temp countdown_label set value "Challenge starts in "
-scoreboard players operation #timer daisukes.timer = #timer_threshold daisukes.timer
-scoreboard players remove #timer daisukes.timer 206
+function daisukes:engine/progress/recalc
 
 # Victoria (victory/watch): es torna a comptar el drac des de zero
 scoreboard players set #dragons_before daisukes.victory 0
 
 # Si aquesta partida ja s'ha guanyat (drac mort), el repte continua aturat fins a /function daisukes:reset
 execute if score #victory daisukes.engine matches 1 run function daisukes:engine/stop
+
+# El repte no es posa en marxa en carregar: en un mon nou (o si s'havia aturat amb debug/stop) es queda
+# aturat fins a /function daisukes:start o daisukes:reset. #engine_active es guarda al mon:
+#  - si ja estava en marxa, continua SENSE titol ni tirada nova (engine/resume)
+#  - si s'havia fet start pero encara no havia avancat (des de la consola sense ningu connectat),
+#    la presentacio continua pendent (engine/begin)
+execute if score #resume daisukes.math matches 1 run function daisukes:engine/resume
+execute if score #engine_active daisukes.engine matches 1 if score #elapsed daisukes.engine matches ..0 run function daisukes:engine/begin
+
+# Repte sense comencar: explicacio breu al xat i la comanda de start (core/welcome). En obrir el mon el load
+# va abans que entri el jugador, aixi que surt des de core/tick, 2 s (40 ticks) despres que hi hagi algu
+scoreboard players set #welcome daisukes.timer 0
+execute unless score #engine_active daisukes.engine matches 1 if score #elapsed daisukes.engine matches ..0 run scoreboard players set #welcome daisukes.timer 40
 
 # Resum al xat de la configuracio aplicada
 # function daisukes:debug/status

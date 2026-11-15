@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "blaze_rod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:blaze_rod"
+          }
+        ]
+      }
+    }
+  }
+}
