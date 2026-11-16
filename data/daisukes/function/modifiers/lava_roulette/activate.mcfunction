@@ -5,6 +5,8 @@ scoreboard objectives add daisukes.lava dummy
 # =====================================================================
 # Descans entre tirades
 scoreboard players set #rest daisukes.lava 20
+# Descans entre tirades quan falla
+scoreboard players set #rest_fail daisukes.lava 200
 # Des que la ruleta tria el bloc fins que comenca a cremar (a la primera tirada, 1 s mes)
 scoreboard players set #warn daisukes.lava 60
 # Temps que crema
