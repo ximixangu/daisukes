@@ -1,4 +1,4 @@
-# Tres boques de sculk surten del terra i et criden: 3 cors que travessen l'armadura
+# Tres boques de sculk surten del terra i et maten
 tag @s add daisukes.hush_caught
 # Surten a l'altura dels peus; si t'enxampen a l'aire (saltant), a l'altura del bloc
 execute if entity @s[nbt={OnGround: true}] run function daisukes:modifiers/hush/mouths
