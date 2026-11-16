@@ -5,8 +5,9 @@ function daisukes:engine/deactivate_execute
 
 function daisukes:engine/select_modifiers
 
-# Dificultat 2-1: la seguent tirada en treu l'altre nombre
+# Dificultats 2-1 i 3-2: la seguent tirada en treu l'altre nombre
 execute if score #current_phase daisukes.engine matches 2 run function daisukes:engine/progress/alternate
+execute if score #current_phase daisukes.engine matches 4 run function daisukes:engine/progress/alternate
 
 function daisukes:engine/activate_execute
 

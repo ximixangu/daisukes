@@ -1,12 +1,17 @@
-# Partida nova: temps jugat a 0, Nether / End sense visitar, sense vara de blaze i sense victoria
+# Partida nova: temps jugat a 0, Nether / End sense visitar, sense fites (vara de blaze, bastio, fortalesa) i sense victoria
 scoreboard players set #elapsed daisukes.engine 0
 scoreboard players set #nether_reached daisukes.engine 0
 scoreboard players set #end_reached daisukes.engine 0
 scoreboard players set #blaze_reached daisukes.engine 0
-scoreboard players set #blaze_time daisukes.engine 0
+scoreboard players set #bastion_reached daisukes.engine 0
+scoreboard players set #nether_goals daisukes.engine 0
+scoreboard players set #nether_goals_time daisukes.engine 0
+scoreboard players set #stronghold_reached daisukes.engine 0
 scoreboard players set #alternate daisukes.engine 0
-# La primera vara de blaze es torna a comptar des de zero
+# Les fites es tornen a comptar des de zero
 advancement revoke @a only daisukes:progress/blaze_rod
+advancement revoke @a only daisukes:progress/bastion
+advancement revoke @a only daisukes:progress/stronghold
 scoreboard players set #victory daisukes.engine 0
 scoreboard players set #defeat daisukes.engine 0
 scoreboard players set #slain daisukes.victory 0

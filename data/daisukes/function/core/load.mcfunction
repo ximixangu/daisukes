@@ -36,14 +36,20 @@ scoreboard players set #alternate_seconds daisukes.config 2400
 scoreboard players set #alternate_high daisukes.config 2
 scoreboard players set #alternate_low daisukes.config 1
 
-# 3. Des de la primera vara de blaze de la partida (Into Fire)
-scoreboard players set #blaze_count daisukes.config 2
+# 3. Quan ja s'ha aconseguit una vara de blaze (Into Fire) i s'ha trobat un bastio (Those Were the Days),
+#    en qualsevol ordre
+scoreboard players set #nether_goals_count daisukes.config 2
 
-# 4. Aquests segons despres de la primera vara de blaze (3000 = 50 min)
-scoreboard players set #blaze_late_seconds daisukes.config 3000
-scoreboard players set #blaze_late_count daisukes.config 3
+# 4. Dificultat 3-2: aquests segons despres de la fase 3 (2400 = 40 min).
+#    A cada canvi alterna #late_high i #late_low (3, 2, 3, 2...)
+scoreboard players set #late_seconds daisukes.config 2400
+scoreboard players set #late_high daisukes.config 3
+scoreboard players set #late_low daisukes.config 2
 
-# 5. A l'End (batalla contra el drac)
+# 5. En arribar a la fortalesa (stronghold, Eye Spy)
+scoreboard players set #stronghold_count daisukes.config 3
+
+# 6. A l'End (batalla contra el drac)
 scoreboard players set #end_count daisukes.config 4
 
 # Cada quants segons canvien els modificadors un cop algu ha entrat a l'End (minim 6). 0 = igual que #change_seconds

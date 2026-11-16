@@ -1,4 +1,4 @@
-# Primer cop que el veiem: un numero, i el creaking als 8 s (si sou mes, 2 s despres de l'anterior)
+# Primer cop que el veiem: un numero, i el primer creaking als 8 s (si sou mes, 2 s despres de l'anterior)
 tag @s remove daisukes.heart_bound
 scoreboard players add #next daisukes.heart 1
 scoreboard players operation @s daisukes.heart = #next daisukes.heart
