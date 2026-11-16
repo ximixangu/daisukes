@@ -1,0 +1,6 @@
+$execute unless items entity @s $(slot) *[custom_data~{daisukes_shift:{}}] unless items entity @s $(slot) *[bundle_contents~{items:{contains:[{predicates:{custom_data:{daisukes_shift:{}}}}]}}] run return 0
+$execute if items entity @s $(slot) *[custom_data~{daisukes_shift:{j:1b}}] run return run item replace entity @s $(slot) with air
+$function daisukes:modifiers/hotbar_shift/read {slot:"$(slot)"}
+function daisukes:modifiers/hotbar_shift/strip
+execute if data storage daisukes:shift x.components."minecraft:bundle_contents"[0] run function daisukes:modifiers/hotbar_shift/fix_bundle
+$function daisukes:modifiers/hotbar_shift/write {slot:"$(slot)"}

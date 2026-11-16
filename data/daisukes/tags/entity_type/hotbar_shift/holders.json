@@ -1,0 +1,15 @@
+{
+  "values": [
+    "minecraft:item_frame",
+    "minecraft:glow_item_frame",
+    "minecraft:armor_stand",
+    "minecraft:allay",
+    "minecraft:wolf",
+    "minecraft:llama",
+    "minecraft:trader_llama",
+    "#minecraft:can_equip_saddle",
+    "#minecraft:can_wear_horse_armor",
+    "#minecraft:can_equip_harness",
+    "#minecraft:can_wear_nautilus_armor"
+  ]
+}

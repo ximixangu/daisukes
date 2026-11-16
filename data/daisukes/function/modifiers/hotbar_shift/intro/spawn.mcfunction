@@ -1,0 +1,9 @@
+function daisukes:modifiers/hotbar_shift/intro/slot {i:0}
+function daisukes:modifiers/hotbar_shift/intro/slot {i:1}
+function daisukes:modifiers/hotbar_shift/intro/slot {i:2}
+function daisukes:modifiers/hotbar_shift/intro/slot {i:3}
+function daisukes:modifiers/hotbar_shift/intro/slot {i:4}
+function daisukes:modifiers/hotbar_shift/intro/slot {i:5}
+function daisukes:modifiers/hotbar_shift/intro/slot {i:6}
+function daisukes:modifiers/hotbar_shift/intro/slot {i:7}
+function daisukes:modifiers/hotbar_shift/intro/slot {i:8}

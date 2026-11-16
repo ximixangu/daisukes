@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "changed": {
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "rewards": {
+    "function": "daisukes:modifiers/hotbar_shift/on_change"
+  }
+}

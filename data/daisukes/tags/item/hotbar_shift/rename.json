@@ -1,0 +1,11 @@
+{
+  "values": [
+    "minecraft:potion",
+    "minecraft:splash_potion",
+    "minecraft:lingering_potion",
+    "minecraft:tipped_arrow",
+    "minecraft:shield",
+    "minecraft:compass",
+    "minecraft:written_book"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "back": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "daisukes:hotbar_shift/active"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "daisukes:modifiers/hotbar_shift/rescue"
+  }
+}

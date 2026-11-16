@@ -47,6 +47,8 @@
     "daisukes:modifiers/king/register",
     "daisukes:modifiers/anchor/register",
     "daisukes:modifiers/living_earth/register",
-    "daisukes:modifiers/heartbound/register"
+    "daisukes:modifiers/heartbound/register",
+    "daisukes:modifiers/hotbar_shift/register",
+    "daisukes:modifiers/roots/register"
   ]
 }

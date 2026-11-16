@@ -1,0 +1,41 @@
+{
+  "criteria": {
+    "block": {
+      "trigger": "minecraft:default_block_use",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": {
+                  "daisukes_shift": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "entity": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "daisukes_shift": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "block",
+      "entity"
+    ]
+  ],
+  "rewards": {
+    "function": "daisukes:modifiers/hotbar_shift/on_use"
+  }
+}

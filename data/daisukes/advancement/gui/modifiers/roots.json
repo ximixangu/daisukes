@@ -1,0 +1,26 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:mangrove_roots"
+    },
+    "title": {
+      "text": "Grasping Roots",
+      "color": "#9C6B3C",
+      "bold": true
+    },
+    "description": {
+      "text": "Roots burst out at your feet: keep walking or they tie you down. Pull until they snap, or get a friend with an axe",
+      "color": "white"
+    },
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

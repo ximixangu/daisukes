@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "killed_marked_mob": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"daisukes.soul_host\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "daisukes:modifiers/mini_creeper/kill"
+  }
+}
