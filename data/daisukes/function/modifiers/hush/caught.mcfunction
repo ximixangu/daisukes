@@ -6,4 +6,4 @@ execute unless entity @s[nbt={OnGround: true}] align y run function daisukes:mod
 particle minecraft:sonic_boom ~ ~1 ~
 particle minecraft:sculk_soul ~ ~1 ~ 0.4 0.6 0.4 0.05 20
 playsound minecraft:entity.warden.sonic_boom master @a ~ ~ ~ 1.5 1
-damage @s 12 minecraft:sonic_boom
+damage @s 100 minecraft:sonic_boom
