@@ -1,0 +1,19 @@
+# Blocs amb aquestes propietats: cactus, sugar_cane
+scoreboard players set #k daisukes.earth 44
+$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {}}
+$execute if block ~ ~ ~ $(name)[age=0] run data modify storage daisukes:earth s.Properties.age set value "0"
+$execute if block ~ ~ ~ $(name)[age=1] run data modify storage daisukes:earth s.Properties.age set value "1"
+$execute if block ~ ~ ~ $(name)[age=2] run data modify storage daisukes:earth s.Properties.age set value "2"
+$execute if block ~ ~ ~ $(name)[age=3] run data modify storage daisukes:earth s.Properties.age set value "3"
+$execute if block ~ ~ ~ $(name)[age=4] run data modify storage daisukes:earth s.Properties.age set value "4"
+$execute if block ~ ~ ~ $(name)[age=5] run data modify storage daisukes:earth s.Properties.age set value "5"
+$execute if block ~ ~ ~ $(name)[age=6] run data modify storage daisukes:earth s.Properties.age set value "6"
+$execute if block ~ ~ ~ $(name)[age=7] run data modify storage daisukes:earth s.Properties.age set value "7"
+$execute if block ~ ~ ~ $(name)[age=8] run data modify storage daisukes:earth s.Properties.age set value "8"
+$execute if block ~ ~ ~ $(name)[age=9] run data modify storage daisukes:earth s.Properties.age set value "9"
+$execute if block ~ ~ ~ $(name)[age=10] run data modify storage daisukes:earth s.Properties.age set value "10"
+$execute if block ~ ~ ~ $(name)[age=11] run data modify storage daisukes:earth s.Properties.age set value "11"
+$execute if block ~ ~ ~ $(name)[age=12] run data modify storage daisukes:earth s.Properties.age set value "12"
+$execute if block ~ ~ ~ $(name)[age=13] run data modify storage daisukes:earth s.Properties.age set value "13"
+$execute if block ~ ~ ~ $(name)[age=14] run data modify storage daisukes:earth s.Properties.age set value "14"
+$execute if block ~ ~ ~ $(name)[age=15] run data modify storage daisukes:earth s.Properties.age set value "15"

@@ -45,6 +45,7 @@
     "daisukes:modifiers/blind_spot/register",
     "daisukes:modifiers/overheat/register",
     "daisukes:modifiers/king/register",
-    "daisukes:modifiers/anchor/register"
+    "daisukes:modifiers/anchor/register",
+    "daisukes:modifiers/living_earth/register"
   ]
 }

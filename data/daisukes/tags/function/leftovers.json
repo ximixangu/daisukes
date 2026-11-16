@@ -27,6 +27,7 @@
     "daisukes:modifiers/overheat/leftovers",
     "daisukes:modifiers/king/leftovers",
     "daisukes:modifiers/anchor/leftovers",
-    "daisukes:modifiers/vertigo/leftovers"
+    "daisukes:modifiers/vertigo/leftovers",
+    "daisukes:modifiers/living_earth/leftovers"
   ]
 }

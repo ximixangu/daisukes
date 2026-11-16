@@ -2,17 +2,23 @@
   "parent": "daisukes:gui/root",
   "display": {
     "icon": {
-      "id": "minecraft:tnt"
+      "id": "minecraft:tnt_minecart"
     },
     "title": {
       "text": "Blind Spot",
       "color": "#FF8A3D",
       "bold": true
     },
-    "description": {
-      "text": "Invisible TNT everywhere: sneak to find it",
-      "color": "white"
-    },
+    "description": [
+      {
+        "text": "Invisible TNT everywhere: sneak to find it",
+        "color": "white"
+      },
+      {
+        "text": "\nInvisible TNT charges are hidden all around you, wherever you go. Sneak to reveal the ones within 4 blocks (walking, you only spot them 1 block away); they stay marked for 10 s. Cover them with a block or shoot them.",
+        "color": "gray"
+      }
+    ],
     "frame": "task",
     "hidden": false,
     "show_toast": false,

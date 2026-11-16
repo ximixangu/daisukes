@@ -1,0 +1,19 @@
+# Blocs amb aquestes propietats: heavy_weighted_pressure_plate, light_weighted_pressure_plate, target
+scoreboard players set #k daisukes.earth 41
+$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {}}
+$execute if block ~ ~ ~ $(name)[power=0] run data modify storage daisukes:earth s.Properties.power set value "0"
+$execute if block ~ ~ ~ $(name)[power=1] run data modify storage daisukes:earth s.Properties.power set value "1"
+$execute if block ~ ~ ~ $(name)[power=2] run data modify storage daisukes:earth s.Properties.power set value "2"
+$execute if block ~ ~ ~ $(name)[power=3] run data modify storage daisukes:earth s.Properties.power set value "3"
+$execute if block ~ ~ ~ $(name)[power=4] run data modify storage daisukes:earth s.Properties.power set value "4"
+$execute if block ~ ~ ~ $(name)[power=5] run data modify storage daisukes:earth s.Properties.power set value "5"
+$execute if block ~ ~ ~ $(name)[power=6] run data modify storage daisukes:earth s.Properties.power set value "6"
+$execute if block ~ ~ ~ $(name)[power=7] run data modify storage daisukes:earth s.Properties.power set value "7"
+$execute if block ~ ~ ~ $(name)[power=8] run data modify storage daisukes:earth s.Properties.power set value "8"
+$execute if block ~ ~ ~ $(name)[power=9] run data modify storage daisukes:earth s.Properties.power set value "9"
+$execute if block ~ ~ ~ $(name)[power=10] run data modify storage daisukes:earth s.Properties.power set value "10"
+$execute if block ~ ~ ~ $(name)[power=11] run data modify storage daisukes:earth s.Properties.power set value "11"
+$execute if block ~ ~ ~ $(name)[power=12] run data modify storage daisukes:earth s.Properties.power set value "12"
+$execute if block ~ ~ ~ $(name)[power=13] run data modify storage daisukes:earth s.Properties.power set value "13"
+$execute if block ~ ~ ~ $(name)[power=14] run data modify storage daisukes:earth s.Properties.power set value "14"
+$execute if block ~ ~ ~ $(name)[power=15] run data modify storage daisukes:earth s.Properties.power set value "15"

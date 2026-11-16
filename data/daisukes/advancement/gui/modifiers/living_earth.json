@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:rooted_dirt"
+    },
+    "title": {
+      "text": "Living Earth",
+      "color": "#8FBF5A",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "What you break comes back black. What you place comes back to you",
+        "color": "white"
+      },
+      {
+        "text": "\nWhat you break comes back black 4 s later: solid, twice as slow to break, and it drops nothing. Black torches, ladders and rails are only shadows. Blocks you place turn red and jump back to you after 2 s.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
