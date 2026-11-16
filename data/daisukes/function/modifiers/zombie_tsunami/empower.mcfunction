@@ -3,5 +3,5 @@
 # i mes enlla de 128 blocs el servidor gairebe no simula res. Els reforcos: 10 en activar-se i 0.5 despres)
 tag @s add daisukes.tsunami
 attribute @s minecraft:follow_range modifier add daisukes:tsunami 93 add_value
-attribute @s minecraft:spawn_reinforcements modifier add daisukes:tsunami 0.5 add_value
+attribute @s minecraft:spawn_reinforcements modifier add daisukes:tsunami 1 add_value
 effect give @s minecraft:speed infinite 3 true
