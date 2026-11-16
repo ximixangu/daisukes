@@ -36,8 +36,8 @@ scoreboard players set #alternate_seconds daisukes.config 2400
 scoreboard players set #alternate_high daisukes.config 2
 scoreboard players set #alternate_low daisukes.config 1
 
-# 3. Quan ja s'ha aconseguit una vara de blaze (Into Fire) i s'ha trobat un bastio (Those Were the Days),
-#    en qualsevol ordre
+# 3. Quan ja s'ha aconseguit una vara de blaze (Into Fire) i s'ha fet un tracte amb un piglin (un piglin
+#    adult agafa un lingot d'or, com Oh Shiny), en qualsevol ordre
 scoreboard players set #nether_goals_count daisukes.config 2
 
 # 4. Dificultat 3-2: aquests segons despres de la fase 3 (2400 = 40 min).

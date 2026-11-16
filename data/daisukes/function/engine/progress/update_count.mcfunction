@@ -1,7 +1,7 @@
 # Fase de dificultat i quants modificadors surten al proper canvi. Es recalcula cada tick; la fase nomes puja:
 #   1 al principi (#start_count)
 #   2 dificultat 2-1: passats #alternate_seconds o en entrar al Nether. Alterna #alternate_high i #alternate_low
-#   3 vara de blaze (Into Fire) i bastio (Those Were the Days), en qualsevol ordre (#nether_goals_count)
+#   3 vara de blaze (Into Fire) i tracte amb un piglin (com Oh Shiny), en qualsevol ordre (#nether_goals_count)
 #   4 dificultat 3-2: #late_seconds despres de la fase 3. Alterna #late_high i #late_low
 #   5 fortalesa, stronghold (Eye Spy) (#stronghold_count)
 #   6 End, batalla contra el drac (#end_count)

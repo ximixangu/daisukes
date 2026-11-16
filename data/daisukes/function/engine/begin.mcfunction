@@ -3,9 +3,9 @@
 # El primer canvi arriba quan el titol ja ha marxat (105 ticks) i s'ha acabat el compte enrere (100 ticks)
 function daisukes:engine/progress/recalc
 
-# Les fites aconseguides abans de comencar no compten (vara de blaze, bastio i fortalesa)
+# Les fites aconseguides abans de comencar no compten (vara de blaze, tracte amb un piglin i fortalesa)
 advancement revoke @a only daisukes:progress/blaze_rod
-advancement revoke @a only daisukes:progress/bastion
+advancement revoke @a only daisukes:progress/piglin_trade
 advancement revoke @a only daisukes:progress/stronghold
 
 scoreboard players set #engine_active daisukes.engine 1
