@@ -28,6 +28,7 @@
     "daisukes:modifiers/king/leftovers",
     "daisukes:modifiers/anchor/leftovers",
     "daisukes:modifiers/vertigo/leftovers",
-    "daisukes:modifiers/living_earth/leftovers"
+    "daisukes:modifiers/living_earth/leftovers",
+    "daisukes:modifiers/heartbound/leftovers"
   ]
 }

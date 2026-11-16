@@ -5,9 +5,8 @@ scoreboard objectives add daisukes.bone_voyage_add dummy
 #   #interval -> el que ha d'acumular cada jugador per intentar fer sortir un esquelet.
 #                Cada tick suma 1..3 (de mitjana 2): 100 = uns 50 ticks (~2,5 s).
 #   #max      -> màxim d'esquelets del modificador a menys de 48 blocs d'un jugador.
-scoreboard players set #interval daisukes.bone_voyage 100
-scoreboard players set #max daisukes.bone_voyage 6
+scoreboard players set #interval daisukes.bone_voyage 400
+scoreboard players set #max daisukes.bone_voyage 3
 
-# Es fa de nit i el temps s'atura mentre duri el modificador (així els esquelets no es cremen amb el sol)
-function daisukes:util/in_worlds {cmd: "time set minecraft:midnight"}
-function daisukes:util/in_worlds {cmd: "gamerule advance_time false"}
+function daisukes:util/in_worlds {cmd: "weather thunder"}
+function daisukes:util/in_worlds {cmd: "gamerule advance_weather false"}

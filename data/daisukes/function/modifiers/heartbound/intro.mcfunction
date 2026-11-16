@@ -1,0 +1,15 @@
+playsound minecraft:block.creaking_heart.spawn master @s ~ ~ ~ 1 0.6
+playsound minecraft:entity.creaking.activate master @s ~ ~ ~ 0.8 0.8
+particle minecraft:block_crumble{block_state: "minecraft:pale_oak_log"} ~2.6 ~0.3 ~0.0 0.1 0.3 0.1 0 6 normal @a[distance=..32]
+particle minecraft:block_crumble{block_state: "minecraft:pale_oak_log"} ~2.25 ~0.3 ~1.3 0.1 0.3 0.1 0 6 normal @a[distance=..32]
+particle minecraft:block_crumble{block_state: "minecraft:pale_oak_log"} ~1.3 ~0.3 ~2.25 0.1 0.3 0.1 0 6 normal @a[distance=..32]
+particle minecraft:block_crumble{block_state: "minecraft:pale_oak_log"} ~0.0 ~0.3 ~2.6 0.1 0.3 0.1 0 6 normal @a[distance=..32]
+particle minecraft:block_crumble{block_state: "minecraft:pale_oak_log"} ~-1.3 ~0.3 ~2.25 0.1 0.3 0.1 0 6 normal @a[distance=..32]
+particle minecraft:block_crumble{block_state: "minecraft:pale_oak_log"} ~-2.25 ~0.3 ~1.3 0.1 0.3 0.1 0 6 normal @a[distance=..32]
+particle minecraft:block_crumble{block_state: "minecraft:pale_oak_log"} ~-2.6 ~0.3 ~0.0 0.1 0.3 0.1 0 6 normal @a[distance=..32]
+particle minecraft:block_crumble{block_state: "minecraft:pale_oak_log"} ~-2.25 ~0.3 ~-1.3 0.1 0.3 0.1 0 6 normal @a[distance=..32]
+particle minecraft:block_crumble{block_state: "minecraft:pale_oak_log"} ~-1.3 ~0.3 ~-2.25 0.1 0.3 0.1 0 6 normal @a[distance=..32]
+particle minecraft:block_crumble{block_state: "minecraft:pale_oak_log"} ~-0.0 ~0.3 ~-2.6 0.1 0.3 0.1 0 6 normal @a[distance=..32]
+particle minecraft:block_crumble{block_state: "minecraft:pale_oak_log"} ~1.3 ~0.3 ~-2.25 0.1 0.3 0.1 0 6 normal @a[distance=..32]
+particle minecraft:block_crumble{block_state: "minecraft:pale_oak_log"} ~2.25 ~0.3 ~-1.3 0.1 0.3 0.1 0 6 normal @a[distance=..32]
+particle minecraft:block{block_state: "minecraft:resin_block"} ~ ~0.2 ~ 1.8 0.1 1.8 0 25 normal @a[distance=..32]
