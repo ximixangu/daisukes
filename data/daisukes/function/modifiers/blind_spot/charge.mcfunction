@@ -15,6 +15,6 @@ execute if entity @e[type=#minecraft:impact_projectiles,distance=..1.8] run retu
 # Es revela si algu va ajupit a 4 blocs o hi passa caminant a 1,5. Marcada, es veu 10 s
 scoreboard players operation #m daisukes.bspot = @s daisukes.bspot
 scoreboard players operation #m daisukes.bspot %= #20 daisukes.bspot
-execute if entity @e[type=minecraft:player,gamemode=!spectator,distance=..4,predicate=daisukes:blind_spot/sneaking] run function daisukes:modifiers/blind_spot/spot
+execute if entity @e[type=minecraft:player,gamemode=!spectator,distance=..5.5,predicate=daisukes:blind_spot/sneaking] run function daisukes:modifiers/blind_spot/spot
 execute if entity @e[type=minecraft:player,gamemode=!spectator,distance=..1.5] run function daisukes:modifiers/blind_spot/spot
 execute if score @s daisukes.bspot_fx matches 1.. run function daisukes:modifiers/blind_spot/shown
