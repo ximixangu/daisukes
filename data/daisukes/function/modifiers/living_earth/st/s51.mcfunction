@@ -1,6 +1,6 @@
-# Blocs amb aquestes propietats: powder_snow_cauldron, water_cauldron
-scoreboard players set #k daisukes.earth 52
-$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {}}
-$execute if block ~ ~ ~ $(name)[level=1] run data modify storage daisukes:earth s.Properties.level set value "1"
-$execute if block ~ ~ ~ $(name)[level=2] run data modify storage daisukes:earth s.Properties.level set value "2"
-$execute if block ~ ~ ~ $(name)[level=3] run data modify storage daisukes:earth s.Properties.level set value "3"
+$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {facing: "north", mode: "compare", powered: "false"}}
+$execute if block ~ ~ ~ $(name)[facing=south] run data modify storage daisukes:earth s.Properties.facing set value "south"
+$execute if block ~ ~ ~ $(name)[facing=west] run data modify storage daisukes:earth s.Properties.facing set value "west"
+$execute if block ~ ~ ~ $(name)[facing=east] run data modify storage daisukes:earth s.Properties.facing set value "east"
+$execute if block ~ ~ ~ $(name)[mode=subtract] run data modify storage daisukes:earth s.Properties.mode set value "subtract"
+$execute if block ~ ~ ~ $(name)[powered=true] run data modify storage daisukes:earth s.Properties.powered set value "true"

@@ -1,9 +1,4 @@
-# Blocs amb aquestes propietats: daylight_detector
-scoreboard players set #k daisukes.earth 100
-$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {}}
-$execute if block ~ ~ ~ $(name)[inverted=true] run data modify storage daisukes:earth s.Properties.inverted set value "true"
-$execute if block ~ ~ ~ $(name)[inverted=false] run data modify storage daisukes:earth s.Properties.inverted set value "false"
-$execute if block ~ ~ ~ $(name)[power=0] run data modify storage daisukes:earth s.Properties.power set value "0"
+$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {power: "0", sculk_sensor_phase: "inactive", waterlogged: "false"}}
 $execute if block ~ ~ ~ $(name)[power=1] run data modify storage daisukes:earth s.Properties.power set value "1"
 $execute if block ~ ~ ~ $(name)[power=2] run data modify storage daisukes:earth s.Properties.power set value "2"
 $execute if block ~ ~ ~ $(name)[power=3] run data modify storage daisukes:earth s.Properties.power set value "3"
@@ -19,3 +14,6 @@ $execute if block ~ ~ ~ $(name)[power=12] run data modify storage daisukes:earth
 $execute if block ~ ~ ~ $(name)[power=13] run data modify storage daisukes:earth s.Properties.power set value "13"
 $execute if block ~ ~ ~ $(name)[power=14] run data modify storage daisukes:earth s.Properties.power set value "14"
 $execute if block ~ ~ ~ $(name)[power=15] run data modify storage daisukes:earth s.Properties.power set value "15"
+$execute if block ~ ~ ~ $(name)[sculk_sensor_phase=active] run data modify storage daisukes:earth s.Properties.sculk_sensor_phase set value "active"
+$execute if block ~ ~ ~ $(name)[sculk_sensor_phase=cooldown] run data modify storage daisukes:earth s.Properties.sculk_sensor_phase set value "cooldown"
+$execute if block ~ ~ ~ $(name)[waterlogged=true] run data modify storage daisukes:earth s.Properties.waterlogged set value "true"

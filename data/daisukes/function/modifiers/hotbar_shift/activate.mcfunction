@@ -8,7 +8,7 @@ scoreboard objectives add daisukes.shift_dead deathCount
 # Número mínim i màxim que pot sortir (d'1 a 8: la hotbar té 9 caselles)
 scoreboard players set #min daisukes.shift 1
 scoreboard players set #max daisukes.shift 8
-# Cap on va la mà: 1 = dreta, 2 = esquerra, 0 = a l'atzar
+# Cap on va la mà (on és el de veritat): 1 = dreta (a dalt surt ←), 2 = esquerra (→), 0 = a l'atzar
 scoreboard players set #dir daisukes.shift 1
 # Durada de la ruleta de l'entrada, en ticks (20 = 1 segon)
 scoreboard players set #roll daisukes.shift 50
@@ -52,7 +52,8 @@ bossbar add daisukes:shift ""
 bossbar set daisukes:shift color purple
 bossbar set daisukes:shift max 1000
 bossbar set daisukes:shift players @a
-bossbar set daisukes:shift name ["",{"text":"⇄ Sleight of Hand ⇄","color":"light_purple","bold":true},{"text":"   Hand shifted ","color":"gray"},{"text":"?","color":"white","bold":true}]
+execute if score #d daisukes.shift matches 1 run bossbar set daisukes:shift name ["",{"text":"⇄ Sleight of Hand ⇄","color":"light_purple","bold":true},{"text":"   Select ","color":"gray"},{"text":"? ←","color":"white","bold":true},{"text":"","color":"gray"}]
+execute if score #d daisukes.shift matches 2 run bossbar set daisukes:shift name ["",{"text":"⇄ Sleight of Hand ⇄","color":"light_purple","bold":true},{"text":"   Select ","color":"gray"},{"text":"? →","color":"white","bold":true},{"text":"","color":"gray"}]
 
 # Entrada: ruleta i hotbar flotant davant de cada jugador
 kill @e[type=item_display,tag=daisukes.shift_fx]

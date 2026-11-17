@@ -1,0 +1,1373 @@
+{
+  "criteria": {
+    "v": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"max": 7.999999523162842}, "z": {"max": 7.999999523162842}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -63.75, "max": 319.75}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "x1": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.03125, "max": 0.0624999962747097}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.09375, "max": 0.1249999925494194}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.15625, "max": 0.1874999850988388}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.21875, "max": 0.2499999850988388}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.28125, "max": 0.3124999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.34375, "max": 0.3749999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.40625, "max": 0.4374999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.46875, "max": 0.4999999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.53125, "max": 0.5624999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.59375, "max": 0.6249999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.65625, "max": 0.6874999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.71875, "max": 0.7499999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.78125, "max": 0.8124999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.84375, "max": 0.8749999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.90625, "max": 0.9374999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.96875, "max": 0.9999999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.03125, "max": 1.0624998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.09375, "max": 1.1249998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.15625, "max": 1.1874998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.21875, "max": 1.2499998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.28125, "max": 1.3124998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.34375, "max": 1.3749998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.40625, "max": 1.4374998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.46875, "max": 1.4999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.53125, "max": 1.5624998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.59375, "max": 1.6249998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.65625, "max": 1.6874998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.71875, "max": 1.7499998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.78125, "max": 1.8124998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.84375, "max": 1.8749998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.90625, "max": 1.9374998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.96875, "max": 1.9999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.03125, "max": 2.062499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.09375, "max": 2.124999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.15625, "max": 2.187499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.21875, "max": 2.249999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.28125, "max": 2.312499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.34375, "max": 2.374999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.40625, "max": 2.437499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.46875, "max": 2.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.53125, "max": 2.562499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.59375, "max": 2.624999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.65625, "max": 2.687499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.71875, "max": 2.749999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.78125, "max": 2.812499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.84375, "max": 2.874999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.90625, "max": 2.937499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.96875, "max": 2.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.03125, "max": 3.062499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.09375, "max": 3.124999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.15625, "max": 3.187499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.21875, "max": 3.249999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.28125, "max": 3.312499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.34375, "max": 3.374999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.40625, "max": 3.437499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.46875, "max": 3.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.53125, "max": 3.562499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.59375, "max": 3.624999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.65625, "max": 3.687499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.71875, "max": 3.749999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.78125, "max": 3.812499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.84375, "max": 3.874999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.90625, "max": 3.937499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.96875, "max": 3.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.03125, "max": 4.062499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.09375, "max": 4.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.15625, "max": 4.187499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.21875, "max": 4.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.28125, "max": 4.312499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.34375, "max": 4.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.40625, "max": 4.437499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.46875, "max": 4.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.53125, "max": 4.562499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.59375, "max": 4.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.65625, "max": 4.687499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.71875, "max": 4.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.78125, "max": 4.812499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.84375, "max": 4.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.90625, "max": 4.937499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.96875, "max": 4.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.03125, "max": 5.062499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.09375, "max": 5.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.15625, "max": 5.187499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.21875, "max": 5.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.28125, "max": 5.312499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.34375, "max": 5.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.40625, "max": 5.437499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.46875, "max": 5.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.53125, "max": 5.562499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.59375, "max": 5.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.65625, "max": 5.687499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.71875, "max": 5.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.78125, "max": 5.812499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.84375, "max": 5.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.90625, "max": 5.937499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.96875, "max": 5.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.03125, "max": 6.062499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.09375, "max": 6.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.15625, "max": 6.187499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.21875, "max": 6.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.28125, "max": 6.312499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.34375, "max": 6.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.40625, "max": 6.437499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.46875, "max": 6.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.53125, "max": 6.562499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.59375, "max": 6.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.65625, "max": 6.687499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.71875, "max": 6.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.78125, "max": 6.812499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.84375, "max": 6.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.90625, "max": 6.937499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.96875, "max": 6.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.03125, "max": 7.062499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.09375, "max": 7.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.15625, "max": 7.187499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.21875, "max": 7.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.28125, "max": 7.312499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.34375, "max": 7.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.40625, "max": 7.437499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.46875, "max": 7.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.53125, "max": 7.562499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.59375, "max": 7.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.65625, "max": 7.687499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.71875, "max": 7.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.78125, "max": 7.812499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.84375, "max": 7.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.90625, "max": 7.937499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.96875, "max": 7.999999523162842}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "x2": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.0625, "max": 0.1249999925494194}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.1875, "max": 0.2499999850988388}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.3125, "max": 0.3749999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.4375, "max": 0.4999999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.5625, "max": 0.6249999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.6875, "max": 0.7499999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.8125, "max": 0.8749999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.9375, "max": 0.9999999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.0625, "max": 1.1249998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.1875, "max": 1.2499998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.3125, "max": 1.3749998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.4375, "max": 1.4999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.5625, "max": 1.6249998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.6875, "max": 1.7499998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.8125, "max": 1.8749998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.9375, "max": 1.9999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.0625, "max": 2.124999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.1875, "max": 2.249999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.3125, "max": 2.374999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.4375, "max": 2.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.5625, "max": 2.624999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.6875, "max": 2.749999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.8125, "max": 2.874999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.9375, "max": 2.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.0625, "max": 3.124999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.1875, "max": 3.249999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.3125, "max": 3.374999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.4375, "max": 3.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.5625, "max": 3.624999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.6875, "max": 3.749999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.8125, "max": 3.874999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.9375, "max": 3.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.0625, "max": 4.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.1875, "max": 4.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.3125, "max": 4.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.4375, "max": 4.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.5625, "max": 4.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.6875, "max": 4.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.8125, "max": 4.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.9375, "max": 4.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.0625, "max": 5.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.1875, "max": 5.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.3125, "max": 5.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.4375, "max": 5.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.5625, "max": 5.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.6875, "max": 5.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.8125, "max": 5.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.9375, "max": 5.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.0625, "max": 6.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.1875, "max": 6.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.3125, "max": 6.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.4375, "max": 6.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.5625, "max": 6.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.6875, "max": 6.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.8125, "max": 6.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.9375, "max": 6.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.0625, "max": 7.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.1875, "max": 7.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.3125, "max": 7.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.4375, "max": 7.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.5625, "max": 7.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.6875, "max": 7.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.8125, "max": 7.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.9375, "max": 7.999999523162842}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "x4": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.125, "max": 0.2499999850988388}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.375, "max": 0.4999999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.625, "max": 0.7499999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.875, "max": 0.9999999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.125, "max": 1.2499998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.375, "max": 1.4999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.625, "max": 1.7499998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.875, "max": 1.9999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.125, "max": 2.249999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.375, "max": 2.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.625, "max": 2.749999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.875, "max": 2.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.125, "max": 3.249999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.375, "max": 3.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.625, "max": 3.749999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.875, "max": 3.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.125, "max": 4.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.375, "max": 4.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.625, "max": 4.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.875, "max": 4.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.125, "max": 5.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.375, "max": 5.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.625, "max": 5.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.875, "max": 5.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.125, "max": 6.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.375, "max": 6.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.625, "max": 6.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.875, "max": 6.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.125, "max": 7.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.375, "max": 7.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.625, "max": 7.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.875, "max": 7.999999523162842}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "x8": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.25, "max": 0.4999999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.75, "max": 0.9999999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.25, "max": 1.4999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.75, "max": 1.9999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.25, "max": 2.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.75, "max": 2.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.25, "max": 3.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.75, "max": 3.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.25, "max": 4.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.75, "max": 4.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.25, "max": 5.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.75, "max": 5.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.25, "max": 6.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.75, "max": 6.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.25, "max": 7.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.75, "max": 7.999999523162842}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "x16": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 0.5, "max": 0.9999999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.5, "max": 1.9999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.5, "max": 2.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.5, "max": 3.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.5, "max": 4.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.5, "max": 5.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.5, "max": 6.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.5, "max": 7.999999523162842}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "x32": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 1.0, "max": 1.9999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 3.0, "max": 3.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 5.0, "max": 5.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 7.0, "max": 7.999999523162842}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "x64": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 2.0, "max": 3.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 6.0, "max": 7.999999523162842}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "x128": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"x": {"min": 4.0, "max": 7.999999523162842}}}}
+        ]
+      }
+    },
+    "z1": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.03125, "max": 0.0624999962747097}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.09375, "max": 0.1249999925494194}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.15625, "max": 0.1874999850988388}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.21875, "max": 0.2499999850988388}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.28125, "max": 0.3124999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.34375, "max": 0.3749999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.40625, "max": 0.4374999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.46875, "max": 0.4999999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.53125, "max": 0.5624999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.59375, "max": 0.6249999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.65625, "max": 0.6874999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.71875, "max": 0.7499999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.78125, "max": 0.8124999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.84375, "max": 0.8749999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.90625, "max": 0.9374999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.96875, "max": 0.9999999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.03125, "max": 1.0624998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.09375, "max": 1.1249998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.15625, "max": 1.1874998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.21875, "max": 1.2499998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.28125, "max": 1.3124998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.34375, "max": 1.3749998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.40625, "max": 1.4374998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.46875, "max": 1.4999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.53125, "max": 1.5624998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.59375, "max": 1.6249998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.65625, "max": 1.6874998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.71875, "max": 1.7499998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.78125, "max": 1.8124998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.84375, "max": 1.8749998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.90625, "max": 1.9374998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.96875, "max": 1.9999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.03125, "max": 2.062499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.09375, "max": 2.124999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.15625, "max": 2.187499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.21875, "max": 2.249999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.28125, "max": 2.312499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.34375, "max": 2.374999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.40625, "max": 2.437499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.46875, "max": 2.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.53125, "max": 2.562499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.59375, "max": 2.624999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.65625, "max": 2.687499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.71875, "max": 2.749999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.78125, "max": 2.812499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.84375, "max": 2.874999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.90625, "max": 2.937499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.96875, "max": 2.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.03125, "max": 3.062499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.09375, "max": 3.124999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.15625, "max": 3.187499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.21875, "max": 3.249999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.28125, "max": 3.312499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.34375, "max": 3.374999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.40625, "max": 3.437499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.46875, "max": 3.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.53125, "max": 3.562499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.59375, "max": 3.624999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.65625, "max": 3.687499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.71875, "max": 3.749999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.78125, "max": 3.812499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.84375, "max": 3.874999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.90625, "max": 3.937499761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.96875, "max": 3.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.03125, "max": 4.062499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.09375, "max": 4.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.15625, "max": 4.187499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.21875, "max": 4.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.28125, "max": 4.312499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.34375, "max": 4.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.40625, "max": 4.437499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.46875, "max": 4.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.53125, "max": 4.562499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.59375, "max": 4.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.65625, "max": 4.687499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.71875, "max": 4.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.78125, "max": 4.812499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.84375, "max": 4.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.90625, "max": 4.937499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.96875, "max": 4.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.03125, "max": 5.062499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.09375, "max": 5.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.15625, "max": 5.187499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.21875, "max": 5.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.28125, "max": 5.312499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.34375, "max": 5.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.40625, "max": 5.437499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.46875, "max": 5.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.53125, "max": 5.562499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.59375, "max": 5.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.65625, "max": 5.687499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.71875, "max": 5.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.78125, "max": 5.812499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.84375, "max": 5.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.90625, "max": 5.937499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.96875, "max": 5.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.03125, "max": 6.062499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.09375, "max": 6.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.15625, "max": 6.187499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.21875, "max": 6.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.28125, "max": 6.312499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.34375, "max": 6.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.40625, "max": 6.437499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.46875, "max": 6.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.53125, "max": 6.562499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.59375, "max": 6.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.65625, "max": 6.687499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.71875, "max": 6.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.78125, "max": 6.812499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.84375, "max": 6.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.90625, "max": 6.937499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.96875, "max": 6.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.03125, "max": 7.062499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.09375, "max": 7.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.15625, "max": 7.187499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.21875, "max": 7.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.28125, "max": 7.312499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.34375, "max": 7.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.40625, "max": 7.437499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.46875, "max": 7.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.53125, "max": 7.562499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.59375, "max": 7.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.65625, "max": 7.687499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.71875, "max": 7.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.78125, "max": 7.812499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.84375, "max": 7.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.90625, "max": 7.937499523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.96875, "max": 7.999999523162842}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "z2": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.0625, "max": 0.1249999925494194}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.1875, "max": 0.2499999850988388}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.3125, "max": 0.3749999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.4375, "max": 0.4999999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.5625, "max": 0.6249999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.6875, "max": 0.7499999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.8125, "max": 0.8749999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.9375, "max": 0.9999999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.0625, "max": 1.1249998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.1875, "max": 1.2499998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.3125, "max": 1.3749998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.4375, "max": 1.4999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.5625, "max": 1.6249998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.6875, "max": 1.7499998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.8125, "max": 1.8749998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.9375, "max": 1.9999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.0625, "max": 2.124999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.1875, "max": 2.249999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.3125, "max": 2.374999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.4375, "max": 2.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.5625, "max": 2.624999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.6875, "max": 2.749999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.8125, "max": 2.874999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.9375, "max": 2.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.0625, "max": 3.124999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.1875, "max": 3.249999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.3125, "max": 3.374999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.4375, "max": 3.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.5625, "max": 3.624999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.6875, "max": 3.749999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.8125, "max": 3.874999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.9375, "max": 3.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.0625, "max": 4.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.1875, "max": 4.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.3125, "max": 4.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.4375, "max": 4.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.5625, "max": 4.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.6875, "max": 4.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.8125, "max": 4.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.9375, "max": 4.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.0625, "max": 5.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.1875, "max": 5.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.3125, "max": 5.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.4375, "max": 5.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.5625, "max": 5.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.6875, "max": 5.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.8125, "max": 5.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.9375, "max": 5.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.0625, "max": 6.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.1875, "max": 6.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.3125, "max": 6.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.4375, "max": 6.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.5625, "max": 6.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.6875, "max": 6.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.8125, "max": 6.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.9375, "max": 6.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.0625, "max": 7.124999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.1875, "max": 7.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.3125, "max": 7.374999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.4375, "max": 7.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.5625, "max": 7.624999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.6875, "max": 7.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.8125, "max": 7.874999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.9375, "max": 7.999999523162842}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "z4": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.125, "max": 0.2499999850988388}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.375, "max": 0.4999999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.625, "max": 0.7499999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.875, "max": 0.9999999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.125, "max": 1.2499998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.375, "max": 1.4999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.625, "max": 1.7499998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.875, "max": 1.9999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.125, "max": 2.249999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.375, "max": 2.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.625, "max": 2.749999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.875, "max": 2.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.125, "max": 3.249999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.375, "max": 3.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.625, "max": 3.749999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.875, "max": 3.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.125, "max": 4.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.375, "max": 4.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.625, "max": 4.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.875, "max": 4.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.125, "max": 5.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.375, "max": 5.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.625, "max": 5.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.875, "max": 5.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.125, "max": 6.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.375, "max": 6.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.625, "max": 6.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.875, "max": 6.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.125, "max": 7.249999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.375, "max": 7.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.625, "max": 7.749999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.875, "max": 7.999999523162842}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "z8": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.25, "max": 0.4999999701976776}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.75, "max": 0.9999999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.25, "max": 1.4999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.75, "max": 1.9999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.25, "max": 2.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.75, "max": 2.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.25, "max": 3.499999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.75, "max": 3.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.25, "max": 4.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.75, "max": 4.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.25, "max": 5.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.75, "max": 5.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.25, "max": 6.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.75, "max": 6.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.25, "max": 7.499999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.75, "max": 7.999999523162842}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "z16": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 0.5, "max": 0.9999999403953552}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.5, "max": 1.9999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.5, "max": 2.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.5, "max": 3.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.5, "max": 4.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.5, "max": 5.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.5, "max": 6.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.5, "max": 7.999999523162842}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "z32": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 1.0, "max": 1.9999998807907104}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 3.0, "max": 3.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 5.0, "max": 5.999999523162842}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 7.0, "max": 7.999999523162842}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "z64": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 2.0, "max": 3.999999761581421}}}},
+              {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 6.0, "max": 7.999999523162842}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "z128": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"distance": {"z": {"min": 4.0, "max": 7.999999523162842}}}}
+        ]
+      }
+    },
+    "y1": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -62.75, "max": -62.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -60.75, "max": -60.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -58.75, "max": -58.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -56.75, "max": -56.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -54.75, "max": -54.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -52.75, "max": -52.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -50.75, "max": -50.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -48.75, "max": -48.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -46.75, "max": -46.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -44.75, "max": -44.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -42.75, "max": -42.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -40.75, "max": -40.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -38.75, "max": -38.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -36.75, "max": -36.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -34.75, "max": -34.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -32.75, "max": -32.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -30.75, "max": -30.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -28.75, "max": -28.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -26.75, "max": -26.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -24.75, "max": -24.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -22.75, "max": -22.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -20.75, "max": -20.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -18.75, "max": -18.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -16.75, "max": -16.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -14.75, "max": -14.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -12.75, "max": -12.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -10.75, "max": -10.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -8.75, "max": -8.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -6.75, "max": -6.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -4.75, "max": -4.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -2.75, "max": -2.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -0.75, "max": -0.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 1.25, "max": 1.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 3.25, "max": 3.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 5.25, "max": 5.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 7.25, "max": 7.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 9.25, "max": 9.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 11.25, "max": 11.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 13.25, "max": 13.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 15.25, "max": 15.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 17.25, "max": 17.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 19.25, "max": 19.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 21.25, "max": 21.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 23.25, "max": 23.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 25.25, "max": 25.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 27.25, "max": 27.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 29.25, "max": 29.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 31.25, "max": 31.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 33.25, "max": 33.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 35.25, "max": 35.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 37.25, "max": 37.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 39.25, "max": 39.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 41.25, "max": 41.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 43.25, "max": 43.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 45.25, "max": 45.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 47.25, "max": 47.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 49.25, "max": 49.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 51.25, "max": 51.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 53.25, "max": 53.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 55.25, "max": 55.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 57.25, "max": 57.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 59.25, "max": 59.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 61.25, "max": 61.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 63.25, "max": 63.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 65.25, "max": 65.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 67.25, "max": 67.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 69.25, "max": 69.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 71.25, "max": 71.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 73.25, "max": 73.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 75.25, "max": 75.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 77.25, "max": 77.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 79.25, "max": 79.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 81.25, "max": 81.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 83.25, "max": 83.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 85.25, "max": 85.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 87.25, "max": 87.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 89.25, "max": 89.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 91.25, "max": 91.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 93.25, "max": 93.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 95.25, "max": 95.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 97.25, "max": 97.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 99.25, "max": 99.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 101.25, "max": 101.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 103.25, "max": 103.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 105.25, "max": 105.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 107.25, "max": 107.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 109.25, "max": 109.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 111.25, "max": 111.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 113.25, "max": 113.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 115.25, "max": 115.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 117.25, "max": 117.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 119.25, "max": 119.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 121.25, "max": 121.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 123.25, "max": 123.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 125.25, "max": 125.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 127.25, "max": 127.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 129.25, "max": 129.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 131.25, "max": 131.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 133.25, "max": 133.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 135.25, "max": 135.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 137.25, "max": 137.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 139.25, "max": 139.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 141.25, "max": 141.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 143.25, "max": 143.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 145.25, "max": 145.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 147.25, "max": 147.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 149.25, "max": 149.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 151.25, "max": 151.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 153.25, "max": 153.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 155.25, "max": 155.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 157.25, "max": 157.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 159.25, "max": 159.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 161.25, "max": 161.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 163.25, "max": 163.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 165.25, "max": 165.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 167.25, "max": 167.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 169.25, "max": 169.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 171.25, "max": 171.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 173.25, "max": 173.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 175.25, "max": 175.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 177.25, "max": 177.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 179.25, "max": 179.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 181.25, "max": 181.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 183.25, "max": 183.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 185.25, "max": 185.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 187.25, "max": 187.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 189.25, "max": 189.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 191.25, "max": 191.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 193.25, "max": 193.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 195.25, "max": 195.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 197.25, "max": 197.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 199.25, "max": 199.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 201.25, "max": 201.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 203.25, "max": 203.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 205.25, "max": 205.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 207.25, "max": 207.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 209.25, "max": 209.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 211.25, "max": 211.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 213.25, "max": 213.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 215.25, "max": 215.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 217.25, "max": 217.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 219.25, "max": 219.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 221.25, "max": 221.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 223.25, "max": 223.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 225.25, "max": 225.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 227.25, "max": 227.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 229.25, "max": 229.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 231.25, "max": 231.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 233.25, "max": 233.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 235.25, "max": 235.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 237.25, "max": 237.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 239.25, "max": 239.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 241.25, "max": 241.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 243.25, "max": 243.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 245.25, "max": 245.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 247.25, "max": 247.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 249.25, "max": 249.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 251.25, "max": 251.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 253.25, "max": 253.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 255.25, "max": 255.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 257.25, "max": 257.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 259.25, "max": 259.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 261.25, "max": 261.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 263.25, "max": 263.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 265.25, "max": 265.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 267.25, "max": 267.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 269.25, "max": 269.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 271.25, "max": 271.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 273.25, "max": 273.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 275.25, "max": 275.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 277.25, "max": 277.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 279.25, "max": 279.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 281.25, "max": 281.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 283.25, "max": 283.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 285.25, "max": 285.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 287.25, "max": 287.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 289.25, "max": 289.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 291.25, "max": 291.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 293.25, "max": 293.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 295.25, "max": 295.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 297.25, "max": 297.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 299.25, "max": 299.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 301.25, "max": 301.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 303.25, "max": 303.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 305.25, "max": 305.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 307.25, "max": 307.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 309.25, "max": 309.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 311.25, "max": 311.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 313.25, "max": 313.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 315.25, "max": 315.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 317.25, "max": 317.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 319.25, "max": 319.75}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "y2": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -61.75, "max": -60.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -57.75, "max": -56.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -53.75, "max": -52.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -49.75, "max": -48.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -45.75, "max": -44.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -41.75, "max": -40.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -37.75, "max": -36.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -33.75, "max": -32.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -29.75, "max": -28.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -25.75, "max": -24.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -21.75, "max": -20.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -17.75, "max": -16.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -13.75, "max": -12.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -9.75, "max": -8.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -5.75, "max": -4.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -1.75, "max": -0.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 2.25, "max": 3.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 6.25, "max": 7.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 10.25, "max": 11.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 14.25, "max": 15.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 18.25, "max": 19.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 22.25, "max": 23.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 26.25, "max": 27.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 30.25, "max": 31.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 34.25, "max": 35.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 38.25, "max": 39.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 42.25, "max": 43.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 46.25, "max": 47.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 50.25, "max": 51.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 54.25, "max": 55.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 58.25, "max": 59.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 62.25, "max": 63.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 66.25, "max": 67.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 70.25, "max": 71.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 74.25, "max": 75.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 78.25, "max": 79.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 82.25, "max": 83.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 86.25, "max": 87.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 90.25, "max": 91.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 94.25, "max": 95.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 98.25, "max": 99.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 102.25, "max": 103.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 106.25, "max": 107.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 110.25, "max": 111.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 114.25, "max": 115.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 118.25, "max": 119.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 122.25, "max": 123.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 126.25, "max": 127.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 130.25, "max": 131.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 134.25, "max": 135.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 138.25, "max": 139.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 142.25, "max": 143.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 146.25, "max": 147.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 150.25, "max": 151.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 154.25, "max": 155.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 158.25, "max": 159.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 162.25, "max": 163.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 166.25, "max": 167.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 170.25, "max": 171.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 174.25, "max": 175.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 178.25, "max": 179.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 182.25, "max": 183.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 186.25, "max": 187.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 190.25, "max": 191.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 194.25, "max": 195.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 198.25, "max": 199.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 202.25, "max": 203.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 206.25, "max": 207.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 210.25, "max": 211.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 214.25, "max": 215.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 218.25, "max": 219.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 222.25, "max": 223.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 226.25, "max": 227.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 230.25, "max": 231.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 234.25, "max": 235.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 238.25, "max": 239.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 242.25, "max": 243.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 246.25, "max": 247.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 250.25, "max": 251.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 254.25, "max": 255.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 258.25, "max": 259.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 262.25, "max": 263.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 266.25, "max": 267.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 270.25, "max": 271.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 274.25, "max": 275.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 278.25, "max": 279.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 282.25, "max": 283.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 286.25, "max": 287.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 290.25, "max": 291.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 294.25, "max": 295.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 298.25, "max": 299.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 302.25, "max": 303.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 306.25, "max": 307.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 310.25, "max": 311.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 314.25, "max": 315.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 318.25, "max": 319.75}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "y4": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -59.75, "max": -56.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -51.75, "max": -48.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -43.75, "max": -40.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -35.75, "max": -32.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -27.75, "max": -24.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -19.75, "max": -16.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -11.75, "max": -8.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -3.75, "max": -0.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 4.25, "max": 7.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 12.25, "max": 15.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 20.25, "max": 23.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 28.25, "max": 31.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 36.25, "max": 39.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 44.25, "max": 47.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 52.25, "max": 55.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 60.25, "max": 63.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 68.25, "max": 71.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 76.25, "max": 79.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 84.25, "max": 87.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 92.25, "max": 95.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 100.25, "max": 103.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 108.25, "max": 111.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 116.25, "max": 119.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 124.25, "max": 127.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 132.25, "max": 135.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 140.25, "max": 143.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 148.25, "max": 151.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 156.25, "max": 159.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 164.25, "max": 167.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 172.25, "max": 175.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 180.25, "max": 183.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 188.25, "max": 191.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 196.25, "max": 199.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 204.25, "max": 207.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 212.25, "max": 215.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 220.25, "max": 223.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 228.25, "max": 231.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 236.25, "max": 239.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 244.25, "max": 247.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 252.25, "max": 255.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 260.25, "max": 263.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 268.25, "max": 271.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 276.25, "max": 279.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 284.25, "max": 287.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 292.25, "max": 295.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 300.25, "max": 303.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 308.25, "max": 311.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 316.25, "max": 319.75}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "y8": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -55.75, "max": -48.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -39.75, "max": -32.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -23.75, "max": -16.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -7.75, "max": -0.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 8.25, "max": 15.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 24.25, "max": 31.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 40.25, "max": 47.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 56.25, "max": 63.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 72.25, "max": 79.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 88.25, "max": 95.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 104.25, "max": 111.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 120.25, "max": 127.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 136.25, "max": 143.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 152.25, "max": 159.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 168.25, "max": 175.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 184.25, "max": 191.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 200.25, "max": 207.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 216.25, "max": 223.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 232.25, "max": 239.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 248.25, "max": 255.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 264.25, "max": 271.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 280.25, "max": 287.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 296.25, "max": 303.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 312.25, "max": 319.75}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "y16": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -47.75, "max": -32.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -15.75, "max": -0.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 16.25, "max": 31.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 48.25, "max": 63.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 80.25, "max": 95.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 112.25, "max": 127.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 144.25, "max": 159.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 176.25, "max": 191.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 208.25, "max": 223.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 240.25, "max": 255.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 272.25, "max": 287.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 304.25, "max": 319.75}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "y32": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": -31.75, "max": -0.25}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 32.25, "max": 63.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 96.25, "max": 127.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 160.25, "max": 191.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 224.25, "max": 255.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 288.25, "max": 319.75}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "y64": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 0.25, "max": 63.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 128.25, "max": 191.75}}}},
+              {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 256.25, "max": 319.75}}}}
+            ]
+          }
+        ]
+      }
+    },
+    "y128": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 64.25, "max": 191.75}}}}
+        ]
+      }
+    },
+    "y256": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": [
+          {"condition": "minecraft:entity_scores", "entity": "this", "scores": {"daisukes.earth": {"min": 1}}},
+          {"condition": "minecraft:value_check", "value": {"type": "minecraft:score", "target": {"type": "minecraft:fixed", "name": "#on"}, "score": "daisukes.earth"}, "range": 1},
+          {"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type_specific": {"type": "minecraft:player", "gamemode": ["survival", "adventure"]}}}
+        ],
+        "location": [
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#minecraft:replaceable"}}}},
+          {"condition": "minecraft:inverted", "term": {"condition": "minecraft:location_check", "predicate": {"block": {"blocks": "#daisukes:living_earth/usable"}}}},
+          {"condition": "minecraft:location_check", "predicate": {"position": {"y": {"min": 192.25, "max": 319.75}}}}
+        ]
+      }
+    }
+  }
+}

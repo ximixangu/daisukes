@@ -8,7 +8,7 @@ advancement grant @a only daisukes:hotbar_shift/rescue
 
 # Restes pel món carregat: objectes a terra, marcs, muntures, fletxes...
 execute as @e[type=item] if items entity @s contents *[custom_data~{daisukes_shift:{}}] run function daisukes:modifiers/hotbar_shift/drop
-execute as @e[type=item] if items entity @s contents *[bundle_contents~{items:{contains:[{predicates:{custom_data:{daisukes_shift:{}}}}]}}] run function daisukes:modifiers/hotbar_shift/drop
+execute as @e[type=item] if items entity @s contents *[bundle_contents] run function daisukes:modifiers/hotbar_shift/drop_bag
 execute as @e[type=#daisukes:hotbar_shift/holders] run function daisukes:modifiers/hotbar_shift/fix_entity
 execute as @e[type=#daisukes:hotbar_shift/projectiles] if data entity @s item.components."minecraft:custom_data".daisukes_shift run function daisukes:modifiers/hotbar_shift/fix_nbt {src:"entity @s",path:"item"}
 

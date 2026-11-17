@@ -1,8 +1,6 @@
 # Cada jugador nou, un numero (i des d'ara pot activar l'avancament de "bloc posat sense res a sota")
 execute as @a unless score @s daisukes.heavy matches 1.. run function daisukes:modifiers/heavy_blocks/join
-# Blocs posats el tick d'abans: ara es busquen
-execute as @e[type=minecraft:marker,tag=daisukes.heavy_look] at @s run function daisukes:modifiers/heavy_blocks/look
-# Els qui n'han posat, a punt per al seguent
-advancement revoke @a[tag=daisukes.heavy_once] only daisukes:modifiers/heavy_blocks/where
-tag @a[tag=daisukes.heavy_once] remove daisukes.heavy_many
-tag @a[tag=daisukes.heavy_once] remove daisukes.heavy_once
+# Blocs posats que encara no s'han buscat (l'avancament used no ha saltat): ara. Si en queda algun marcador, el jugador ja
+# no hi es
+execute as @a[tag=daisukes.heavy_placing] run function daisukes:modifiers/heavy_blocks/finish
+kill @e[type=minecraft:marker,tag=daisukes.heavy_look]

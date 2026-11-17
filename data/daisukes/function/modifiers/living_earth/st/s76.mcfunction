@@ -1,13 +1,7 @@
-# Blocs amb aquestes propietats: vine
-scoreboard players set #k daisukes.earth 77
-$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {}}
-$execute if block ~ ~ ~ $(name)[east=true] run data modify storage daisukes:earth s.Properties.east set value "true"
-$execute if block ~ ~ ~ $(name)[east=false] run data modify storage daisukes:earth s.Properties.east set value "false"
-$execute if block ~ ~ ~ $(name)[north=true] run data modify storage daisukes:earth s.Properties.north set value "true"
-$execute if block ~ ~ ~ $(name)[north=false] run data modify storage daisukes:earth s.Properties.north set value "false"
-$execute if block ~ ~ ~ $(name)[south=true] run data modify storage daisukes:earth s.Properties.south set value "true"
-$execute if block ~ ~ ~ $(name)[south=false] run data modify storage daisukes:earth s.Properties.south set value "false"
-$execute if block ~ ~ ~ $(name)[up=true] run data modify storage daisukes:earth s.Properties.up set value "true"
-$execute if block ~ ~ ~ $(name)[up=false] run data modify storage daisukes:earth s.Properties.up set value "false"
-$execute if block ~ ~ ~ $(name)[west=true] run data modify storage daisukes:earth s.Properties.west set value "true"
-$execute if block ~ ~ ~ $(name)[west=false] run data modify storage daisukes:earth s.Properties.west set value "false"
+$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {facing: "north", segment_amount: "1"}}
+$execute if block ~ ~ ~ $(name)[facing=south] run data modify storage daisukes:earth s.Properties.facing set value "south"
+$execute if block ~ ~ ~ $(name)[facing=west] run data modify storage daisukes:earth s.Properties.facing set value "west"
+$execute if block ~ ~ ~ $(name)[facing=east] run data modify storage daisukes:earth s.Properties.facing set value "east"
+$execute if block ~ ~ ~ $(name)[segment_amount=2] run data modify storage daisukes:earth s.Properties.segment_amount set value "2"
+$execute if block ~ ~ ~ $(name)[segment_amount=3] run data modify storage daisukes:earth s.Properties.segment_amount set value "3"
+$execute if block ~ ~ ~ $(name)[segment_amount=4] run data modify storage daisukes:earth s.Properties.segment_amount set value "4"

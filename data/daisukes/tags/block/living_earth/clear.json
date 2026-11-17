@@ -4,9 +4,9 @@
     "minecraft:water",
     "minecraft:lava",
     "minecraft:bubble_column",
-    "#minecraft:fire",
     "minecraft:light",
     "minecraft:structure_void",
-    "minecraft:moving_piston"
+    "minecraft:fire",
+    "minecraft:soul_fire"
   ]
 }

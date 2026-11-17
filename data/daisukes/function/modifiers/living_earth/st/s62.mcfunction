@@ -1,13 +1,6 @@
-# Blocs amb aquestes propietats: bell
-scoreboard players set #k daisukes.earth 63
-$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {}}
-$execute if block ~ ~ ~ $(name)[attachment=floor] run data modify storage daisukes:earth s.Properties.attachment set value "floor"
-$execute if block ~ ~ ~ $(name)[attachment=ceiling] run data modify storage daisukes:earth s.Properties.attachment set value "ceiling"
-$execute if block ~ ~ ~ $(name)[attachment=single_wall] run data modify storage daisukes:earth s.Properties.attachment set value "single_wall"
-$execute if block ~ ~ ~ $(name)[attachment=double_wall] run data modify storage daisukes:earth s.Properties.attachment set value "double_wall"
-$execute if block ~ ~ ~ $(name)[facing=north] run data modify storage daisukes:earth s.Properties.facing set value "north"
+$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {cracked: "false", facing: "north", waterlogged: "false"}}
+$execute if block ~ ~ ~ $(name)[cracked=true] run data modify storage daisukes:earth s.Properties.cracked set value "true"
 $execute if block ~ ~ ~ $(name)[facing=south] run data modify storage daisukes:earth s.Properties.facing set value "south"
 $execute if block ~ ~ ~ $(name)[facing=west] run data modify storage daisukes:earth s.Properties.facing set value "west"
 $execute if block ~ ~ ~ $(name)[facing=east] run data modify storage daisukes:earth s.Properties.facing set value "east"
-$execute if block ~ ~ ~ $(name)[powered=true] run data modify storage daisukes:earth s.Properties.powered set value "true"
-$execute if block ~ ~ ~ $(name)[powered=false] run data modify storage daisukes:earth s.Properties.powered set value "false"
+$execute if block ~ ~ ~ $(name)[waterlogged=true] run data modify storage daisukes:earth s.Properties.waterlogged set value "true"

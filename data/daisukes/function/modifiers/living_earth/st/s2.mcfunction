@@ -1,16 +1,9 @@
-# Blocs amb aquestes propietats: acacia_stairs, andesite_stairs, bamboo_mosaic_stairs, bamboo_stairs, birch_stairs, blackstone_stairs...
-scoreboard players set #k daisukes.earth 3
-$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {}}
-$execute if block ~ ~ ~ $(name)[facing=north] run data modify storage daisukes:earth s.Properties.facing set value "north"
-$execute if block ~ ~ ~ $(name)[facing=south] run data modify storage daisukes:earth s.Properties.facing set value "south"
-$execute if block ~ ~ ~ $(name)[facing=west] run data modify storage daisukes:earth s.Properties.facing set value "west"
-$execute if block ~ ~ ~ $(name)[facing=east] run data modify storage daisukes:earth s.Properties.facing set value "east"
-$execute if block ~ ~ ~ $(name)[half=top] run data modify storage daisukes:earth s.Properties.half set value "top"
-$execute if block ~ ~ ~ $(name)[half=bottom] run data modify storage daisukes:earth s.Properties.half set value "bottom"
-$execute if block ~ ~ ~ $(name)[shape=straight] run data modify storage daisukes:earth s.Properties.shape set value "straight"
-$execute if block ~ ~ ~ $(name)[shape=inner_left] run data modify storage daisukes:earth s.Properties.shape set value "inner_left"
-$execute if block ~ ~ ~ $(name)[shape=inner_right] run data modify storage daisukes:earth s.Properties.shape set value "inner_right"
-$execute if block ~ ~ ~ $(name)[shape=outer_left] run data modify storage daisukes:earth s.Properties.shape set value "outer_left"
-$execute if block ~ ~ ~ $(name)[shape=outer_right] run data modify storage daisukes:earth s.Properties.shape set value "outer_right"
+$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {distance: "7", persistent: "false", waterlogged: "false"}}
+$execute if block ~ ~ ~ $(name)[distance=1] run data modify storage daisukes:earth s.Properties.distance set value "1"
+$execute if block ~ ~ ~ $(name)[distance=2] run data modify storage daisukes:earth s.Properties.distance set value "2"
+$execute if block ~ ~ ~ $(name)[distance=3] run data modify storage daisukes:earth s.Properties.distance set value "3"
+$execute if block ~ ~ ~ $(name)[distance=4] run data modify storage daisukes:earth s.Properties.distance set value "4"
+$execute if block ~ ~ ~ $(name)[distance=5] run data modify storage daisukes:earth s.Properties.distance set value "5"
+$execute if block ~ ~ ~ $(name)[distance=6] run data modify storage daisukes:earth s.Properties.distance set value "6"
+$execute if block ~ ~ ~ $(name)[persistent=true] run data modify storage daisukes:earth s.Properties.persistent set value "true"
 $execute if block ~ ~ ~ $(name)[waterlogged=true] run data modify storage daisukes:earth s.Properties.waterlogged set value "true"
-$execute if block ~ ~ ~ $(name)[waterlogged=false] run data modify storage daisukes:earth s.Properties.waterlogged set value "false"

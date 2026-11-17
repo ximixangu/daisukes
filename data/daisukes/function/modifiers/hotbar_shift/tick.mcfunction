@@ -9,6 +9,7 @@ execute as @e[type=player,gamemode=!survival,gamemode=!adventure] if predicate d
 
 # Objectes llançats o caiguts amb disfressa, i l'inventari de la muntura (burro, barca amb cofre...)
 execute at @a as @e[type=item,distance=..8] if items entity @s contents *[custom_data~{daisukes_shift:{}}] run function daisukes:modifiers/hotbar_shift/drop
+execute at @a as @e[type=item,distance=..8] if items entity @s contents *[bundle_contents] run function daisukes:modifiers/hotbar_shift/drop_bag
 execute as @e[type=player] on vehicle if items entity @s container.* *[custom_data~{daisukes_shift:{}}] run function daisukes:modifiers/hotbar_shift/fix_items {src:"entity @s"}
 execute as @e[type=player] on vehicle if items entity @s horse.* *[custom_data~{daisukes_shift:{}}] run function daisukes:modifiers/hotbar_shift/fix_items {src:"entity @s"}
 

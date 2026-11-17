@@ -1,11 +1,17 @@
-# Blocs amb aquestes propietats: black_bed, blue_bed, brown_bed, cyan_bed, gray_bed, green_bed...
-scoreboard players set #k daisukes.earth 14
-$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {}}
-$execute if block ~ ~ ~ $(name)[facing=north] run data modify storage daisukes:earth s.Properties.facing set value "north"
-$execute if block ~ ~ ~ $(name)[facing=south] run data modify storage daisukes:earth s.Properties.facing set value "south"
-$execute if block ~ ~ ~ $(name)[facing=west] run data modify storage daisukes:earth s.Properties.facing set value "west"
-$execute if block ~ ~ ~ $(name)[facing=east] run data modify storage daisukes:earth s.Properties.facing set value "east"
-$execute if block ~ ~ ~ $(name)[occupied=true] run data modify storage daisukes:earth s.Properties.occupied set value "true"
-$execute if block ~ ~ ~ $(name)[occupied=false] run data modify storage daisukes:earth s.Properties.occupied set value "false"
-$execute if block ~ ~ ~ $(name)[part=head] run data modify storage daisukes:earth s.Properties.part set value "head"
-$execute if block ~ ~ ~ $(name)[part=foot] run data modify storage daisukes:earth s.Properties.part set value "foot"
+$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {rotation: "8", waterlogged: "false"}}
+$execute if block ~ ~ ~ $(name)[rotation=0] run data modify storage daisukes:earth s.Properties.rotation set value "0"
+$execute if block ~ ~ ~ $(name)[rotation=1] run data modify storage daisukes:earth s.Properties.rotation set value "1"
+$execute if block ~ ~ ~ $(name)[rotation=2] run data modify storage daisukes:earth s.Properties.rotation set value "2"
+$execute if block ~ ~ ~ $(name)[rotation=3] run data modify storage daisukes:earth s.Properties.rotation set value "3"
+$execute if block ~ ~ ~ $(name)[rotation=4] run data modify storage daisukes:earth s.Properties.rotation set value "4"
+$execute if block ~ ~ ~ $(name)[rotation=5] run data modify storage daisukes:earth s.Properties.rotation set value "5"
+$execute if block ~ ~ ~ $(name)[rotation=6] run data modify storage daisukes:earth s.Properties.rotation set value "6"
+$execute if block ~ ~ ~ $(name)[rotation=7] run data modify storage daisukes:earth s.Properties.rotation set value "7"
+$execute if block ~ ~ ~ $(name)[rotation=9] run data modify storage daisukes:earth s.Properties.rotation set value "9"
+$execute if block ~ ~ ~ $(name)[rotation=10] run data modify storage daisukes:earth s.Properties.rotation set value "10"
+$execute if block ~ ~ ~ $(name)[rotation=11] run data modify storage daisukes:earth s.Properties.rotation set value "11"
+$execute if block ~ ~ ~ $(name)[rotation=12] run data modify storage daisukes:earth s.Properties.rotation set value "12"
+$execute if block ~ ~ ~ $(name)[rotation=13] run data modify storage daisukes:earth s.Properties.rotation set value "13"
+$execute if block ~ ~ ~ $(name)[rotation=14] run data modify storage daisukes:earth s.Properties.rotation set value "14"
+$execute if block ~ ~ ~ $(name)[rotation=15] run data modify storage daisukes:earth s.Properties.rotation set value "15"
+$execute if block ~ ~ ~ $(name)[waterlogged=true] run data modify storage daisukes:earth s.Properties.waterlogged set value "true"

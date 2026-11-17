@@ -1,11 +1,10 @@
-# Blocs amb aquestes propietats: pink_petals, wildflowers
-scoreboard players set #k daisukes.earth 48
-$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {}}
-$execute if block ~ ~ ~ $(name)[facing=north] run data modify storage daisukes:earth s.Properties.facing set value "north"
+$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {facing: "north", slot_0_occupied: "false", slot_1_occupied: "false", slot_2_occupied: "false", slot_3_occupied: "false", slot_4_occupied: "false", slot_5_occupied: "false"}}
 $execute if block ~ ~ ~ $(name)[facing=south] run data modify storage daisukes:earth s.Properties.facing set value "south"
 $execute if block ~ ~ ~ $(name)[facing=west] run data modify storage daisukes:earth s.Properties.facing set value "west"
 $execute if block ~ ~ ~ $(name)[facing=east] run data modify storage daisukes:earth s.Properties.facing set value "east"
-$execute if block ~ ~ ~ $(name)[flower_amount=1] run data modify storage daisukes:earth s.Properties.flower_amount set value "1"
-$execute if block ~ ~ ~ $(name)[flower_amount=2] run data modify storage daisukes:earth s.Properties.flower_amount set value "2"
-$execute if block ~ ~ ~ $(name)[flower_amount=3] run data modify storage daisukes:earth s.Properties.flower_amount set value "3"
-$execute if block ~ ~ ~ $(name)[flower_amount=4] run data modify storage daisukes:earth s.Properties.flower_amount set value "4"
+$execute if block ~ ~ ~ $(name)[slot_0_occupied=true] run data modify storage daisukes:earth s.Properties.slot_0_occupied set value "true"
+$execute if block ~ ~ ~ $(name)[slot_1_occupied=true] run data modify storage daisukes:earth s.Properties.slot_1_occupied set value "true"
+$execute if block ~ ~ ~ $(name)[slot_2_occupied=true] run data modify storage daisukes:earth s.Properties.slot_2_occupied set value "true"
+$execute if block ~ ~ ~ $(name)[slot_3_occupied=true] run data modify storage daisukes:earth s.Properties.slot_3_occupied set value "true"
+$execute if block ~ ~ ~ $(name)[slot_4_occupied=true] run data modify storage daisukes:earth s.Properties.slot_4_occupied set value "true"
+$execute if block ~ ~ ~ $(name)[slot_5_occupied=true] run data modify storage daisukes:earth s.Properties.slot_5_occupied set value "true"

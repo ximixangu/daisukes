@@ -91,6 +91,141 @@
       "entity": "this",
       "predicate": {
         "slots": {
+          "container.*": {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:custom_data": {
+                                    "daisukes_shift": {}
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "container.*": {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:bundle_contents": {
+                                    "items": {
+                                      "contains": [
+                                        {
+                                          "predicates": {
+                                            "minecraft:custom_data": {
+                                              "daisukes_shift": {}
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "container.*": {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:bundle_contents": {
+                                    "items": {
+                                      "contains": [
+                                        {
+                                          "predicates": {
+                                            "minecraft:bundle_contents": {
+                                              "items": {
+                                                "contains": [
+                                                  {
+                                                    "predicates": {
+                                                      "minecraft:custom_data": {
+                                                        "daisukes_shift": {}
+                                                      }
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
           "weapon.offhand": {
             "predicates": {
               "minecraft:bundle_contents": {
@@ -100,6 +235,141 @@
                       "predicates": {
                         "minecraft:custom_data": {
                           "daisukes_shift": {}
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.offhand": {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:custom_data": {
+                                    "daisukes_shift": {}
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.offhand": {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:bundle_contents": {
+                                    "items": {
+                                      "contains": [
+                                        {
+                                          "predicates": {
+                                            "minecraft:custom_data": {
+                                              "daisukes_shift": {}
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.offhand": {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:bundle_contents": {
+                                    "items": {
+                                      "contains": [
+                                        {
+                                          "predicates": {
+                                            "minecraft:bundle_contents": {
+                                              "items": {
+                                                "contains": [
+                                                  {
+                                                    "predicates": {
+                                                      "minecraft:custom_data": {
+                                                        "daisukes_shift": {}
+                                                      }
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
                         }
                       }
                     }
@@ -141,6 +411,141 @@
       "entity": "this",
       "predicate": {
         "slots": {
+          "player.cursor": {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:custom_data": {
+                                    "daisukes_shift": {}
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "player.cursor": {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:bundle_contents": {
+                                    "items": {
+                                      "contains": [
+                                        {
+                                          "predicates": {
+                                            "minecraft:custom_data": {
+                                              "daisukes_shift": {}
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "player.cursor": {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:bundle_contents": {
+                                    "items": {
+                                      "contains": [
+                                        {
+                                          "predicates": {
+                                            "minecraft:bundle_contents": {
+                                              "items": {
+                                                "contains": [
+                                                  {
+                                                    "predicates": {
+                                                      "minecraft:custom_data": {
+                                                        "daisukes_shift": {}
+                                                      }
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
           "player.crafting.*": {
             "predicates": {
               "minecraft:bundle_contents": {
@@ -150,6 +555,141 @@
                       "predicates": {
                         "minecraft:custom_data": {
                           "daisukes_shift": {}
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "player.crafting.*": {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:custom_data": {
+                                    "daisukes_shift": {}
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "player.crafting.*": {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:bundle_contents": {
+                                    "items": {
+                                      "contains": [
+                                        {
+                                          "predicates": {
+                                            "minecraft:custom_data": {
+                                              "daisukes_shift": {}
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "player.crafting.*": {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:bundle_contents": {
+                                    "items": {
+                                      "contains": [
+                                        {
+                                          "predicates": {
+                                            "minecraft:bundle_contents": {
+                                              "items": {
+                                                "contains": [
+                                                  {
+                                                    "predicates": {
+                                                      "minecraft:custom_data": {
+                                                        "daisukes_shift": {}
+                                                      }
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
                         }
                       }
                     }

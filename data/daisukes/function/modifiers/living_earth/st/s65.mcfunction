@@ -1,5 +1,5 @@
-# Blocs amb aquestes propietats: cave_vines_plant
-scoreboard players set #k daisukes.earth 66
-$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {}}
-$execute if block ~ ~ ~ $(name)[berries=true] run data modify storage daisukes:earth s.Properties.berries set value "true"
-$execute if block ~ ~ ~ $(name)[berries=false] run data modify storage daisukes:earth s.Properties.berries set value "false"
+$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {eye: "false", facing: "north"}}
+$execute if block ~ ~ ~ $(name)[eye=true] run data modify storage daisukes:earth s.Properties.eye set value "true"
+$execute if block ~ ~ ~ $(name)[facing=south] run data modify storage daisukes:earth s.Properties.facing set value "south"
+$execute if block ~ ~ ~ $(name)[facing=west] run data modify storage daisukes:earth s.Properties.facing set value "west"
+$execute if block ~ ~ ~ $(name)[facing=east] run data modify storage daisukes:earth s.Properties.facing set value "east"

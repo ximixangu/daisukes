@@ -1,11 +1,4 @@
-# Blocs amb aquestes propietats: snow
-scoreboard players set #k daisukes.earth 101
-$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {}}
-$execute if block ~ ~ ~ $(name)[layers=1] run data modify storage daisukes:earth s.Properties.layers set value "1"
-$execute if block ~ ~ ~ $(name)[layers=2] run data modify storage daisukes:earth s.Properties.layers set value "2"
-$execute if block ~ ~ ~ $(name)[layers=3] run data modify storage daisukes:earth s.Properties.layers set value "3"
-$execute if block ~ ~ ~ $(name)[layers=4] run data modify storage daisukes:earth s.Properties.layers set value "4"
-$execute if block ~ ~ ~ $(name)[layers=5] run data modify storage daisukes:earth s.Properties.layers set value "5"
-$execute if block ~ ~ ~ $(name)[layers=6] run data modify storage daisukes:earth s.Properties.layers set value "6"
-$execute if block ~ ~ ~ $(name)[layers=7] run data modify storage daisukes:earth s.Properties.layers set value "7"
-$execute if block ~ ~ ~ $(name)[layers=8] run data modify storage daisukes:earth s.Properties.layers set value "8"
+$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {can_summon: "false", shrieking: "false", waterlogged: "false"}}
+$execute if block ~ ~ ~ $(name)[can_summon=true] run data modify storage daisukes:earth s.Properties.can_summon set value "true"
+$execute if block ~ ~ ~ $(name)[shrieking=true] run data modify storage daisukes:earth s.Properties.shrieking set value "true"
+$execute if block ~ ~ ~ $(name)[waterlogged=true] run data modify storage daisukes:earth s.Properties.waterlogged set value "true"

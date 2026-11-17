@@ -1,5 +1,8 @@
-# Blocs amb aquestes propietats: grass_block, mycelium, podzol
-scoreboard players set #k daisukes.earth 43
-$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {}}
-$execute if block ~ ~ ~ $(name)[snowy=true] run data modify storage daisukes:earth s.Properties.snowy set value "true"
-$execute if block ~ ~ ~ $(name)[snowy=false] run data modify storage daisukes:earth s.Properties.snowy set value "false"
+$data modify storage daisukes:earth s set value {Name: "$(name)", Properties: {age: "0"}}
+$execute if block ~ ~ ~ $(name)[age=1] run data modify storage daisukes:earth s.Properties.age set value "1"
+$execute if block ~ ~ ~ $(name)[age=2] run data modify storage daisukes:earth s.Properties.age set value "2"
+$execute if block ~ ~ ~ $(name)[age=3] run data modify storage daisukes:earth s.Properties.age set value "3"
+$execute if block ~ ~ ~ $(name)[age=4] run data modify storage daisukes:earth s.Properties.age set value "4"
+$execute if block ~ ~ ~ $(name)[age=5] run data modify storage daisukes:earth s.Properties.age set value "5"
+$execute if block ~ ~ ~ $(name)[age=6] run data modify storage daisukes:earth s.Properties.age set value "6"
+$execute if block ~ ~ ~ $(name)[age=7] run data modify storage daisukes:earth s.Properties.age set value "7"

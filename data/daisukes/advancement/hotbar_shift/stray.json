@@ -1,0 +1,231 @@
+{
+  "criteria": {
+    "d0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "daisukes:hotbar_shift/active"
+            }
+          }
+        ],
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "daisukes_shift": {}
+              }
+            }
+          }
+        ]
+      }
+    },
+    "d1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "daisukes:hotbar_shift/active"
+            }
+          }
+        ],
+        "items": [
+          {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:custom_data": {
+                          "daisukes_shift": {}
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "d2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "daisukes:hotbar_shift/active"
+            }
+          }
+        ],
+        "items": [
+          {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:custom_data": {
+                                    "daisukes_shift": {}
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "d3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "daisukes:hotbar_shift/active"
+            }
+          }
+        ],
+        "items": [
+          {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:bundle_contents": {
+                                    "items": {
+                                      "contains": [
+                                        {
+                                          "predicates": {
+                                            "minecraft:custom_data": {
+                                              "daisukes_shift": {}
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "d4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "daisukes:hotbar_shift/active"
+            }
+          }
+        ],
+        "items": [
+          {
+            "predicates": {
+              "minecraft:bundle_contents": {
+                "items": {
+                  "contains": [
+                    {
+                      "predicates": {
+                        "minecraft:bundle_contents": {
+                          "items": {
+                            "contains": [
+                              {
+                                "predicates": {
+                                  "minecraft:bundle_contents": {
+                                    "items": {
+                                      "contains": [
+                                        {
+                                          "predicates": {
+                                            "minecraft:bundle_contents": {
+                                              "items": {
+                                                "contains": [
+                                                  {
+                                                    "predicates": {
+                                                      "minecraft:custom_data": {
+                                                        "daisukes_shift": {}
+                                                      }
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "d0",
+      "d1",
+      "d2",
+      "d3",
+      "d4"
+    ]
+  ],
+  "rewards": {
+    "function": "daisukes:modifiers/hotbar_shift/stray"
+  }
+}

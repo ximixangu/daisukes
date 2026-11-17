@@ -1,0 +1,5 @@
+# Sarró a terra: si porta alguna cosa marcada (fins a 4 sarrons endins), s'arregla
+execute if items entity @s contents *[bundle_contents~{items:{contains:[{predicates:{custom_data:{daisukes_shift:{}}}}]}}] run return run function daisukes:modifiers/hotbar_shift/drop
+execute if items entity @s contents *[bundle_contents~{items:{contains:[{predicates:{bundle_contents:{items:{contains:[{predicates:{custom_data:{daisukes_shift:{}}}}]}}}}]}}] run return run function daisukes:modifiers/hotbar_shift/drop
+execute if items entity @s contents *[bundle_contents~{items:{contains:[{predicates:{bundle_contents:{items:{contains:[{predicates:{bundle_contents:{items:{contains:[{predicates:{custom_data:{daisukes_shift:{}}}}]}}}}]}}}}]}}] run return run function daisukes:modifiers/hotbar_shift/drop
+execute if items entity @s contents *[bundle_contents~{items:{contains:[{predicates:{bundle_contents:{items:{contains:[{predicates:{bundle_contents:{items:{contains:[{predicates:{bundle_contents:{items:{contains:[{predicates:{custom_data:{daisukes_shift:{}}}}]}}}}]}}}}]}}}}]}}] run return run function daisukes:modifiers/hotbar_shift/drop
