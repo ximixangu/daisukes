@@ -8,4 +8,6 @@ execute if score #lv daisukes.rush matches 1 run scoreboard players set #b daisu
 execute if score #lv daisukes.rush matches 2 run scoreboard players set #b daisukes.rush 12
 execute if score #lv daisukes.rush matches 3 run scoreboard players set #b daisukes.rush 10
 execute if score #lv daisukes.rush matches 4 run scoreboard players set #b daisukes.rush 8
+scoreboard players set #b daisukes.rush 8
+scoreboard players set #t daisukes.rush 14
 function daisukes:modifiers/arrow_rush/gen/step

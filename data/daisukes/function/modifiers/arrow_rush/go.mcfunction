@@ -6,7 +6,7 @@ scoreboard players operation #next daisukes.rush += #rest daisukes.rush
 execute if score #rest daisukes.rush matches 82.. run scoreboard players remove #rest daisukes.rush 2
 # Nivell (no es veu): 1 al principi i +1 cada 30 s (600 ticks) que fa que esta actiu, fins al 4 (a l'1:30)
 scoreboard players operation #lv daisukes.rush = #clock daisukes.rush
-scoreboard players operation #lv daisukes.rush /= #600 daisukes.rush
+scoreboard players operation #lv daisukes.rush /= #300 daisukes.rush
 scoreboard players add #lv daisukes.rush 1
 execute if score #lv daisukes.rush matches 5.. run scoreboard players set #lv daisukes.rush 4
 execute as @e[type=minecraft:player,gamemode=!spectator] at @s run function daisukes:modifiers/arrow_rush/start

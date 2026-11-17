@@ -1,0 +1,26 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:trial_key"
+    },
+    "title": {
+      "text": "Clockwork",
+      "color": "#D9A441",
+      "bold": true
+    },
+    "description": {
+      "text": "Your spring runs down as you move: spin to the right to wind it up, and stop when it chimes",
+      "color": "white"
+    },
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

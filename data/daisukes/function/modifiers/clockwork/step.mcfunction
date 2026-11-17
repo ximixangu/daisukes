@@ -1,0 +1,11 @@
+# Com a la clau: mostra el pas del seu amo (#pk), girant en #idur ticks
+execute store result entity @s interpolation_duration int 1 run scoreboard players get #idur daisukes.cw
+scoreboard players operation @s daisukes.cw_k = #pk daisukes.cw
+execute if score #pk daisukes.cw matches 0 run data merge entity @s {transformation: {translation: [0f, 0f, -0.325f], left_rotation: [0f, 0f, 0f, 1f], scale: [0.65f, 0.65f, 0.65f], right_rotation: [-0.707107f, 0f, 0f, 0.707107f]}, start_interpolation: 0}
+execute if score #pk daisukes.cw matches 1 run data merge entity @s {transformation: {translation: [0f, 0f, -0.325f], left_rotation: [0f, 0f, 0.382683f, 0.92388f], scale: [0.65f, 0.65f, 0.65f], right_rotation: [-0.707107f, 0f, 0f, 0.707107f]}, start_interpolation: 0}
+execute if score #pk daisukes.cw matches 2 run data merge entity @s {transformation: {translation: [0f, 0f, -0.325f], left_rotation: [0f, 0f, 0.707107f, 0.707107f], scale: [0.65f, 0.65f, 0.65f], right_rotation: [-0.707107f, 0f, 0f, 0.707107f]}, start_interpolation: 0}
+execute if score #pk daisukes.cw matches 3 run data merge entity @s {transformation: {translation: [0f, 0f, -0.325f], left_rotation: [0f, 0f, 0.92388f, 0.382683f], scale: [0.65f, 0.65f, 0.65f], right_rotation: [-0.707107f, 0f, 0f, 0.707107f]}, start_interpolation: 0}
+execute if score #pk daisukes.cw matches 4 run data merge entity @s {transformation: {translation: [0f, 0f, -0.325f], left_rotation: [0f, 0f, 1f, 0f], scale: [0.65f, 0.65f, 0.65f], right_rotation: [-0.707107f, 0f, 0f, 0.707107f]}, start_interpolation: 0}
+execute if score #pk daisukes.cw matches 5 run data merge entity @s {transformation: {translation: [0f, 0f, -0.325f], left_rotation: [0f, 0f, 0.92388f, -0.382683f], scale: [0.65f, 0.65f, 0.65f], right_rotation: [-0.707107f, 0f, 0f, 0.707107f]}, start_interpolation: 0}
+execute if score #pk daisukes.cw matches 6 run data merge entity @s {transformation: {translation: [0f, 0f, -0.325f], left_rotation: [0f, 0f, 0.707107f, -0.707107f], scale: [0.65f, 0.65f, 0.65f], right_rotation: [-0.707107f, 0f, 0f, 0.707107f]}, start_interpolation: 0}
+execute if score #pk daisukes.cw matches 7 run data merge entity @s {transformation: {translation: [0f, 0f, -0.325f], left_rotation: [0f, 0f, 0.382683f, -0.92388f], scale: [0.65f, 0.65f, 0.65f], right_rotation: [-0.707107f, 0f, 0f, 0.707107f]}, start_interpolation: 0}
