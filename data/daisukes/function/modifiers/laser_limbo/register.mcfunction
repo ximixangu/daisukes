@@ -4,4 +4,4 @@ data modify storage daisukes:texts desc.laser_limbo set value "Lasers sweep towa
 
 # Broken Legs (no es pot saltar) i Supersonic (massa rapid) fan impossible esquivar-los,
 # Dunce tapa la pantalla (no es veuen els lasers) i Shadow Beat tambe es d'esquivar a temps: massa soroll junts
-data modify storage daisukes:registry incompatible.laser_limbo set value ["no_jump", "sonic", "gerxu", "shadow"]
+data modify storage daisukes:registry incompatible.laser_limbo set value ["no_jump"]

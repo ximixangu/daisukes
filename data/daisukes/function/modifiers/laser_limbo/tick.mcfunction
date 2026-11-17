@@ -1,6 +1,6 @@
 # Dificultat: com mes temps, mes lasers alhora al voltant de cada jugador (3 al principi, 4 als 30 s)
 scoreboard players add #t daisukes.laser 1
-execute if score #t daisukes.laser matches 600 run scoreboard players set #max daisukes.laser 4
+execute if score #t daisukes.laser matches 600 run scoreboard players set @a daisukes.laser_cd 60
 
 # Cada jugador: quan li toca, neix un laser a prop seu
 execute as @e[type=player,gamemode=!spectator] at @s run function daisukes:modifiers/laser_limbo/player

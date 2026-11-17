@@ -1,7 +1,5 @@
 # Llargada 3 + nivell/2 (3, 4, 4, 5) i lectura 22 - 2 x nivell (20, 18, 16, 14 ticks)
-scoreboard players operation #len daisukes.rush = #lv daisukes.rush
-scoreboard players operation #len daisukes.rush /= #2 daisukes.rush
-scoreboard players add #len daisukes.rush 3
+scoreboard players add #len daisukes.rush 8
 scoreboard players set #t daisukes.rush 22
 scoreboard players operation #t daisukes.rush -= #lv daisukes.rush
 scoreboard players operation #t daisukes.rush -= #lv daisukes.rush

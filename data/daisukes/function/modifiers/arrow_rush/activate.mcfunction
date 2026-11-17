@@ -19,5 +19,5 @@ scoreboard players set #600 daisukes.rush 600
 # Rellotge de l'entrada, compte enrere de la ronda (no compta fins a l'escalfament), descans (ticks) i barres creades
 scoreboard players set #clock daisukes.rush 0
 scoreboard players set #next daisukes.rush 1000000
-scoreboard players set #rest daisukes.rush 120
+scoreboard players set #rest daisukes.rush 280
 scoreboard players set #ids daisukes.rush 0

@@ -4,4 +4,4 @@ data modify storage daisukes:texts desc.ender_step set value "Whenever you step 
 
 # Broken Legs i Laser Limbo depenen de saltar (aqui saltar es un TP), Supersonic aniria massa rapid,
 # Hush no sentiria els blocs saltats ni els salts, i un jugador petrificat (Gorgun's Gaze) podria saltar
-data modify storage daisukes:registry incompatible.ender_step set value ["no_jump", "sonic"]
+data modify storage daisukes:registry incompatible.ender_step set value ["no_jump", "sonic", "hush"]

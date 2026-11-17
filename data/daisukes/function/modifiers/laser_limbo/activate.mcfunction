@@ -9,8 +9,8 @@ kill @e[type=block_display,tag=daisukes.laser]
 # Ajustos (es poden canviar aqui):
 #   #max      -> lasers alhora al voltant de cada jugador. Als 30 s puja sol a 4 (mira tick)
 scoreboard players set #t daisukes.laser 0
-scoreboard players set #max daisukes.laser 3
-scoreboard players set @a daisukes.laser_cd 60
+scoreboard players set #max daisukes.laser 5
+scoreboard players set @a daisukes.laser_cd 80
 
 execute as @e[type=player] at @s run playsound minecraft:block.beacon.activate hostile @s ~ ~ ~ 1 1.2
 execute as @e[type=player] at @s run playsound minecraft:block.amethyst_block.resonate hostile @s ~ ~ ~ 1 0.8

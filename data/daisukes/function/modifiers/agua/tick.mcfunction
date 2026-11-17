@@ -1,6 +1,7 @@
 # Cada 5 s, una pocio (persistent, d'aigua) cau al costat de cada jugador
 scoreboard players add #timer daisukes.agua 1
-execute if score #timer daisukes.agua matches 100.. run scoreboard players set #timer daisukes.agua 0
+execute unless dimension minecraft:the_nether if score #timer daisukes.agua matches 100.. run scoreboard players set #timer daisukes.agua 0
+execute if dimension minecraft:the_nether if score #timer daisukes.agua matches 240.. run scoreboard players set #timer daisukes.agua 0
 execute if score #timer daisukes.agua matches 0 as @e[type=minecraft:player,gamemode=!spectator] at @s run function daisukes:modifiers/agua/throw
 
 # On s'ha trencat (el nuvol de la pocio), hi queda una font d'aigua
