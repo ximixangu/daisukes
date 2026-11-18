@@ -14,7 +14,7 @@ scoreboard players set #noise daisukes.hush 0
 scoreboard players set #deaf daisukes.hush 100
 
 bossbar add daisukes:hush {"text": "The Deep is listening", "color": "#3FE0D0"}
-bossbar set daisukes:hush max 700
+bossbar set daisukes:hush max 1000
 bossbar set daisukes:hush style notched_10
 bossbar set daisukes:hush color green
 bossbar set daisukes:hush players @a

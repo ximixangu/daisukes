@@ -1,0 +1,98 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Daisuke's Challenge",
+    "color": "red",
+    "bold": true
+  },
+  "external_title": {
+    "text": "Daisuke's"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "width": 300,
+      "contents": {
+        "text": "Random modifiers keep changing the rules of the game. Defeat the Ender Dragon to win.",
+        "color": "white"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "width": 300,
+      "contents": {
+        "text": "Choose how the challenge works in Settings and Modifiers. When everyone is ready, press Start: until then nobody can move.",
+        "color": "gray"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "label": {
+        "text": "▶ Start",
+        "color": "green",
+        "bold": true
+      },
+      "tooltip": {
+        "text": "Start the challenge (or resume it if it was stopped). Everyone can move once it starts."
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger daisukes.menu set 4"
+      }
+    },
+    {
+      "label": {
+        "text": "⚙ Settings"
+      },
+      "tooltip": {
+        "text": "How many modifiers are active at once, how often they change and what happens when someone dies. Also presets, like the default one."
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger daisukes.menu set 2"
+      }
+    },
+    {
+      "label": {
+        "text": "☰ Modifiers"
+      },
+      "tooltip": {
+        "text": "Choose which modifiers can come up"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger daisukes.menu set 3"
+      }
+    },
+    {
+      "label": {
+        "text": "↺ New game"
+      },
+      "tooltip": {
+        "text": "Start the challenge again from zero, in this same world"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger daisukes.menu set 6"
+      }
+    }
+  ],
+  "columns": 1,
+  "exit_action": {
+    "label": {
+      "text": "Close"
+    },
+    "width": 200,
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "/trigger daisukes.menu set 9"
+    }
+  },
+  "pause": false,
+  "after_action": "none"
+}

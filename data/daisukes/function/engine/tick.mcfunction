@@ -2,11 +2,12 @@
 function daisukes:victory/watch
 execute unless score #engine_active daisukes.engine matches 1 run return 0
 
-# Ha mort algun jugador? Derrota i s'atura el repte (defeat/start). Les morts es tornen a 0 cada tick (core/tick)
-execute if entity @a[scores={daisukes.deaths=1..}] run function daisukes:defeat/start
+# Ha mort algun jugador? Derrota i s'atura el repte (defeat/start), si al menu morir acaba el repte (#death_ends).
+# Les morts es tornen a 0 cada tick (core/tick)
+execute if score #death_ends daisukes.config matches 1 if entity @a[scores={daisukes.deaths=1..}] run function daisukes:defeat/start
 execute unless score #engine_active daisukes.engine matches 1 run return 0
 
-# Presentacio pendent (/function daisukes:start o daisukes:reset): surt ara
+# Presentacio pendent (Start al menu, /function daisukes:start o daisukes:reset): surt ara
 execute if score #intro daisukes.engine matches 1 run function daisukes:engine/intro
 
 scoreboard players add #timer daisukes.timer 1

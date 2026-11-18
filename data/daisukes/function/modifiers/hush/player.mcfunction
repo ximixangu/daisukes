@@ -3,8 +3,8 @@ scoreboard players operation #n daisukes.hush = @s daisukes.hush_sprint
 scoreboard players operation #n daisukes.hush *= #2 daisukes.hush
 scoreboard players operation #n daisukes.hush += @s daisukes.hush_walk
 scoreboard players operation #n daisukes.hush /= #10 daisukes.hush
-execute if score @s daisukes.hush_jump matches 1.. run scoreboard players add #n daisukes.hush 50
-execute if score @s daisukes.hush_hit matches 1.. run scoreboard players add #n daisukes.hush 40
+execute if score @s daisukes.hush_jump matches 1.. run scoreboard players add #n daisukes.hush 140
+execute if score @s daisukes.hush_hit matches 1.. run scoreboard players add #n daisukes.hush 80
 
 execute if score #phase daisukes.hush matches 0 if score #deaf daisukes.hush matches ..0 run scoreboard players operation #noise daisukes.hush += #n daisukes.hush
 

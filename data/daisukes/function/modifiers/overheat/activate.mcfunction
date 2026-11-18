@@ -23,7 +23,7 @@ scoreboard objectives add daisukes.heat_d deathCount
 #  CONFIGURACIO (en ticks, 20 = 1 s)
 # =====================================================================
 # Temps fora de l'aigua fins que se sobreescalfa i comenca a cremar
-scoreboard players set #max daisukes.heat 300
+scoreboard players set #max daisukes.heat 320
 # Temps a l'aigua per refredar-se del tot (des de la barra plena)
 scoreboard players set #cool_time daisukes.heat 50
 # El mal de cremar es a burn (1 cor per segon)

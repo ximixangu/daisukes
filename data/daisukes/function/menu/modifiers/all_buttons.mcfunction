@@ -1,0 +1,3 @@
+# Botons d'activar-los o desactivar-los tots (menu/modifiers/show): 3<pagina> i 4<pagina>, per tornar a la mateixa
+$data modify storage daisukes:menu dialog.actions append value {label: {text: "✔ Enable all", color: "green"}, tooltip: "Every modifier can come up", width: 148, action: {type: "minecraft:run_command", command: "/trigger daisukes.menu set 3$(page)"}}
+$data modify storage daisukes:menu dialog.actions append value {label: {text: "✘ Disable all", color: "red"}, tooltip: "No modifier can come up. Then enable the ones you want", width: 148, action: {type: "minecraft:run_command", command: "/trigger daisukes.menu set 4$(page)"}}

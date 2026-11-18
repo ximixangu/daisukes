@@ -5,6 +5,14 @@ execute as @a unless score @s daisukes.left matches 0 run function daisukes:core
 # (si el servidor no es pausa sol, en tornar no hi hauria 10 modificadors de cop)
 execute unless entity @a run return 0
 
+# Menu: botons dels dialegs (/trigger daisukes.menu, menu/handle). Qualsevol jugador, sense trucs ni op
+execute as @a[scores={daisukes.menu=1..}] run function daisukes:menu/handle
+scoreboard players set @a[scores={daisukes.menu=..-1}] daisukes.menu 0
+scoreboard players enable @a daisukes.menu
+
+# Repte sense comencar: tothom quiet fins que algu premi Start (core/lobby)
+function daisukes:core/lobby
+
 # Repte sense comencar: explicacio al xat 2 s despres de carregar, quan ja hi ha algu (core/load, core/welcome)
 execute if score #welcome daisukes.timer matches 1 run function daisukes:core/welcome
 execute if score #welcome daisukes.timer matches 1.. run scoreboard players remove #welcome daisukes.timer 1

@@ -1,5 +1,5 @@
 # Presentacio del repte: el primer tick que el motor avanca amb algu connectat despres de
-# /function daisukes:start o daisukes:reset (engine/begin). En carregar el mon o amb /reload ja no surt.
+# Start al menu, /function daisukes:start o daisukes:reset (engine/begin). En carregar el mon o amb /reload ja no surt.
 # Titol amb el rugit del drac de l'End; quan el titol ha marxat, compte enrere de 5 s i primer modificador
 scoreboard players set #intro daisukes.engine 0
 

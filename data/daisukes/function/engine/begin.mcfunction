@@ -1,4 +1,4 @@
-# Posa en marxa el repte amb la presentacio (/function daisukes:start la primera vegada, o daisukes:reset).
+# Posa en marxa el repte amb la presentacio (start la primera vegada: Start al menu o /function daisukes:start).
 # Quan hi hagi algu connectat surt el titol Challenge Mode (engine/intro), compte enrere de 5 s i primer modificador.
 # El primer canvi arriba quan el titol ja ha marxat (105 ticks) i s'ha acabat el compte enrere (100 ticks)
 function daisukes:engine/progress/recalc

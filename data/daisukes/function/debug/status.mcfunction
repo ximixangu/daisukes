@@ -21,10 +21,10 @@ execute unless score #engine_active daisukes.engine matches 1 run tellraw @a [""
 
 # Actius ara (passant el ratoli per sobre, que fa cadascun)
 execute if data storage daisukes:temp chat_texts[0] run tellraw @a ["", {"text": "   Active: ", "color": "gray"}, {"nbt": "chat_texts[]", "storage": "daisukes:temp", "interpret": true, "separator": {"text": ", ", "color": "gray"}}]
-execute unless score #engine_active daisukes.engine matches 1 unless score #victory daisukes.engine matches 1 if score #elapsed daisukes.engine matches ..0 run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "not started", "color": "red"}, {"text": " (/function daisukes:start)", "color": "dark_gray"}]
-execute unless score #engine_active daisukes.engine matches 1 unless score #victory daisukes.engine matches 1 unless score #defeat daisukes.engine matches 1 if score #elapsed daisukes.engine matches 1.. run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "stopped", "color": "red"}, {"text": " (/function daisukes:start to resume)", "color": "dark_gray"}]
-execute if score #victory daisukes.engine matches 1 run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "challenge completed, Ender Dragon defeated", "color": "gold"}, {"text": " (/function daisukes:reset for a new game)", "color": "dark_gray"}]
-execute if score #defeat daisukes.engine matches 1 run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "challenge failed, a player died", "color": "red"}, {"text": " (/function daisukes:reset for a new game)", "color": "dark_gray"}]
+execute unless score #engine_active daisukes.engine matches 1 unless score #victory daisukes.engine matches 1 if score #elapsed daisukes.engine matches ..0 run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "not started", "color": "red"}, {"text": " (Start in the menu)", "color": "dark_gray"}]
+execute unless score #engine_active daisukes.engine matches 1 unless score #victory daisukes.engine matches 1 unless score #defeat daisukes.engine matches 1 if score #elapsed daisukes.engine matches 1.. run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "stopped", "color": "red"}, {"text": " (Start in the menu to resume)", "color": "dark_gray"}]
+execute if score #victory daisukes.engine matches 1 run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "challenge completed, Ender Dragon defeated", "color": "gold"}, {"text": " (New game in the menu)", "color": "dark_gray"}]
+execute if score #defeat daisukes.engine matches 1 run tellraw @a ["", {"text": "   Engine: ", "color": "gray"}, {"text": "challenge failed, a player died", "color": "red"}, {"text": " (New game in the menu)", "color": "dark_gray"}]
 
 # Dificultat: fase actual i que la fara pujar
 function daisukes:debug/status_difficulty
@@ -33,3 +33,9 @@ function daisukes:debug/status_difficulty
 execute if score #end_reached daisukes.engine matches 1 run tellraw @a ["", {"text": "   Phase: ", "color": "gray"}, {"text": "End", "color": "light_purple"}]
 execute unless score #end_reached daisukes.engine matches 1 if score #nether_reached daisukes.engine matches 1 run tellraw @a ["", {"text": "   Phase: ", "color": "gray"}, {"text": "Nether", "color": "red"}]
 execute unless score #end_reached daisukes.engine matches 1 unless score #nether_reached daisukes.engine matches 1 run tellraw @a ["", {"text": "   Phase: ", "color": "gray"}, {"text": "Overworld", "color": "green"}]
+
+# Configuracio del menu i quants modificadors poden sortir
+function daisukes:settings/summary
+function daisukes:settings/count_enabled
+tellraw @a ["", {"text": "   Settings: ", "color": "gray"}, {"nbt": "summary", "storage": "daisukes:menu", "interpret": true}]
+tellraw @a ["", {"text": "   Modifiers: ", "color": "gray"}, {"score": {"name": "#enabled", "objective": "daisukes.math"}, "color": "white"}, {"text": " of ", "color": "gray"}, {"score": {"name": "#total", "objective": "daisukes.math"}, "color": "white"}, {"text": " enabled", "color": "gray"}]

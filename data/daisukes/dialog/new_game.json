@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "text": "New game?",
+    "color": "red",
+    "bold": true
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "width": 300,
+    "contents": {
+      "text": "The challenge starts again from zero: time, milestones and difficulty. The world stays the same, and the settings too. Nobody can move until someone presses Start.",
+      "color": "gray"
+    }
+  },
+  "yes": {
+    "label": {
+      "text": "↺ New game",
+      "color": "red"
+    },
+    "width": 150,
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "/trigger daisukes.menu set 5"
+    }
+  },
+  "no": {
+    "label": {
+      "text": "Cancel"
+    },
+    "width": 150,
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "/trigger daisukes.menu set 1"
+    }
+  },
+  "pause": false,
+  "after_action": "none"
+}

@@ -5,7 +5,7 @@ execute if score #victory daisukes.engine matches 1 run return 0
 scoreboard players set #victory daisukes.engine 1
 
 # Fora tots els modificadors i ja no en surten mes. Queda aturat tambe amb /reload o en tornar a obrir
-# el mon (core/load mira #victory), fins que es comenci una partida nova amb /function daisukes:reset
+# el mon (core/load mira #victory), fins que es comenci una partida nova (New game al menu, o /function daisukes:reset)
 function daisukes:engine/stop
 
 # Temps de partida (nomes avanca amb el repte en marxa, aixi que es el temps final)
@@ -23,7 +23,7 @@ execute if entity @a[tag=daisukes.dragon_slayer] run tellraw @a ["", {"text": " 
 tag @a remove daisukes.dragon_slayer
 execute if score #hours daisukes.math matches 1.. run tellraw @a ["", {"text": "   Challenge completed in ", "color": "gray"}, {"score": {"name": "#hours", "objective": "daisukes.math"}, "color": "white"}, {"text": " h ", "color": "gray"}, {"score": {"name": "#mins", "objective": "daisukes.math"}, "color": "white"}, {"text": " min ", "color": "gray"}, {"score": {"name": "#secs", "objective": "daisukes.math"}, "color": "white"}, {"text": " s", "color": "gray"}]
 execute unless score #hours daisukes.math matches 1.. run tellraw @a ["", {"text": "   Challenge completed in ", "color": "gray"}, {"score": {"name": "#mins", "objective": "daisukes.math"}, "color": "white"}, {"text": " min ", "color": "gray"}, {"score": {"name": "#secs", "objective": "daisukes.math"}, "color": "white"}, {"text": " s", "color": "gray"}]
-tellraw @a ["", {"text": "   Modifiers stopped. New game: ", "color": "gray"}, {"text": "/function daisukes:reset", "color": "white"}]
+tellraw @a ["", {"text": "   Modifiers stopped. ", "color": "gray"}, {"text": "[New game]", "color": "gold", "click_event": {"action": "show_dialog", "dialog": "daisukes:new_game"}, "hover_event": {"action": "show_text", "value": "Start the challenge again from zero"}}]
 
 # Titol, fanfara, petards i musica
 function daisukes:victory/celebrate

@@ -3,6 +3,8 @@
 scoreboard players set #silent daisukes.math 1
 scoreboard players set #current_count daisukes.engine -1
 scoreboard players set #current_phase daisukes.engine -1
+scoreboard players set #current_top daisukes.engine -1
+scoreboard players set #current_low daisukes.engine -1
 function daisukes:engine/progress/update_interval
 function daisukes:engine/progress/update_count
 scoreboard players set #silent daisukes.math 0
