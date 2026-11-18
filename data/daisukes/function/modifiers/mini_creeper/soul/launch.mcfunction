@@ -1,5 +1,8 @@
-# Com a l'anima que surt del cos: en linia recta i frenant (uns 5 blocs en 0,65 s)
+# Com a l'anima que surt del cos: en linia recta i frenant (uns 5 blocs en 0,65 s). Si n'han sortit unes
+# quantes, les darreres esperen dins del cos (temps negatiu)
 scoreboard players add @s daisukes.soul 1
+execute if score @s daisukes.soul matches ..0 run return 0
+execute if score @s daisukes.soul matches 1 run function daisukes:modifiers/mini_creeper/soul/depart
 execute if score @s daisukes.soul matches ..4 run tp @s ^ ^ ^0.7
 execute if score @s daisukes.soul matches 5..7 run tp @s ^ ^ ^0.45
 execute if score @s daisukes.soul matches 8..10 run tp @s ^ ^ ^0.28

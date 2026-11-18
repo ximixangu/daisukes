@@ -14,4 +14,5 @@ execute if score #enabled daisukes.math matches 0 run function daisukes:menu/mod
 execute if score #enabled daisukes.math matches 0 run return 0
 
 dialog clear @s
+time set day
 function daisukes:start

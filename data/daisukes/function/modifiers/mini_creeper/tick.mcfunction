@@ -8,7 +8,7 @@ execute unless data storage daisukes:soul {ready: true} run function daisukes:mo
 execute at @e[type=minecraft:player,gamemode=!spectator] as @e[distance=..96,type=!minecraft:player,type=!#daisukes:non_mob,type=!#daisukes:rideable,tag=!daisukes.soul_host] run function daisukes:modifiers/mini_creeper/mark
 
 # Un jugador acaba de matar un mob marcat (avancament mini_creeper/kill): del cos, que encara s'esta morint
-# (vida 0, 1 s), en surt l'anima
+# (vida 0, 1 s), en surten les animes
 execute as @a[tag=daisukes.soul_killer] at @s as @e[type=minecraft:marker,tag=daisukes.soul_marker,distance=..96] if predicate daisukes:mini_creeper/dying run function daisukes:modifiers/mini_creeper/release
 tag @a remove daisukes.soul_killer
 

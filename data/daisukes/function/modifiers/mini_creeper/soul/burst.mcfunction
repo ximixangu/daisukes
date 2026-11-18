@@ -1,4 +1,4 @@
-# Esclata (com a l'anima, als seus peus). Mal: 6 (3 cors, igual a totes les dificultats) a cada jugador a menys
+# Esclata (com a l'anima, als seus peus). Mal: 8 (4 cors, igual a totes les dificultats) a cada jugador a menys
 # de 2,5 blocs. Surt del punt de l'esclat: empeny, l'escut l'atura si hi mires, i l'armadura i Blast Protection
 # el redueixen. Tipus de dany vanilla minecraft:fireworks (al xat: "went off with a bang"); un de propi no es
 # carregaria amb /reload, nomes en obrir el mon
