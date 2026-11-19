@@ -30,6 +30,7 @@
     "daisukes:modifiers/living_earth/leftovers",
     "daisukes:modifiers/heartbound/leftovers",
     "daisukes:modifiers/roots/leftovers",
-    "daisukes:modifiers/clockwork/leftovers"
+    "daisukes:modifiers/clockwork/leftovers",
+    "daisukes:modifiers/overcharge/leftovers"
   ]
 }

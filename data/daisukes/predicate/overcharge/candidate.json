@@ -1,0 +1,165 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:any_of",
+        "terms": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "daisukes.oc_id": {
+                "min": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#l1"
+                  },
+                  "score": "daisukes.oc"
+                },
+                "max": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#l1"
+                  },
+                  "score": "daisukes.oc"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "daisukes.oc_id": {
+                "min": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#l2"
+                  },
+                  "score": "daisukes.oc"
+                },
+                "max": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#l2"
+                  },
+                  "score": "daisukes.oc"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "daisukes.oc_id": {
+                "min": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#l3"
+                  },
+                  "score": "daisukes.oc"
+                },
+                "max": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#l3"
+                  },
+                  "score": "daisukes.oc"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:any_of",
+        "terms": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "daisukes.oc_l1": {
+                "min": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#a"
+                  },
+                  "score": "daisukes.oc"
+                },
+                "max": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#a"
+                  },
+                  "score": "daisukes.oc"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "daisukes.oc_l2": {
+                "min": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#a"
+                  },
+                  "score": "daisukes.oc"
+                },
+                "max": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#a"
+                  },
+                  "score": "daisukes.oc"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "daisukes.oc_l3": {
+                "min": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#a"
+                  },
+                  "score": "daisukes.oc"
+                },
+                "max": {
+                  "type": "minecraft:score",
+                  "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#a"
+                  },
+                  "score": "daisukes.oc"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 scoreboard objectives add daisukes.glass_run dummy
 
 # Ticks que dura cada bloc de gel abans de trencar-se (40 = 2 s)
-scoreboard players set #delay daisukes.glass_run 40
+scoreboard players set #delay daisukes.glass_run 50
 
 # Quins blocs es converteixen en gel:
 #   0 = els que hi ha sota la hitbox del jugador (els que l'aguanten; rastre d'1 bloc)

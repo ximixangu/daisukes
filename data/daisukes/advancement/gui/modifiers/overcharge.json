@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:lightning_rod"
+    },
+    "title": {
+      "text": "Overcharge",
+      "color": "#6AB8FF",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "High voltage",
+        "color": "white"
+      },
+      {
+        "text": "\nNearby mobs link up with electric beams that shock you and throw you back. When a mob dies, its charge strikes the ground around it a moment later: be in the air! A lightning rod nearby soaks it up.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

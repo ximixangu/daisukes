@@ -51,6 +51,7 @@
     "daisukes:modifiers/thunderstruck/register",
     "daisukes:modifiers/uhc/register",
     "daisukes:modifiers/vertigo/register",
-    "daisukes:modifiers/zombie_tsunami/register"
+    "daisukes:modifiers/zombie_tsunami/register",
+    "daisukes:modifiers/overcharge/register"
   ]
 }
