@@ -6,7 +6,7 @@
     },
     "title": {
       "text": "UHC",
-      "color": "red",
+      "color": "dark_red",
       "bold": true
     },
     "description": [
