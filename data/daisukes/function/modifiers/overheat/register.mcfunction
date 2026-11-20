@@ -4,4 +4,4 @@ data modify storage daisukes:texts desc.overheat set value "You keep heating up,
 
 # Alyra's Curse fa mal a l'aigua (l'unica cosa que et refreda) i amb Flooded sempre en tens al costat (no faria res).
 # Balloon Boy et llanca enlaire a cada cremada (no arribaries mai a l'aigua) i Gorgun's Gaze et deixa 8 s petrificat cremant-te
-data modify storage daisukes:registry incompatible.overheat set value ["alyra", "agua", "balloon", "gorguns_gaze"]
+data modify storage daisukes:registry incompatible.overheat set value ["alyra"]
