@@ -1,4 +1,4 @@
-# Living Earth: tot el que trenques torna als 4 s, negre i amb la seva forma (costa el doble de trencar i no dona res).
+# Ctrl+Z: tot el que trenques torna als 4 s, negre i amb la seva forma (costa el doble de trencar i no dona res).
 # El que poses et torna a l'inventari als 2 s (menys les coses que es fan servir).
 #  daisukes.earth: valors globals, numero de cada jugador i del seu cursor, ordre dels blocs negres i amo d'un bloc posat
 #  daisukes.earth_k: el cursor, si el bloc que mira tornaria negre   daisukes.earth_t: temps que falta   daisukes.earth_v: casella de la caixa forta

@@ -1,4 +1,4 @@
-# Cada segon (core/leftovers), nomes si Living Earth no esta actiu (i no estan desapareixent els negres):
+# Cada segon (core/leftovers), nomes si Ctrl+Z no esta actiu (i no estan desapareixent els negres):
 # el que era en chunks sense carregar, els jugadors que no hi eren i la caixa forta
 execute if data storage daisukes:state {active: ["living_earth"]} run return 0
 execute if data storage daisukes:earth {fading: 1b} run return 0
