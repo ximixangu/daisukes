@@ -7,3 +7,4 @@ execute unless score @s daisukes.item_drop matches 2000.. run return 0
 
 scoreboard players set @s daisukes.item_drop 0
 execute if items entity @s weapon.mainhand * run function daisukes:modifiers/item_drop/drop
+playsound minecraft:block.sniffer_egg.plop player @a ~ ~ ~ 0.2 1.2

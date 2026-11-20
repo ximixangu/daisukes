@@ -30,7 +30,7 @@
     "daisukes:modifiers/hotbar_cycle/register",
     "daisukes:modifiers/hush/register",
     "daisukes:modifiers/icarus/register",
-    "daisukes:modifiers/glass_run/register",
+    "daisukes:modifiers/ice_run/register",
     "daisukes:modifiers/inv_weight/register",
     "daisukes:modifiers/jeb/register",
     "daisukes:modifiers/junk/register",

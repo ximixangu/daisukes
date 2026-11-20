@@ -7,4 +7,3 @@ item replace entity @s weapon.mainhand with minecraft:air
 execute summon minecraft:marker run function daisukes:modifiers/item_drop/aim
 
 tag @e[type=minecraft:item,tag=daisukes.slip] remove daisukes.slip
-playsound minecraft:block.honey_block.slide player @a ~ ~ ~ 0.8 1.2
