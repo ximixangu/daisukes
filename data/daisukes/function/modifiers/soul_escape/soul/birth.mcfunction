@@ -21,6 +21,6 @@ execute if score #roll daisukes.soul matches 0.. run scoreboard players set #cou
 # Les animes, una darrere l'altra (cada una surt 0,2 s despres) i cap a costats diferents (120 graus)
 scoreboard players set #delay daisukes.soul 0
 execute store result score #yaw daisukes.soul run random value -180..179
-execute positioned ~ ~0.3 ~ summon minecraft:interaction run function daisukes:modifiers/mini_creeper/soul/setup
-execute if score #count daisukes.soul matches 2.. positioned ~ ~0.3 ~ summon minecraft:interaction run function daisukes:modifiers/mini_creeper/soul/setup
-execute if score #count daisukes.soul matches 3 positioned ~ ~0.3 ~ summon minecraft:interaction run function daisukes:modifiers/mini_creeper/soul/setup
+execute positioned ~ ~0.3 ~ summon minecraft:interaction run function daisukes:modifiers/soul_escape/soul/setup
+execute if score #count daisukes.soul matches 2.. positioned ~ ~0.3 ~ summon minecraft:interaction run function daisukes:modifiers/soul_escape/soul/setup
+execute if score #count daisukes.soul matches 3 positioned ~ ~0.3 ~ summon minecraft:interaction run function daisukes:modifiers/soul_escape/soul/setup

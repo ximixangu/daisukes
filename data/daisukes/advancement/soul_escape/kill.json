@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "daisukes:modifiers/mini_creeper/kill"
+    "function": "daisukes:modifiers/soul_escape/kill"
   }
 }

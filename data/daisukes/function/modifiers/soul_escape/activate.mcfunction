@@ -1,5 +1,5 @@
 # Soul Escape. Cada mob a menys de 96 blocs d'un jugador porta un marker a sobre (de passatger). Quan un jugador
-# en mata un (avancament mini_creeper/kill), el marker diu on es el cos i en surten d'1 a 3 animes (soul/birth).
+# en mata un (avancament soul_escape/kill), el marker diu on es el cos i en surten d'1 a 3 animes (soul/birth).
 #  soul: valors globals (#...) i, a cada anima, els ticks que porta en la fase
 #  soul_id: identificador de cada jugador i, a cada anima, el del jugador que la va matar (a qui empaita)
 # Fases de l'anima (etiquetes): soul_launch (surt disparada del cos), soul_hunt (volta al voltant del jugador),
@@ -29,8 +29,8 @@ scoreboard players set #chance3 daisukes.soul 10
 # =====================================================================
 
 # Restes d'una activacio anterior (i el scoreboard que feia servir la versio Creeper)
-function daisukes:modifiers/mini_creeper/clear
-scoreboard objectives remove daisukes.mini_creeper
+function daisukes:modifiers/soul_escape/clear
+scoreboard objectives remove daisukes.soul_escape
 
 # Entrada: un murmuri d'animes al voltant de cada jugador
 execute at @e[type=minecraft:player,gamemode=!spectator] run particle minecraft:soul ~ ~1 ~ 1.2 0.6 1.2 0.02 16 force

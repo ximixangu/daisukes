@@ -5,5 +5,5 @@ execute if entity @s[tag=daisukes.soul_host] run return 0
 tag @s add daisukes.soul_host
 execute on passengers if entity @s[tag=daisukes.soul_marker] run return 0
 tag @s add daisukes.soul_host_now
-execute at @s summon minecraft:marker run function daisukes:modifiers/mini_creeper/attach
+execute at @s summon minecraft:marker run function daisukes:modifiers/soul_escape/attach
 tag @s remove daisukes.soul_host_now

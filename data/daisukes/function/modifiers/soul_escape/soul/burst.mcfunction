@@ -5,7 +5,7 @@
 particle minecraft:flash{color: [0.31, 0.84, 0.95, 1.0]} ~ ~0.35 ~ 0 0 0 0 1 force
 particle minecraft:explosion ~ ~0.35 ~ 0 0 0 0 1 force
 particle minecraft:soul ~ ~0.35 ~ 0.3 0.3 0.3 0.06 12 force
-execute positioned ~ ~0.35 ~ run function daisukes:modifiers/mini_creeper/soul/ring {s: 0.4}
+execute positioned ~ ~0.35 ~ run function daisukes:modifiers/soul_escape/soul/ring {s: 0.4}
 playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 0.8 1.6
 playsound minecraft:particle.soul_escape hostile @a ~ ~ ~ 1.5 0.6
 execute positioned ~ ~0.35 ~ as @e[type=minecraft:player,gamemode=!spectator,distance=..2.5] run damage @s 8 minecraft:fireworks at ~ ~ ~
