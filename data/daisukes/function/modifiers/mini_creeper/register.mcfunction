@@ -4,6 +4,4 @@ data modify storage daisukes:registry modifiers append value "mini_creeper"
 data modify storage daisukes:texts map.mini_creeper set value {"text": "Soul Escape", "color": "#4FD6F2", "bold": true}
 data modify storage daisukes:texts desc.mini_creeper set value "Every mob you kill releases one to three souls. They circle you like a vex, then dive in and explode: punch them (left or right click) or block them with a shield."
 
-# Amb Short Arms no s'hi arriba, encadenat per Anchor o lligat per Grasping Roots no pots picar i amb Dunce no
-# la veus venir
-data modify storage daisukes:registry incompatible.mini_creeper set value ["no_arms", "anchor", "roots", "gerxu"]
+data modify storage daisukes:registry incompatible.mini_creeper set value ["no_arms"]

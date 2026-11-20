@@ -1,4 +1,4 @@
-# Heartbound: cada jugador porta un creaking lligat durant tot el modificador (nomes es mou quan ningu el mira).
+# Don't Blink: cada jugador porta un creaking lligat durant tot el modificador (nomes es mou quan ningu el mira).
 # No pot morir, el segueix sempre (si es queda enrere, torna a sortir darrere seu) i va un 50 % mes rapid i fa un 50 % mes de mal.
 #  daisukes.heart: globals, numero de cada jugador i del seu creaking   daisukes.heart_t: temps fins que surt (jugador), segons lluny (creaking)
 #  daisukes.heart_l: l'ultim tick que s'ha vist cada jugador   daisukes.heart_s: ticks que li queden de tremolar (creaking)

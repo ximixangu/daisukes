@@ -1,4 +1,4 @@
-# Cada segon (core/leftovers), nomes si Heartbound no esta actiu: el que era en chunks sense carregar
+# Cada segon (core/leftovers), nomes si Don't Blink no esta actiu: el que era en chunks sense carregar
 execute if data storage daisukes:state {active: ["heartbound"]} run return 0
 execute as @e[type=minecraft:creaking,tag=daisukes.heart_creaking] at @s run function daisukes:modifiers/heartbound/vanish
 kill @e[type=minecraft:interaction,tag=daisukes.heart_hit]

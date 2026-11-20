@@ -3,13 +3,13 @@
 Al `register.mcfunction` d'un modificador, afegeix una línia amb els que **no** poden sortir a la vegada que ell:
 
 ```mcfunction
-data modify storage daisukes:registry incompatible.laser_limbo set value ["no_jump", "sonic", "gerxu", "shadow"]
+data modify storage daisukes:registry incompatible.laser_limbo set value ["no_jump", "sonic", "dunce", "shadow"]
 ```
 
 - Hi pots posar tants noms com vulguis (entre cometes i dins de `[ ]`, encara que només n'hi hagi un).
 - Va en els dos sentits: si `heisenberg` no pot anar amb `gorguns_gaze`, `gorguns_gaze` tampoc pot anar amb `heisenberg`. Només cal escriure-ho en un dels dos fitxers.
 - Fes `/reload` perquè es carregui. Si un nom està mal escrit, surt un avís al xat.
-- Exemples inclosos: `heisenberg` amb `gorguns_gaze` (petrificat saltaria sense parar) i `laser_limbo` amb `no_jump`, `sonic`, `gerxu` i `shadow`.
+- Exemples inclosos: `heisenberg` amb `gorguns_gaze` (petrificat saltaria sense parar) i `laser_limbo` amb `no_jump`, `sonic`, `dunce` i `shadow`.
 
 ## Com tria ara
 
