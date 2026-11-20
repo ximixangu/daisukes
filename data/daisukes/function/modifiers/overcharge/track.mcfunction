@@ -1,5 +1,5 @@
-# Com a mob nou a prop d'un jugador: entra a la xarxa. Si el tenen a prop dos jugadors, surt dos cops en el mateix
-# tick: nomes compta el primer
+# Com a mob nou a prop d'un jugador, a la posicio del jugador (el que neixi per al mob, at @s): entra a la xarxa.
+# Si el tenen a prop dos jugadors, surt dos cops en el mateix tick: nomes compta el primer
 execute if predicate daisukes:overcharge/tracked run return 0
 execute if score #count daisukes.oc >= #max_mobs daisukes.oc run return 0
 scoreboard players add #count daisukes.oc 1
@@ -21,5 +21,5 @@ execute if entity @s[type=#daisukes:rideable] run tag @s add daisukes.oc_ride
 execute if entity @s[tag=daisukes.oc_ride] run return run function daisukes:modifiers/overcharge/shadow/new
 execute on passengers if entity @s[tag=daisukes.oc_rider] run return 0
 tag @s add daisukes.oc_new
-execute summon minecraft:marker run function daisukes:modifiers/overcharge/attach
+execute at @s summon minecraft:marker run function daisukes:modifiers/overcharge/attach
 tag @s remove daisukes.oc_new

@@ -3,13 +3,17 @@ execute store result score #pointers daisukes.oc if entity @e[type=minecraft:mar
 execute if score #pointers daisukes.oc matches 2.. run kill @e[type=minecraft:marker,tag=daisukes.oc_pointer]
 execute unless entity @e[type=minecraft:marker,tag=daisukes.oc_pointer] as @a[limit=1] at @s summon minecraft:marker run tag @s add daisukes.oc_pointer
 
+# Etiquetes de la xarxa sense id (un mob convertit, o restes d'una activacio anterior en un chunk que no era
+# carregat): fora. Si es a prop, hi torna a entrar ara mateix amb un id nou
+execute as @e[tag=daisukes.oc_mob,predicate=!daisukes:overcharge/tracked] run function daisukes:modifiers/overcharge/untrack
+
 # Mobs nous a menys de 32 blocs d'un jugador entren a la xarxa (com a molt #max_mobs; 8 per jugador i tick).
 # Qualsevol mob: ni objectes, fletxes, vehicles, displays... (#daisukes:non_mob) ni el drac de l'End
 execute store result score #count daisukes.oc if entity @e[tag=daisukes.oc_mob]
 execute if score #count daisukes.oc < #max_mobs daisukes.oc at @e[type=minecraft:player,gamemode=!spectator] as @e[distance=..32,type=!minecraft:player,type=!#daisukes:non_mob,type=!minecraft:ender_dragon,predicate=!daisukes:overcharge/tracked,sort=nearest,limit=8] run function daisukes:modifiers/overcharge/track
 
 # Morts. Marker de sobre: si el seu mob ja no es pot seleccionar, es que s'esta morint. Muntables: l'ombra segueix
-# el seu mob, i la que no l'ha trobat es que s'ha mort
+# el seu mob, i la que no l'ha trobat mira si s'ha mort
 execute as @e[type=minecraft:marker,tag=daisukes.oc_rider] on vehicle if entity @s[tag=daisukes.oc_mob] at @s unless entity @e[tag=daisukes.oc_mob,distance=..0.001] run function daisukes:modifiers/overcharge/death
 execute as @e[tag=daisukes.oc_ride] at @s run function daisukes:modifiers/overcharge/shadow/follow
 execute as @e[type=minecraft:marker,tag=daisukes.oc_shadow,tag=!daisukes.oc_seen] at @s run function daisukes:modifiers/overcharge/shadow/lost
