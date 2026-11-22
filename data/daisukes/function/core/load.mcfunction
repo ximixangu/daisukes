@@ -19,7 +19,7 @@ scoreboard objectives add daisukes.deaths deathCount
 
 # Constants
 scoreboard players set #2 daisukes.math 2
-scoreboard players set #3 daisukes.math 3
+scoreboard players set #7 daisukes.math 7
 scoreboard players set #10 daisukes.math 10
 scoreboard players set #18 daisukes.math 18
 scoreboard players set #20 daisukes.math 20
