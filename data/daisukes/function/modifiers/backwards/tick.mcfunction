@@ -1,1 +1,1 @@
-execute as @e[type=minecraft:player,gamemode=!spectator] at @s run function daisukes:modifiers/backwards/check
+execute as @e[type=minecraft:player,gamemode=!spectator] at @s if predicate {condition: "minecraft:entity_properties", entity: "this", predicate: {type_specific: {type: "minecraft:player", input: {"forward": true}}}} run damage @s 2 minecraft:magic
