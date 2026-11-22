@@ -40,7 +40,7 @@ scoreboard players set #1200 daisukes.cw 1200
 
 # ==================== VALORS (CLOCKWORK.md) ====================
 # Com de pressa es gasta, en percentatge (100: quiet, de plena a res en 2 minuts; 250: 2,5 vegades mes de pressa; 0: no es gasta)
-scoreboard players set #drain daisukes.cw 350
+scoreboard players set #drain daisukes.cw 300
 # Temps lliure (la barra verda) amb la corda plena, en ticks (400 = 20 s; minim 10). Al principi, compta des que surt la clau
 scoreboard players set #free daisukes.cw 60
 # Clavat: el mal de cada grinyol, en desenes (20 = 2, un cor; 0: cap), i cada quants ticks grinyola (40 = 2 s)
