@@ -19,6 +19,7 @@ scoreboard objectives add daisukes.deaths deathCount
 
 # Constants
 scoreboard players set #2 daisukes.math 2
+scoreboard players set #3 daisukes.math 3
 scoreboard players set #10 daisukes.math 10
 scoreboard players set #18 daisukes.math 18
 scoreboard players set #20 daisukes.math 20
@@ -59,7 +60,7 @@ scoreboard players set #stronghold_count daisukes.config 3
 scoreboard players set #end_count daisukes.config 4
 
 # Quants segons duren els petards de la victoria quan mor el drac. 0 = sense petards (titol i musica si)
-scoreboard players set #victory_seconds daisukes.config 90
+scoreboard players set #victory_seconds daisukes.config 80
 
 # Configuracio del menu: per defecte el primer cop (o en un mon d'abans del menu), i valors per al motor
 execute unless score #configured daisukes.config matches 1 run function daisukes:settings/defaults

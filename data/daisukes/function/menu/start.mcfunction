@@ -7,6 +7,7 @@ execute if score #defeat daisukes.engine matches 1 run scoreboard players set #f
 execute if score #finished daisukes.math matches 1 run dialog show @s daisukes:new_game
 execute if score #finished daisukes.math matches 1 run return 0
 
+time set day
 # Sense cap modificador activat no pot comencar: a la llista, que ho diu en vermell
 function daisukes:settings/count_enabled
 scoreboard players set #page daisukes.math 1
@@ -14,5 +15,4 @@ execute if score #enabled daisukes.math matches 0 run function daisukes:menu/mod
 execute if score #enabled daisukes.math matches 0 run return 0
 
 dialog clear @s
-time set day
 function daisukes:start

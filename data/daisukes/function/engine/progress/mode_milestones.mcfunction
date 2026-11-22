@@ -12,12 +12,24 @@ scoreboard players operation #phase_ticks daisukes.math *= #20 daisukes.math
 execute if score #alternate_seconds daisukes.config matches 1.. if score #elapsed daisukes.engine >= #phase_ticks daisukes.math run scoreboard players set #new_phase daisukes.math 2
 execute if score #nether_reached daisukes.engine matches 1 run scoreboard players set #new_phase daisukes.math 2
 
+scoreboard players operation #phase_ticks daisukes.math = #alternate_seconds daisukes.config
+scoreboard players operation #phase_ticks daisukes.math *= #3 daisukes.math
+scoreboard players operation #phase_ticks daisukes.math *= #20 daisukes.math
+execute if score #elapsed daisukes.engine >= #phase_ticks daisukes.math run scoreboard players set #new_phase daisukes.math 3
+
 execute if score #nether_goals daisukes.engine matches 1 run scoreboard players set #new_phase daisukes.math 3
 
 scoreboard players operation #phase_ticks daisukes.math = #late_seconds daisukes.config
 scoreboard players operation #phase_ticks daisukes.math *= #20 daisukes.math
 scoreboard players operation #phase_ticks daisukes.math += #nether_goals_time daisukes.engine
 execute if score #nether_goals daisukes.engine matches 1 if score #elapsed daisukes.engine >= #phase_ticks daisukes.math run scoreboard players set #new_phase daisukes.math 4
+
+scoreboard players operation #phase_ticks daisukes.math = #alternate_seconds daisukes.config
+scoreboard players operation #phase_ticks daisukes.math *= #3 daisukes.math
+scoreboard players operation #phase_ticks daisukes.math *= #2 daisukes.math
+scoreboard players operation #phase_ticks daisukes.math *= #20 daisukes.math
+execute if score #elapsed daisukes.engine >= #phase_ticks daisukes.math run scoreboard players set #new_phase daisukes.math 4
+
 
 execute if score #stronghold_reached daisukes.engine matches 1 run scoreboard players set #new_phase daisukes.math 5
 
