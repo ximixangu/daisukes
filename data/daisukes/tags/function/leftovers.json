@@ -30,6 +30,8 @@
     "daisukes:modifiers/heartbound/leftovers",
     "daisukes:modifiers/roots/leftovers",
     "daisukes:modifiers/clockwork/leftovers",
-    "daisukes:modifiers/overcharge/leftovers"
+    "daisukes:modifiers/overcharge/leftovers",
+    "daisukes:modifiers/ender_mobs/leftovers",
+    "daisukes:modifiers/tank/leftovers"
   ]
 }

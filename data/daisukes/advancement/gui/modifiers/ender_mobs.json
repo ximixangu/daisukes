@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:enderman_spawn_egg"
+    },
+    "title": {
+      "text": "Ender Mobs",
+      "color": "#E079FA",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "Now you see them...",
+        "color": "white"
+      },
+      {
+        "text": "\nMobs teleport a few blocks away whenever they take damage, just like endermen, and hostile ones also blink around now and then. Wherever they land, they keep coming for you.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

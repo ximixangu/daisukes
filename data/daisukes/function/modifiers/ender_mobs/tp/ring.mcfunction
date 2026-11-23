@@ -1,0 +1,4 @@
+# Torna 1 si els 8 blocs del voltant d'aquest son lliures (lloc buit a terra, aigua a l'aigua): hi cap un mob ample
+execute if score #mode daisukes.em matches 0 if block ~1 ~ ~ #daisukes:ender_mobs/open if block ~-1 ~ ~ #daisukes:ender_mobs/open if block ~ ~ ~1 #daisukes:ender_mobs/open if block ~ ~ ~-1 #daisukes:ender_mobs/open if block ~1 ~ ~1 #daisukes:ender_mobs/open if block ~1 ~ ~-1 #daisukes:ender_mobs/open if block ~-1 ~ ~1 #daisukes:ender_mobs/open if block ~-1 ~ ~-1 #daisukes:ender_mobs/open run return 1
+execute if score #mode daisukes.em matches 1 if block ~1 ~ ~ #daisukes:ender_mobs/water if block ~-1 ~ ~ #daisukes:ender_mobs/water if block ~ ~ ~1 #daisukes:ender_mobs/water if block ~ ~ ~-1 #daisukes:ender_mobs/water if block ~1 ~ ~1 #daisukes:ender_mobs/water if block ~1 ~ ~-1 #daisukes:ender_mobs/water if block ~-1 ~ ~1 #daisukes:ender_mobs/water if block ~-1 ~ ~-1 #daisukes:ender_mobs/water run return 1
+return fail

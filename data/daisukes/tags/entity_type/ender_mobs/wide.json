@@ -1,0 +1,23 @@
+{
+  "values": [
+    "minecraft:spider",
+    "minecraft:iron_golem",
+    "minecraft:ravager",
+    "minecraft:sniffer",
+    "minecraft:hoglin",
+    "minecraft:zoglin",
+    "minecraft:polar_bear",
+    "minecraft:panda",
+    "minecraft:horse",
+    "minecraft:donkey",
+    "minecraft:mule",
+    "minecraft:skeleton_horse",
+    "minecraft:zombie_horse",
+    "minecraft:camel",
+    "minecraft:camel_husk",
+    "minecraft:turtle",
+    "minecraft:elder_guardian",
+    "minecraft:slime",
+    "minecraft:magma_cube"
+  ]
+}

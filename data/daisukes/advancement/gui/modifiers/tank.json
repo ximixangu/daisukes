@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:light_weighted_pressure_plate"
+    },
+    "title": {
+      "text": "Tanks",
+      "color": "#7F9A3A",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "Roll out!",
+        "color": "white"
+      },
+      {
+        "text": "\nA and D turn you in place like a tank instead of strafing. Sneak to plant a mine (up to 5) and jump to set them all off: they wreck blocks and hurt everything, you included.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

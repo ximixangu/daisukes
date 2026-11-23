@@ -1,0 +1,12 @@
+{
+  "values": [
+    "minecraft:iron_golem",
+    "minecraft:ravager",
+    "minecraft:warden",
+    "minecraft:camel",
+    "minecraft:camel_husk",
+    "minecraft:wither_skeleton",
+    "minecraft:slime",
+    "minecraft:magma_cube"
+  ]
+}

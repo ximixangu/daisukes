@@ -52,6 +52,8 @@
     "daisukes:modifiers/uhc/register",
     "daisukes:modifiers/vertigo/register",
     "daisukes:modifiers/zombie_tsunami/register",
-    "daisukes:modifiers/overcharge/register"
+    "daisukes:modifiers/overcharge/register",
+    "daisukes:modifiers/ender_mobs/register",
+    "daisukes:modifiers/tank/register"
   ]
 }
