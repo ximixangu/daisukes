@@ -54,6 +54,8 @@
     "daisukes:modifiers/zombie_tsunami/register",
     "daisukes:modifiers/overcharge/register",
     "daisukes:modifiers/ender_mobs/register",
-    "daisukes:modifiers/tank/register"
+    "daisukes:modifiers/tank/register",
+    "daisukes:modifiers/curse_blind/register",
+    "daisukes:modifiers/world_edit/register"
   ]
 }

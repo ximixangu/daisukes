@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:wooden_axe"
+    },
+    "title": {
+      "text": "World Edit",
+      "color": "#B48CFF",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "//swap",
+        "color": "white"
+      },
+      {
+        "text": "\nPairs of glowing boxes, one blue and one red, keep popping up right next to you. A few seconds later they swap every block inside them. Don't be in one when it happens.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

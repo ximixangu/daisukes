@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:structure_void"
+    },
+    "title": {
+      "text": "Curse of the Blind",
+      "color": "dark_purple",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "What's in your pockets?",
+        "color": "white"
+      },
+      {
+        "text": "\nEvery item you carry (and every item lying near you) looks like a Structure Void. They still work as usual: hover over one to see what it really is.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

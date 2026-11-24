@@ -1,0 +1,34 @@
+[
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "components": {
+        "minecraft:item_model": "minecraft:air"
+      }
+    },
+    "on_fail": {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "minecraft:structure_void"
+      }
+    }
+  },
+  {
+    "function": "minecraft:modify_contents",
+    "component": "minecraft:bundle_contents",
+    "modifier": {
+      "function": "minecraft:filtered",
+      "item_filter": {
+        "components": {
+          "minecraft:item_model": "minecraft:air"
+        }
+      },
+      "on_fail": {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:item_model": "minecraft:structure_void"
+        }
+      }
+    }
+  }
+]

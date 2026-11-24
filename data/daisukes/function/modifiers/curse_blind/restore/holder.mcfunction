@@ -1,0 +1,14 @@
+# Com a una entitat que pot dur objectes (marc, estaca, allay, maniqui, mob...), on es: el que sembli un structure void
+# sense ser-ho torna a ser normal. Un item_display ajudant (cb_tmp) fa la feina i despres desapareix
+execute unless items entity @s contents *[minecraft:item_model="minecraft:structure_void"] unless items entity @s weapon.* *[minecraft:item_model="minecraft:structure_void"] unless items entity @s armor.* *[minecraft:item_model="minecraft:structure_void"] unless items entity @s armor.body *[minecraft:item_model="minecraft:structure_void"] unless items entity @s saddle *[minecraft:item_model="minecraft:structure_void"] run return 0
+execute summon minecraft:item_display run tag @s add daisukes.cb_tmp
+execute if items entity @s contents *[minecraft:item_model="minecraft:structure_void"] unless items entity @s contents minecraft:structure_void run function daisukes:modifiers/curse_blind/restore/slot {slot: "contents"}
+execute if items entity @s weapon.mainhand *[minecraft:item_model="minecraft:structure_void"] unless items entity @s weapon.mainhand minecraft:structure_void run function daisukes:modifiers/curse_blind/restore/slot {slot: "weapon.mainhand"}
+execute if items entity @s weapon.offhand *[minecraft:item_model="minecraft:structure_void"] unless items entity @s weapon.offhand minecraft:structure_void run function daisukes:modifiers/curse_blind/restore/slot {slot: "weapon.offhand"}
+execute if items entity @s armor.head *[minecraft:item_model="minecraft:structure_void"] unless items entity @s armor.head minecraft:structure_void run function daisukes:modifiers/curse_blind/restore/slot {slot: "armor.head"}
+execute if items entity @s armor.chest *[minecraft:item_model="minecraft:structure_void"] unless items entity @s armor.chest minecraft:structure_void run function daisukes:modifiers/curse_blind/restore/slot {slot: "armor.chest"}
+execute if items entity @s armor.legs *[minecraft:item_model="minecraft:structure_void"] unless items entity @s armor.legs minecraft:structure_void run function daisukes:modifiers/curse_blind/restore/slot {slot: "armor.legs"}
+execute if items entity @s armor.feet *[minecraft:item_model="minecraft:structure_void"] unless items entity @s armor.feet minecraft:structure_void run function daisukes:modifiers/curse_blind/restore/slot {slot: "armor.feet"}
+execute if items entity @s armor.body *[minecraft:item_model="minecraft:structure_void"] unless items entity @s armor.body minecraft:structure_void run function daisukes:modifiers/curse_blind/restore/slot {slot: "armor.body"}
+execute if items entity @s saddle *[minecraft:item_model="minecraft:structure_void"] unless items entity @s saddle minecraft:structure_void run function daisukes:modifiers/curse_blind/restore/slot {slot: "saddle"}
+kill @n[type=minecraft:item_display,tag=daisukes.cb_tmp]

@@ -1,0 +1,3 @@
+# Macro: {x, y, z, x2, y2, z2, d}. Com a jugador: la casella ha de ser carregada i dins del mon (fora del mon, el
+# "unless block" falla i la linia no fa res), sense cap jugador a dins (els espectadors no compten) ni cap altra caixa
+$execute if loaded $(x) $(y) $(z) if loaded $(x2) $(y2) $(z2) unless block $(x) $(y) $(z) minecraft:void_air unless block $(x2) $(y2) $(z2) minecraft:void_air positioned $(x) $(y) $(z) unless entity @a[gamemode=!spectator,dx=$(d),dy=$(d),dz=$(d)] unless entity @e[type=minecraft:marker,tag=daisukes.we_box,distance=..0.5] run function daisukes:modifiers/world_edit/pick/fixed with storage daisukes:world_edit try

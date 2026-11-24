@@ -31,7 +31,8 @@
     "daisukes:modifiers/roots/leftovers",
     "daisukes:modifiers/clockwork/leftovers",
     "daisukes:modifiers/overcharge/leftovers",
-    "daisukes:modifiers/ender_mobs/leftovers",
-    "daisukes:modifiers/tank/leftovers"
+    "daisukes:modifiers/tank/leftovers",
+    "daisukes:modifiers/curse_blind/leftovers",
+    "daisukes:modifiers/world_edit/leftovers"
   ]
 }
