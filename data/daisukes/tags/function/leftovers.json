@@ -33,6 +33,9 @@
     "daisukes:modifiers/overcharge/leftovers",
     "daisukes:modifiers/tank/leftovers",
     "daisukes:modifiers/curse_blind/leftovers",
-    "daisukes:modifiers/world_edit/leftovers"
+    "daisukes:modifiers/world_edit/leftovers",
+    "daisukes:modifiers/pumpkin_head/leftovers",
+    "daisukes:modifiers/snake/leftovers",
+    "daisukes:modifiers/laser_eyes/leftovers"
   ]
 }

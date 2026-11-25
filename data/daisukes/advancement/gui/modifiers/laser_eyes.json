@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:spider_eye"
+    },
+    "title": {
+      "text": "Laser Eyes",
+      "color": "#FF3B30",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "Don't stare",
+        "color": "white"
+      },
+      {
+        "text": "\nLasers shoot from your eyes and never switch off: anything you stare at for a second bursts into flames, mobs and friends included. Look at the sky to rest your eyes.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -56,6 +56,9 @@
     "daisukes:modifiers/ender_mobs/register",
     "daisukes:modifiers/tank/register",
     "daisukes:modifiers/curse_blind/register",
-    "daisukes:modifiers/world_edit/register"
+    "daisukes:modifiers/world_edit/register",
+    "daisukes:modifiers/pumpkin_head/register",
+    "daisukes:modifiers/snake/register",
+    "daisukes:modifiers/laser_eyes/register"
   ]
 }

@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:carved_pumpkin"
+    },
+    "title": {
+      "text": "Pumpkin Head",
+      "color": "#F08C1E",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "Trick or treat?",
+        "color": "white"
+      },
+      {
+        "text": "\nA carved pumpkin with Curse of Binding gets stuck on everyone's head: it won't come off, and you can barely see through it. Your helmet comes back when this ends.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

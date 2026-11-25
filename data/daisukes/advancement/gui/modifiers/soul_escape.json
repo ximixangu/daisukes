@@ -5,8 +5,8 @@
       "id": "minecraft:creeper_spawn_egg"
     },
     "title": {
-      "text": "Creeper",
-      "color": "green",
+      "text": "Soul Escape",
+      "color": "#4FD6F2",
       "bold": true
     },
     "description": [
@@ -15,7 +15,7 @@
         "color": "white"
       },
       {
-        "text": "\nEvery mob that dies releases a tiny creeper with a very short fuse. Even the ones you kill.",
+        "text": "\nEvery mob you kill releases one to three souls. They circle you like a vex, then dive in and explode: punch them (left or right click) or block them with a shield.",
         "color": "gray"
       }
     ],

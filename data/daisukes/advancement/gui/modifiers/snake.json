@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:lime_concrete"
+    },
+    "title": {
+      "text": "Snake",
+      "color": "#39FF14",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "Don't bite your own tail!",
+        "color": "white"
+      },
+      {
+        "text": "\nYou leave a glowing tail behind you, like the snake in the old game: 10 blocks long, 5 more every time you eat, up to 40. It only moves when you do. Touching any tail, yours or a friend's, hurts.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
