@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:clock"
+    },
+    "title": {
+      "text": "Ekko",
+      "color": "#4F8BFF",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "Snap back in time",
+        "color": "white"
+      },
+      {
+        "text": "\nSneak and a glowing blue echo of you stays behind. 5 s later you snap back to it, with the health you had back then: any damage since is undone, and so is any healing.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

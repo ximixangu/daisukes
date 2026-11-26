@@ -36,6 +36,8 @@
     "daisukes:modifiers/world_edit/leftovers",
     "daisukes:modifiers/pumpkin_head/leftovers",
     "daisukes:modifiers/snake/leftovers",
-    "daisukes:modifiers/laser_eyes/leftovers"
+    "daisukes:modifiers/laser_eyes/leftovers",
+    "daisukes:modifiers/ekko/leftovers",
+    "daisukes:modifiers/katamari/leftovers"
   ]
 }

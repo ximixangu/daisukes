@@ -59,6 +59,8 @@
     "daisukes:modifiers/world_edit/register",
     "daisukes:modifiers/pumpkin_head/register",
     "daisukes:modifiers/snake/register",
-    "daisukes:modifiers/laser_eyes/register"
+    "daisukes:modifiers/laser_eyes/register",
+    "daisukes:modifiers/ekko/register",
+    "daisukes:modifiers/katamari/register"
   ]
 }

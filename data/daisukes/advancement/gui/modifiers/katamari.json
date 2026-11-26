@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:slime_ball"
+    },
+    "title": {
+      "text": "Katamari",
+      "color": "#FF4FA3",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "Roll it up!",
+        "color": "white"
+      },
+      {
+        "text": "\nEverything you mine, kill or roll over makes you bigger. Once you're big enough, you flatten what you walk through: plants, then treetops, then any mob weak enough. Sneak to tiptoe.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
