@@ -1,0 +1,32 @@
+{
+  "parent": "daisukes:gui/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_boots"
+    },
+    "title": {
+      "text": "Jump King",
+      "color": "#F2C230",
+      "bold": true
+    },
+    "description": [
+      {
+        "text": "Charge your leap",
+        "color": "white"
+      },
+      {
+        "text": "\nSpace doesn't jump anymore: hold it to crouch and charge, let go to leap. The longer you hold (just over a second at most), the higher and farther you fly, towards the WASD keys you're holding. Walls bounce you back, and long falls leave you splatted for a moment.",
+        "color": "gray"
+      }
+    ],
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "never": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "daisukes:jump_king/left": 128,
+      "daisukes:jump_king/left_fine": 128,
+      "daisukes:jump_king/up": 128,
+      "daisukes:jump_king/up_fine": 128,
+      "daisukes:jump_king/forward": 128,
+      "daisukes:jump_king/forward_fine": 128
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "daisukes_jk": {
+        "ok": true
+      }
+    }
+  }
+]

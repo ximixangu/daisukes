@@ -61,6 +61,7 @@
     "daisukes:modifiers/snake/register",
     "daisukes:modifiers/laser_eyes/register",
     "daisukes:modifiers/ekko/register",
-    "daisukes:modifiers/katamari/register"
+    "daisukes:modifiers/katamari/register",
+    "daisukes:modifiers/jump_king/register"
   ]
 }

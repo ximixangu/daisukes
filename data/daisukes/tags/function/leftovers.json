@@ -38,6 +38,7 @@
     "daisukes:modifiers/snake/leftovers",
     "daisukes:modifiers/laser_eyes/leftovers",
     "daisukes:modifiers/ekko/leftovers",
-    "daisukes:modifiers/katamari/leftovers"
+    "daisukes:modifiers/katamari/leftovers",
+    "daisukes:modifiers/jump_king/leftovers"
   ]
 }

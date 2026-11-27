@@ -1,0 +1,53 @@
+{
+  "function": "minecraft:set_enchantments",
+  "enchantments": {
+    "daisukes:jump_king/left": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#lc"
+      },
+      "score": "daisukes.jk"
+    },
+    "daisukes:jump_king/left_fine": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#lf"
+      },
+      "score": "daisukes.jk"
+    },
+    "daisukes:jump_king/up": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#uc"
+      },
+      "score": "daisukes.jk"
+    },
+    "daisukes:jump_king/up_fine": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#uf"
+      },
+      "score": "daisukes.jk"
+    },
+    "daisukes:jump_king/forward": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#fc"
+      },
+      "score": "daisukes.jk"
+    },
+    "daisukes:jump_king/forward_fine": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#ff"
+      },
+      "score": "daisukes.jk"
+    }
+  }
+}

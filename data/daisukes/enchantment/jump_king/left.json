@@ -1,0 +1,44 @@
+{
+  "description": {
+    "text": "Jump King"
+  },
+  "supported_items": "minecraft:stick",
+  "weight": 1,
+  "max_level": 255,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "saddle"
+  ],
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "coordinate_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "magnitude": {
+            "type": "minecraft:linear",
+            "base": -12.7,
+            "per_level_above_first": 0.1
+          }
+        }
+      }
+    ]
+  }
+}
